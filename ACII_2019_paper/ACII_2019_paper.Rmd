@@ -1,0 +1,138 @@
+---
+title: The relation betweem feeling and expressing emotions. A comparison between sujective feeling and facial expression recognition of spontaneous emotions. 
+affiliation:
+  ## use one only of the following
+  # author-columnar: true         ## one column per author
+  institution-columnar: true  ## one column per institution (multiple autors eventually)
+  # wide: true                  ## one column wide author/affiliation fields
+
+  institution:
+    - name: Dublin City University
+      location: Dublin, Ireland
+      email: damien.dupre@dcu.ie
+      mark: 1
+      author:
+        - name: Damien Dupré
+    - name: Grenoble Alpes University
+      location: Grenoble, France
+      mark: 2
+      author:
+        - name: Anna Tcherkassof
+          email: anna.tcherkassof@univ-grenoble-alpes.fr
+abstract: |
+  The abstract goes here.
+  On multiple lines eventually.
+
+bibliography: mybibfile.bib
+output: rticles::ieee_article
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  cache.extra = knitr::rand_seed, 
+  message = FALSE, 
+  warning = FALSE, 
+  error = FALSE, 
+  echo = FALSE, 
+  fig.align="center",
+  fig.pos = 'H')
+#
+set.seed(123)# Seed for random number generation
+options(scipen = 999)# Disable scientific number format
+#
+library(tidyverse) # Data wrangling & grammar of graphics
+library(here) # Locate files relative to project root
+```
+
+```{r data}
+# self_report_data
+self_report_data <- readr::read_rds(here::here("data/human_self_report_data/Base_Finale_20090114.rds"))
+# metadata_video
+metadata_video <- readr::read_rds(here::here("metadata_video.rds"))
+# human_recognition_data
+source(here::here("script/data_wrangling_human_recognition.R"))
+```
+
+Introduction
+=============
+
+With the developement of commercial automatic facial expression recognition tools, industries and governments are gradually implementing this technology in order to track humans' emotions in various scenarios (e.g., marketing, heathcare, automotive to name a few). Beside the ethical question of measuring human emotions, these tools are challenging psychological theories about infering emotions from facial expressions. When automatic facial expression recognition tools are used to measure human emotions, they rest on the premise that facial expressions provide a direct access to expressers' emotions. However the link between emotion felt and facial expressions is far from being established and still remain a hot topic in psychology research.
+
+## The link between emotion and facial expression thought the behaviorist approach
+Based on the behaviorist approach initiated by Darwin in *The Expression of the Emotions in Man and Animals* [@darwin1872expression], facial expression are conceived as a genuine display of individuals inner emotional state. This hypothesis is used as a basis for the Basic Emotion Theory (BET) which states that a set of six or seven emotions are universally displayed and are genetically hardwired [@ekman1992argument]. According to this view, "when emotions are aroused by perception of a social event, a set of central commands produce patterned emotion-specific changes in multiple systems, including [...] facial expressions." [@ekman2007directed, p49]. Even if this theory obtained a popular support, it fails to explain how individuals can feel emotions without expressing them and how individuals can express emotions without feeling them. 
+
+## The link between emotion and facial expression thought the social constructivist approach
+Detractors of the Basic Emotion Theory are perceiving emotion not as genetically hardwired but as a learnt association between a given situation and an appropriate response [@averill1980constructivist]. For the tenants of the constructivist approach, emotions are "concepts" based on past experiences and which are "a collection of embodied, whole brain representations that predict what is about to happen in the sensory environment, what the best action is to deal with impending events, and their consequences for allostasis" [@barrett2017theory, p12]. Following this assumption, faces are used as tools to display signals in social interactions [@crivelli2018facial]. These signals can convey individuals' motivations and readiness [@frijda1997facial] or social messages [@fridlund1995human].
+
+This current paper investigates the link between the subjective feeling of emotions and their recognition from facial expressions. If emotions are hardwired, individuals emotional subjective feeling should be correlated to the recognition of facial expressions from both human observers and automatic classifiers whereas if emotions are social constructs, no correlation between subjective feeling and facial expression recognition should be observed.
+
+Method
+=============
+
+To evaluate the link between subjective feeling of emotions and their recognition from facial expressions, participants were recruited to perform an emotion elicitation task while their facial expression was video recorded. Then, the videos was shown to human observer and analysed by an automatic classifier in order to identify which emotion was displayed.
+
+## Emotion Elicitation
+
+```{r self_report_method}
+self_report_gender <- self_report_data %>% 
+  dplyr::group_by(Genre_C) %>% 
+  dplyr::summarise(n= n())
+
+self_report_age <- self_report_data %>%
+  dplyr::summarise(Age_m = mean(Age), Age_sd = sd(Age)) %>% 
+  dplyr::mutate_all(round,1)
+```
+
+For the emotion elicitation experiment, `r nrow(self_report_data)` French participants (`r self_report_gender[self_report_gender$Genre_C == "F","n"]` females, `r self_report_gender[self_report_gender$Genre_C == "H","n"]` males, *M*age = `r self_report_age[,"Age_m"]`, *SD*age = `r self_report_age[,"Age_sd"]`) were recruited to perform one out of 11 emotions eliciation tasks designed to trigger a positive, negative or neutral emotional state [see @tcherkassof2013dynemo for a description of tasks and procedure]. Participants' face were recorded using an hidden camera resulting `r nrow(self_report_data)` front facing 768x576 videos varying from `r min(metadata_video$ffprobe_duration)`s to `r max(metadata_video$ffprobe_duration)`s.
+
+After their emotion eliciation task the participants had to rate their emotional state during the task on a likert scale from 0 ("not at all") to 5 ("strongly") the six "basic" emotions (i.e., *Anger*, *Disgust*, *Fear*, *Happiness*, *Surprise* and *Sadness*) as well as six "non-basic" emotions (i.e., *Pride*, *Curiosity*, *Boredom*, *Shame*, *Humiliation*, and *Disappointement*). The emotion scales rated as the highest is considered as describing participants subjective feeling.
+
+Finally, a debriefing session was perform to emsure that participants were not durably affected by the emotion eliciation task. All the participants gave their agreement on their data and video to be processed for research puropose only.
+
+## Human Facial Expression Recognition
+
+```{r human_recognition_method}
+unique_ppt_count <- human_recognition_data %>% 
+  dplyr::group_by(source,SEXE_Juge, C_Juge) %>% 
+  dplyr::summarise(n = n())
+
+unique_video_count <- human_recognition_data %>% 
+  dplyr::select(source,SEXE_Juge, C_Juge, C_Video) %>% 
+  unique() %>% 
+  dplyr::group_by(C_Video) %>% 
+  dplyr::summarise(n = n())
+```
+
+For the human facial expression recognition method, `r nrow(unique_ppt_count)` student participants were recruited to annotate `r nrow(unique_video_count)` out of the `r nrow(self_report_data)` video, therefore only the `r nrow(unique_video_count)` annotated videos will be analysed in this paper. Each participants had to annotate between `r min(unique_ppt_count$n)` and `r max(unique_ppt_count$n)` videos resulting that ach video was annotated `r mean(unique_video_count$n) %>% round(0)` times on average (*SD* = `r sd(unique_video_count$n) %>% round(0)`).
+
+The annotation of facial expressions was performed on-site using *Oudjat*, a software for designing video annotation experiements [@dupre2015oudjat]. For each video, the annotation procedure hat two steps. First, the participants had to identify the emotional sequences by pressing the space bar of their keyboard to indicate the begining and the end of the emotional sequences while watching the video. Second, the participants watched each emotional sequence previously identified and had to label the sequence using one of the 12 emotions proposed including six "basic" emotions (i.e., *Anger*, *Disgust*, *Fear*, *Happiness*, *Surprise* and *Sadness*) and six "non-basic" emotions (i.e., *Pride*, *Curiosity*, *Boredom*, *Shame*, *Humiliation*, and *Disappointement*). They also had the possibility to indicate that the sequence was not expressing one of the proposed emotion. 
+
+This annotation procedure results in a uni-dimesional time-serie for each video per human observer identifying for each second of the video which emotion was recognized. Then time-series corresponding to the same video were aggreated to calculate the proprotion of human observers for each second of the video per emotional label. The sum of each label proportion per second was used as a score to determine which labels corresponds to the overall video (i.e., the highest score).
+
+## Automatic Facial Expression Recognition
+
+The `r nrow(unique_video_count)` annotated video were processed with Affdex (SDK v3.4.1). Affdex is an automatic facial expression recognition classifier developed and distributed by Affectiva is a spinoff company resulting from the research activities of MIT media lab created in 2009 [@mcduff2016affdex]. Affdex’s algorithm uses Histogram of Oriented Gradient (HOG) features and Support Vector Machine (SVM) classifiers in order to recognize facial expressions. For each video frame, Affdex identify the probability of the face as expressing one of the six "basic" emotions (i.e., *Anger*, *Disgust*, *Fear*, *Happiness*, *Surprise* and *Sadness*) as well as additional psychological states such as *Valence*, *Engagement* or *Contempt*, and facial features such as *Cheek Raise*, *Eye Widen* or *Jaw Drop*.
+
+To determine which of the six "basic" emotion can be used to identify each video, the recognition probability for each label by frame was converted into odd ratio by frame [@dente2017measures]. The highest sum of each odd ratio time-serie defines the label recognized by the automatic classifier.
+
+Results
+============
+
+Whereas the self-reports, the human annotations and the automatic recognition include data on "non-basic" emotions and features, the analysis is performed using only the six "basic" emotions in order to compare them.
+
+## Correlation between self-report and human facial expression recognition
+
+## Correlation between self-report and automatic facial expression recognition
+
+
+Conclusion
+============
+The conclusion goes here.
+
+Acknowledgment {#acknowledgment}
+==============
+
+The authors would like to thank Brigitte Meillon and Jean Michel Adam who developed the software used to collect and preprocess human observer annotations.
+
+References {#references .numbered}
+==========

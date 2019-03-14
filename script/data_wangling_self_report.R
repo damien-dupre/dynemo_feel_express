@@ -2,10 +2,11 @@
 library(here)
 library(tidyverse)
 library(data.table)
+library(janitor)
 # upload data ------------------------------------------------------------------
-data_sr <- read_rds(here::here("data/human_self_report_data/Base_Finale_20090114.rds"))
+self_report_data <- readr::read_rds(here::here("data/human_self_report_data/Base_Finale_20090114.rds"))
 
-test <- data_sr %>%
+test <- self_report_data %>%
   dplyr::select(
     "N° sujet__C",
     "Induction_C",
@@ -23,6 +24,10 @@ test <- data_sr %>%
     "DECU",
     "AUTRE"
   )
+
+test <- test %>% 
+  janitor::clean_names()
+
 
 test2 <- test %>%
   tidyr::gather(
@@ -92,3 +97,7 @@ test5 %>%
   theme_minimal() +
   theme(text = element_text(family = "serif", size=8))
   
+data_sr <- data_sr %>% 
+  dplyr::filter(!is.na(`N° sujet__C`))
+
+write_rds(data_sr, here::here("data/human_self_report_data/Base_Finale_20090114.rds"))
