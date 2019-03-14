@@ -24,8 +24,7 @@ ffprobe_duration <- list_video %>%
 metadata_video <- data.frame(list_video, ffprobe_duration) %>% 
   dplyr::mutate_if(is.factor,as.character) %>% 
   dplyr::mutate(C_Video = base::basename(list_video) %>% stringr::str_replace(".mp4", "")) %>% 
-  dplyr::mutate(ffprobe_duration = stringr::str_replace(ffprobe_duration, "duration=", "") %>% as.numeric()) %>% 
-  #dplyr::mutate(ffprobe_duration = stringr::str_replace(ffprobe_duration, "duration=", "") %>% as.numeric()*1000) %>% 
+  dplyr::mutate(ffprobe_duration = stringr::str_replace(ffprobe_duration, "duration=", "") %>% as.numeric()) %>% #as.numeric()*1000 for millisecond 
   dplyr::mutate(ffprobe_duration = round(ffprobe_duration,0)) %>% 
   dplyr::select(-list_video)
 

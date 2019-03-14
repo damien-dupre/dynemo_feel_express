@@ -3,7 +3,7 @@ library(here)
 library(tidyverse)
 library(data.table)
 # upload data ------------------------------------------------------------------
-data_sr <- read_rds(here::here("data/Base_Finale_20090114.rds"))
+data_sr <- read_rds(here::here("data/human_self_report_data/Base_Finale_20090114.rds"))
 
 test <- data_sr %>%
   dplyr::select(
