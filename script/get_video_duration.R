@@ -28,6 +28,6 @@ metadata_video <- data.frame(list_video, ffprobe_duration) %>%
   dplyr::mutate(ffprobe_duration = round(ffprobe_duration,0)) %>% 
   dplyr::select(-list_video)
 
-write_rds(metadata_video, "metadata_video.rds")
+# write_rds(metadata_video, "metadata_video.rds")
 
 
