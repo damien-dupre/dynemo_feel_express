@@ -473,13 +473,13 @@ The abstract goes here. On multiple lines eventually.
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-With the developement of commercial automatic facial expression
+With the development of commercial automatic facial expression
 recognition tools (see Dupré et al. 2018 for a non-exhaustive list of
 available tools), industries and governments are gradually implementing
 this technology in order to track humans' emotions in various scenarios
-(e.g., marketing, heathcare, automotive to name a few). Beside the
+(e.g., marketing, healthcare, automotive to name a few). Beside the
 ethical question of measuring human emotions, these tools are
-challenging psychological theories about infering emotions from facial
+challenging psychological theories about inferring emotions from facial
 expressions. When automatic facial expression recognition tools are used
 to measure human emotions, they rest on the premise that facial
 expressions provide a direct access to expressers' emotions. However the
@@ -546,24 +546,24 @@ was displayed.
 
 For the emotion elicitation experiment, 358 French participants (182
 females, 176 males, \emph{M}age = 47.9, \emph{SD}age = 9.2) were
-recruited to perform one out of 11 emotions eliciation tasks designed to
-trigger a positive, negative or neutral emotional state (see Tcherkassof
-et al. 2013 for a description of tasks and procedure). Participants'
-face were recorded using an hidden camera resulting 358 front facing
-768x576 videos varying from 1s to 1479s.
+recruited to perform one out of 11 emotions elicitation tasks designed
+to trigger a positive, negative or neutral emotional state (see
+Tcherkassof et al. 2013 for a description of tasks and procedure).
+Participants' face were recorded using an hidden camera resulting 358
+front facing 768x576 videos varying from 1s to 1479s.
 
-After their emotion eliciation task the participants had to rate their
+After their emotion elicitation task the participants had to rate their
 emotional state during the task on a likert scale from 0 (``not at
 all'') to 5 (``strongly'') the six ``basic'' emotions (i.e.,
 \emph{anger}, \emph{disgust}, \emph{fear}, \emph{happiness},
 \emph{surprise} and \emph{sadness}) as well as six ``non-basic''
 emotions (i.e., \emph{pride}, \emph{curiosity}, \emph{boredom},
-\emph{shame}, \emph{humiliation}, and \emph{disappointement}).
+\emph{shame}, \emph{humiliation}, and \emph{disappointment}).
 
-Finally, a debriefing session was perform to emsure that participants
-were not durably affected by the emotion eliciation task. All the
+Finally, a debriefing session was perform to ensure that participants
+were not durably affected by the emotion elicitation task. All the
 participants gave their agreement on their data and video to be
-processed for research puropose only.
+processed for research purpose only.
 
 \hypertarget{human-facial-expression-recognition}{%
 \subsection{Human Facial Expression
@@ -573,31 +573,31 @@ For the human facial expression recognition method, 1383 student
 participants were recruited to annotate 232 out of the 358 video,
 therefore only the 232 annotated videos will be analysed in this paper.
 Each participants had to annotate between 1 and 177 videos resulting
-that ach video was annotated 29 times on average (\emph{SD} = 12).
+that each video was annotated 29 times on average (\emph{SD} = 12).
 
 The annotation of facial expressions was performed on-site using
-\emph{Oudjat}, a software for designing video annotation experiements
+\emph{Oudjat}, a software for designing video annotation experiments
 (Dupré et al. 2015). For each video, the annotation procedure hat two
 steps. First, the participants had to identify the emotional sequences
-by pressing the space bar of their keyboard to indicate the begining and
-the end of the emotional sequences while watching the video. Second, the
-participants watched each emotional sequence previously identified and
-had to label the sequence using one of the 12 emotions proposed
+by pressing the space bar of their keyboard to indicate the beginning
+and the end of the emotional sequences while watching the video. Second,
+the participants watched each emotional sequence previously identified
+and had to label the sequence using one of the 12 emotions proposed
 including six ``basic'' emotions (i.e., \emph{anger}, \emph{disgust},
 \emph{fear}, \emph{happiness}, \emph{surprise} and \emph{sadness}) and
 six ``non-basic'' emotions (i.e., \emph{pride}, \emph{curiosity},
 \emph{boredom}, \emph{shame}, \emph{humiliation}, and
-\emph{disappointement}). They also had the possibility to indicate that
+\emph{disappointment}). They also had the possibility to indicate that
 the sequence was not expressing one of the proposed emotion.
 
-This annotation procedure results in a uni-dimesional time-serie for
+This annotation procedure results in a uni-dimensional time-series for
 each video per human observer identifying for each second of the video
 which emotion was recognized. Then time-series corresponding to the same
-video were aggreated to calculate the proprotion of human observers for
+video were aggregated to calculate the proportion of human observers for
 each second of the video per emotional label. The sum of each label
 proportion per second was used as a score to determine which labels
 corresponds to the overall video (i.e., the highest score). In case of
-more than one label having the maximum value, the emotion is discribed
+more than one label having the maximum value, the emotion is described
 as undetermined.
 
 \hypertarget{automatic-facial-expression-recognition}{%
@@ -606,7 +606,7 @@ Recognition}\label{automatic-facial-expression-recognition}}
 
 The 232 annotated video were processed with Affdex (SDK v3.4.1). Affdex
 is an automatic facial expression recognition classifier developed and
-distributed by Affectiva is a spinoff company resulting from the
+distributed by Affectiva is a spin-off company resulting from the
 research activities of MIT media lab created in 2009 (McDuff et al.
 2016). Affdex's algorithm uses Histogram of Oriented Gradient (HOG)
 features and Support Vector Machine (SVM) classifiers in order to
@@ -621,7 +621,7 @@ facial features such as \emph{cheek raise}, \emph{eye widen} or
 To determine which of the six ``basic'' emotion can be used to identify
 each video, the recognition probability for each label by frame was
 converted into odd ratio by frame (Dente et al. 2017). The highest sum
-of each odd ratio time-serie defines the label recognized by the
+of each odd ratio time-series defines the label recognized by the
 automatic classifier.
 
 \hypertarget{results}{%
@@ -652,7 +652,7 @@ human observers.}
 \end{figure}
 
 The result of the confusion matrix show a low agreement between emotion
-felt during the elecitation and emotion recognized by the human
+felt during the elicitation and emotion recognized by the human
 annotators (Accuracy = 0.27, 95\%CI{[}0.21,0.33{]}; Kappa = 0.11) except
 for \emph{happiness} (15.2\%), \emph{surprise} (8.26\%) and
 \emph{disgust} (1.74\%). Sensitivity, specificity, precision and F1
@@ -686,7 +686,7 @@ undetermined & 0.00 & 0.99 & 0.00 & \textit{na.}\\
 \end{table}
 
 However, the self-report show a very high proportion of undetermined
-emotional states which reveals not only the possiblility of the emotion
+emotional states which reveals not only the possibility of the emotion
 elicitation tasks to trigger more than one emotion but also the
 potential limit of using 6-points likert scales for which the
 participants can easily score to the maximum for more than one emotion.
@@ -710,7 +710,7 @@ automatic classifier.}
 \end{figure}
 
 Results obtained for the comparison between emotions self-reported and
-recognised by the automatic classifier are similar to the ones with
+recognized by the automatic classifier are similar to the ones with
 human observers (Table \ref{tab:confusionTable_sr_ar}). Overall there is
 a low agreement between emotion self-reported and emotion recognized by
 the automatic classifier (Accuracy = 0.19, 95\%CI{[}0.14,0.24{]}; Kappa
@@ -718,7 +718,7 @@ the automatic classifier (Accuracy = 0.19, 95\%CI{[}0.14,0.24{]}; Kappa
 (3.48\%). Surprisingly the automatic classifier incorrectly recognized
 as \emph{disgust} an important proportion of videos in which
 \emph{happiness} was the highest self-reported emotion (7.83\%). In
-parallel, the automatic classifier recognised as \emph{happiness} and
+parallel, the automatic classifier recognized as \emph{happiness} and
 \emph{disgust} videos in which \emph{surprise} was the highest
 self-reported emotion (respectively 5.22\% and 6.09\%).
 
@@ -744,47 +744,47 @@ undetermined & 0.00 & 1.00 & \textit{na.} & \textit{na.}\\
 \end{tabu}
 \end{table}
 
-A comparable explaination can be provided as the level of undetermined
+A comparable explanation can be provided as the level of undetermined
 emotion are very high for the self reports.
 
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
 
-Despit being one on the most investigated question in affective science,
-the link between emotion felt and facial expression is a hot topic and
-no clear evidence have been found to definively answer it. However, with
-the growing interest of industries and govenment to monitor individual's
-psychological states, evidences are showing that facial expressions are
-in reality not expressing emotions (McKeown 2013). This research aimed
-to provide some empirical data to the question. The subjective feeling
-of participants was compared with human recognition on one side and
-automatic recognition on the other side. The results reveals a low
-accuracy for both humans and automatic classifier to accurately identify
-the inner emotional states of these individuals based on their facial
-expressions.
+Despite being one on the most investigated question in affective
+science, the link between emotion felt and facial expression is a hot
+topic and no clear evidence have been found to definitely answer it.
+However, with the growing interest of industries and government to
+monitor individual's psychological states, evidences are showing that
+facial expressions are in reality not expressing emotions (McKeown
+2013). This research aimed to provide some empirical data to the
+question. The subjective feeling of participants was compared with human
+recognition on one side and automatic recognition on the other side. The
+results reveals a low accuracy for both humans and automatic classifier
+to accurately identify the inner emotional states of these individuals
+based on their facial expressions.
 
 Some limitations to this process should be stated over the use of
-self-reports to evalute individual's subjective feelings. Accessing to
-the inner subjective feeling can be biaised if not impossible. Moreover
+self-reports to evaluate individual's subjective feelings. Accessing to
+the inner subjective feeling can be biased if not impossible. Moreover
 the laboratory setting can trigger ambiguous and ``non-basic'' emotions
 which were not analysed in this research. The procedure use for human
 annotation can also be incriminated. Instead of asking the human
-annotators to provide an unique label, a more sutble approach was
-choosen to mimic results provided by the automatic classifier. In this
-regard, the results of the human annotation could have been more
-ambiguous because it is not the natural way that people are infering
-human emotions. Finaly, the automatic classifer algorithm can also be
+annotators to provide an unique label, a more subtle approach was chosen
+to mimic results provided by the automatic classifier. In this regard,
+the results of the human annotation could have been more ambiguous
+because it is not the natural way that people are inferring human
+emotions. Finally, the automatic classifier algorithm can also be
 problematic. Based on training datasets which are most of the time using
 prototypical facial expression of the ``basic'' emotions, the algorithm
-to classify facial expressions can be held in check by the spontanous
+to classify facial expressions can be held in check by the spontaneous
 facial expressions analysed.
 
 Considering the above, the results provides an additional evidence that
-individuals' subjective feeling can not be infered from facial
+individuals' subjective feeling can not be inferred from facial
 expressions and in our case invalidate the hypothesis of hardwired
 emotions. This result suggests that automatic facial expression
 recognition tools should be focused on evaluating facial morphology
-features such as action units rather than infering potentional emotional
+features such as action units rather than inferring potential emotional
 or affective states.
 
 \hypertarget{acknowledgment}{%
