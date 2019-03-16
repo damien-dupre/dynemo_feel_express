@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.12.3)  16 MAR 2019 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.12.3)  16 MAR 2019 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -419,7 +419,7 @@ ftex.map}
 LaTeX Warning: Reference `fig:confusionMatrix_sr_hr' on page 2 undefined on inp
 ut line 663.
 
-<ACII_2019_paper_files/figure-latex/confusionMatrix_sr_hr-1.pdf, id=69, 469.755
+<ACII_2019_paper_files/figure-latex/confusionMatrix_sr_hr-1.pdf, id=73, 469.755
 pt x 289.08pt>
 File: ACII_2019_paper_files/figure-latex/confusionMatrix_sr_hr-1.pdf Graphic fi
 le (type pdf)
@@ -452,7 +452,7 @@ LaTeX Warning: Reference `fig:confusionMatrix_sr_ar' on page 2 undefined on inp
 ut line 721.
 
 [2]
-<ACII_2019_paper_files/figure-latex/confusionMatrix_sr_ar-1.pdf, id=82, 469.755
+<ACII_2019_paper_files/figure-latex/confusionMatrix_sr_ar-1.pdf, id=86, 469.755
 pt x 289.08pt>
 File: ACII_2019_paper_files/figure-latex/confusionMatrix_sr_ar-1.pdf Graphic fi
 le (type pdf)
@@ -469,38 +469,54 @@ Overfull \hbox (5.59161pt too wide) in paragraph at lines 763--763
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: Reference `fig:roc' on page 3 undefined on input line 776.
+
+
 Underfull \vbox (badness 5954) has occurred while \output is active []
 
+<ACII_2019_paper_files/figure-latex/roc-1.pdf, id=88, 469.755pt x 433.62pt>
+File: ACII_2019_paper_files/figure-latex/roc-1.pdf Graphic file (type pdf)
+<use ACII_2019_paper_files/figure-latex/roc-1.pdf>
+Package pdftex.def Info: ACII_2019_paper_files/figure-latex/roc-1.pdf  used on 
+input line 780.
+(pdftex.def)             Requested size: 252.0pt x 232.61629pt.
 [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.800 
+l.806 
       pdfTeX warning (ext4): destination with the same identifier (name{table.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.800 
+l.806 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.800 
+l.806 
       pdfTeX warning (ext4): destination with the same identifier (name{table.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.800 
+l.806 
        <./ACII_2019_paper_files/figure-latex/confusionMatrix_sr_hr-1.pdf> <./AC
 II_2019_paper_files/figure-latex/confusionMatrix_sr_ar-1.pdf>]
-Underfull \hbox (badness 2698) in paragraph at lines 880--886
+Underfull \hbox (badness 2698) in paragraph at lines 902--908
 [][]\OT1/ptm/m/n/10 McDuff, Daniel, Ab-del-rah-man Mah-moud, Mo-ham-mad
  []
 
+[4pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.923 
+       <./ACII_2019_paper_files/figure-latex/roc-1.pdf>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -512,24 +528,26 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 902.
-[4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 902.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 924.
+[5
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 924.
 (./ACII_2019_paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 902.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 902.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 924.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 924.
 Package rerunfilecheck Info: File `ACII_2019_paper.out' has not changed.
-(rerunfilecheck)             Checksum: 154C1B471A94455AA7112D3A915DAC3E;3106.
+(rerunfilecheck)             Checksum: 97C04533CEAD08E32FA9B72395CD4CBA;3427.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 902.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 924.
  ) 
 Here is how much of TeX's memory you used:
- 9835 strings out of 494585
- 145337 string characters out of 6176317
- 234750 words of memory out of 5000000
- 13378 multiletter control sequences out of 15000+600000
+ 9847 strings out of 494585
+ 145714 string characters out of 6176317
+ 233824 words of memory out of 5000000
+ 13385 multiletter control sequences out of 15000+600000
  39304 words of font info for 73 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  28i,14n,30p,583b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -539,10 +557,10 @@ mb8a.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/ti
 mes/utmbi8a.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on ACII_2019_paper.pdf (4 pages, 85945 bytes).
+Output written on ACII_2019_paper.pdf (5 pages, 93338 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
