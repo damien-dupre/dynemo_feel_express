@@ -23,8 +23,10 @@ human_recognition_data <- here::here("./data/human_recognition_data") %>%
 
 # data wrangling ---------------------------------------------------------------
 unique_ppt_count <- human_recognition_data %>% 
-  dplyr::select(source,SEXE_Juge, C_Juge) %>% 
-  unique()
+  dplyr::group_by(source,SEXE_Juge, C_Juge, C_Video) %>% 
+  dplyr::summarise(n = 1) %>% 
+  dplyr::group_by(source,SEXE_Juge, C_Juge) %>% 
+  dplyr::summarise(n = n())
 
 unique_ppt <- human_recognition_data %>% 
   dplyr::select(-E_Detectee, -TC_Debut, -TC_Fin) %>% 
