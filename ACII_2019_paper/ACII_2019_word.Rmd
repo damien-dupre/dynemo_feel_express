@@ -1,5 +1,5 @@
 ---
-title: "Are facial expressions the genuine display of individuals' subjective feeling? A comparison of human and automatic recognition. "
+title: "Coherence between subjective feeling and facial expression: a time-series analysis of human and automatic recognition."
 output: word_document
 bibliography: mybibfile.bib
 abstract: |
@@ -46,8 +46,8 @@ fig_nums(
   name = "confusionMatrix_sr_ar", 
   caption = "Confusion matrix of between the emotion self-reported as being characteristic of the elicitation with the emotion recognized by the automatic classifier.")
 fig_nums(
-  name = "roc", 
-  caption = "ROC curve comparing the accuracy in inferring subjective feelings from facial expressions by human observers and automatic recognition.")
+  name = "confusionMatrix_hr_ar", 
+  caption = "Confusion matrix of between the human obersers and automatic classifier recognition.")
 ```
 
 ```{r data}
@@ -124,7 +124,15 @@ For the human facial expression recognition method, `r nrow(unique_ppt_count)` s
 
 The annotation of facial expressions was performed on-site using *Oudjat*, a software for designing video annotation experiments [@dupre2015oudjat]. For each video, the annotation procedure hat two steps. First, the participants had to identify the emotional sequences by pressing the space bar of their keyboard to indicate the beginning and the end of the emotional sequences while watching the video. Second, the participants watched each emotional sequence previously identified and had to label the sequence using one of the 12 emotions proposed including six "basic" emotion labels (i.e., *anger*, *disgust*, *fear*, *happiness*, *surprise* and *sadness*) and six "non-basic" emotion labels (i.e., *pride*, *curiosity*, *boredom*, *shame*, *humiliation*, and *disappointment*). They also had the possibility to indicate that the sequence was not expressing one of the proposed emotion. 
 
-This annotation procedure results in a uni-dimensional time-series for each video per human observer identifying for each second of the video which emotion was recognized. Then time-series corresponding to the same video were aggregated to calculate the proportion of human observers for each second of the video per emotional label. The sum of each label proportion per second was used as a score to determine which labels corresponds to the overall video (i.e., the highest score). In case of more than one label having the maximum value, the emotion is described as undetermined.
+This annotation procedure results in a uni-dimensional time-series for each video per human observer identifying for each second of the video which emotion was recognized. Then time-series corresponding to the same video were aggregated to calculate the proportion of human observers for each second of the video per emotional label (EQ1).
+
+$$x_{video_{i}.label_{i}.t_{i}} = \frac{n_{video_{i}.label_{i}.t_{i}}}{n_{video_{i}}}$$
+
+The sum of each label proportion per second was used as a score to determine which labels corresponds to the overall video (i.e., the highest score). 
+
+$$x_{video.label.t_{i}} = \frac{n_{video.label.t_{i}}}{n_{video}}$$
+
+In case of more than one label having the maximum value, the emotion is described as undetermined.
 
 ## Automatic Facial Expression Recognition
 
@@ -135,13 +143,15 @@ To determine which of the six "basic" emotion can be used to identify each video
 Results
 ============
 
-Whereas the self-reports, the human annotations and the automatic recognition include data on "non-basic" emotion labels and features, the analysis is performed using only the six "basic" emotion labels in order to compare them. The maximum score for self-reports, human annotations and automatic recognition is used to label the video. In case of more than one label obtaining the maximum value, the video is labeled as undetermined.
+Whereas the self-reports, the human observation and the automatic recognition include data on "non-basic" emotion labels and features, the analysis is performed using only the six "basic" emotion labels in order to compare them. The maximum score for self-reports, human annotations and automatic recognition is used to label the video. In case of more than one label obtaining the maximum value, the video is labeled as undetermined.
 
 ## Correlation between self-report and human facial expression recognition
 
 ```{r sr_hr}
 comparison_sr_hr <- dplyr::inner_join(self_report_score,human_recognition_score, by = "C_Video") %>% 
   dplyr::ungroup() %>% 
+  dplyr::filter(hr_emotion != "undetermined") %>% 
+  dplyr::filter(sr_emotion != "undetermined") %>% 
   dplyr::mutate_if(is.character,as.factor)
 
 confusionMatrix_sr_hr <- caret::confusionMatrix(
@@ -156,27 +166,30 @@ Participants' subjective feeling is compared with human observers recognition in
 confusionMatrix_sr_hr_freq <- confusionMatrix_sr_hr$table %>% 
   as.data.frame() %>% 
   dplyr::rename(hr_emotion = Prediction, sr_emotion = Reference) %>% 
+  dplyr::mutate(n_video = sum(Freq)) %>% 
   dplyr::mutate(prop_video = Freq/sum(Freq)) %>% 
   dplyr::group_by(sr_emotion) %>% 
+  dplyr::mutate(n_sr = sum(Freq)) %>%
   dplyr::mutate(prop_sr = Freq/sum(Freq)) %>% 
   dplyr::ungroup()
 
 confusionMatrix_sr_hr_freq %>% 
   ggplot(mapping = aes(x = sr_emotion, y = hr_emotion)) +
-  geom_tile(aes(fill = Freq), colour = "white") +
+  geom_tile(aes(fill = prop_sr), colour = "white") +
   geom_text(
-    aes(label = Freq),
+    aes(label = paste0(scales::percent(prop_sr), "\n(", Freq,"/",n_sr, ")")),
     color = "black",
-    family="serif",
     size = 4,
-    parse = FALSE, 
-    lineheight = 0.7
-  ) +
+    family="serif",
+    parse = FALSE,
+    lineheight = 0.7)+
   scale_fill_gradient(
-    name = "Frequency",
+    name = "Proportion of Recognized\nSelf-Reported Emotion",
     low = "white", 
     high = "red", 
-    ) +
+    labels = scales::percent,
+    limits = c(0,1)
+  ) +
   scale_x_discrete(name = "Self-Reports") +
   scale_y_discrete(name = "Human Observers") +
   theme_minimal() +
@@ -185,10 +198,10 @@ confusionMatrix_sr_hr_freq %>%
         axis.text.y = element_text(size=16, hjust = 0.5),
         axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0)),
         legend.text = element_text(size=8),
-        legend.position = "none")
+        legend.position = "bottom")
 ```
 
-The result of the confusion matrix show a low agreement between emotion felt during the elicitation and emotion recognized by the human annotators (Accuracy = `r round(confusionMatrix_sr_hr$overall["Accuracy"],2)`, 95%CI[`r round(confusionMatrix_sr_hr$overall["AccuracyLower"],2)`,`r round(confusionMatrix_sr_hr$overall["AccuracyUpper"],2)`]; Kappa = `r round(confusionMatrix_sr_hr$overall["Kappa"],2)`) except for *happiness* (`r scales::percent(as.numeric(confusionMatrix_sr_hr_freq[confusionMatrix_sr_hr_freq$hr_emotion == "happiness" & confusionMatrix_sr_hr_freq$sr_emotion == "happiness", "prop_sr"]))` of the video self-reported), *surprise* (`r scales::percent(as.numeric(confusionMatrix_sr_hr_freq[confusionMatrix_sr_hr_freq$hr_emotion == "surprise" & confusionMatrix_sr_hr_freq$sr_emotion == "surprise", "prop_sr"]))` of the videos self-reported) and *disgust* (`r scales::percent(as.numeric(confusionMatrix_sr_hr_freq[confusionMatrix_sr_hr_freq$hr_emotion == "disgust" & confusionMatrix_sr_hr_freq$sr_emotion == "disgust", "prop_sr"]))` of the videos self-reported). Sensitivity, specificity, precision and F1 score for each emotion can be found `r table_nums("confusionTable_sr_hr", display = "cite")`. Interestingly human annotators seem to recognize as *surprise* videos in which *happiness* was the highest self-reported emotion (`r scales::percent(as.numeric(confusionMatrix_sr_hr_freq[confusionMatrix_sr_hr_freq$hr_emotion == "surprise" & confusionMatrix_sr_hr_freq$sr_emotion == "happiness", "prop_sr"]))` of the videos self-reported), and in a lower instance *happiness* videos in which *surprise* was the highest self-reported emotion (`r scales::percent(as.numeric(confusionMatrix_sr_hr_freq[confusionMatrix_sr_hr_freq$hr_emotion == "happiness" & confusionMatrix_sr_hr_freq$sr_emotion == "surprise", "prop_sr"]))` of the videos self-reported).
+The result of the confusion matrix show a moderate agreement between emotion felt during the elicitation and emotion recognized by the human observers (Accuracy = `r round(confusionMatrix_sr_hr$overall["Accuracy"],2)`, 95%CI[`r round(confusionMatrix_sr_hr$overall["AccuracyLower"],2)`,`r round(confusionMatrix_sr_hr$overall["AccuracyUpper"],2)`]; Kappa = `r round(confusionMatrix_sr_hr$overall["Kappa"],2)`) except for *disgust* (`r scales::percent(as.numeric(confusionMatrix_sr_hr_freq[confusionMatrix_sr_hr_freq$hr_emotion == "disgust" & confusionMatrix_sr_hr_freq$sr_emotion == "disgust", "prop_sr"]))` of the videos self-reported). Sensitivity, specificity, precision and F1 score for each emotion reveals that *happiness* has the highest coherence ratio whereas *sadness* has the lowest coherence ratio between true positives and false positives `r table_nums("confusionTable_sr_hr", display = "cite")`. Interestingly human observers seem to recognize *surprise* expressed in videos where *anger*, *fear* *happiness* and *sadness* was the highest self-reported emotion (respectively `r scales::percent(as.numeric(confusionMatrix_sr_hr_freq[confusionMatrix_sr_hr_freq$hr_emotion == "surprise" & confusionMatrix_sr_hr_freq$sr_emotion == "anger", "prop_sr"]))`, `r scales::percent(as.numeric(confusionMatrix_sr_hr_freq[confusionMatrix_sr_hr_freq$hr_emotion == "surprise" & confusionMatrix_sr_hr_freq$sr_emotion == "fear", "prop_sr"]))`, `r scales::percent(as.numeric(confusionMatrix_sr_hr_freq[confusionMatrix_sr_hr_freq$hr_emotion == "surprise" & confusionMatrix_sr_hr_freq$sr_emotion == "happiness", "prop_sr"]))` and `r scales::percent(as.numeric(confusionMatrix_sr_hr_freq[confusionMatrix_sr_hr_freq$hr_emotion == "surprise" & confusionMatrix_sr_hr_freq$sr_emotion == "sadness", "prop_sr"]))` of the videos self-reported), and in a lower instance *happiness* was recognized in videos where *fear* and *surprise* was the highest self-reported emotion (respectively `r scales::percent(as.numeric(confusionMatrix_sr_hr_freq[confusionMatrix_sr_hr_freq$hr_emotion == "happiness" & confusionMatrix_sr_hr_freq$sr_emotion == "fear", "prop_sr"]))` and `r scales::percent(as.numeric(confusionMatrix_sr_hr_freq[confusionMatrix_sr_hr_freq$hr_emotion == "happiness" & confusionMatrix_sr_hr_freq$sr_emotion == "surprise", "prop_sr"]))` of the videos self-reported).
 
 ```{r confusionTable_sr_hr, results="asis"}
 confusionMatrix_sr_hr_table <- confusionMatrix_sr_hr %>%
@@ -230,26 +243,16 @@ However, the self-report show a very high proportion of undetermined emotional s
 ## Correlation between self-report and automatic facial expression recognition
 
 ```{r sr_ar}
-comparison_sr_ar <- dplyr::inner_join(
-    self_report_score, 
-    automatic_recognition_score, 
-    by = "C_Video") %>% 
+comparison_sr_ar <- dplyr::inner_join(self_report_score,automatic_recognition_score, by = "C_Video") %>% 
   dplyr::ungroup() %>% 
+  dplyr::filter(ar_emotion != "undetermined") %>% 
+  dplyr::filter(sr_emotion != "undetermined") %>% 
   dplyr::mutate_if(is.character,as.factor)
 
-dat_table <- table(
-  comparison_sr_ar$ar_emotion,
-  comparison_sr_ar$sr_emotion
-)
-emotions <- c("anger","disgust","fear","happiness","sadness","surprise", "undetermined")
-emo_table <- matrix(
-  0,
-  length(emotions),
-  length(emotions),
-  dimnames = list(emotions, emotions))
-emo_table[row.names(dat_table), colnames(dat_table)] <- dat_table
-
-confusionMatrix_sr_ar <- caret::confusionMatrix(as.table(emo_table))
+confusionMatrix_sr_ar <- caret::confusionMatrix(
+  data = comparison_sr_ar$ar_emotion,
+  reference = comparison_sr_ar$sr_emotion
+  )
 ```
 
 Similarly to the previous analysis, a confusion matrix was used to compare participants subjective feeling with the emotion label recognized by the automatic classifier (`r fig_nums("confusionMatrix_sr_ar", display = "cite")`).
@@ -257,28 +260,31 @@ Similarly to the previous analysis, a confusion matrix was used to compare parti
 ```{r confusionMatrix_sr_ar, fig.height=4, fig.cap=fig_nums("confusionMatrix_sr_ar")}
 confusionMatrix_sr_ar_freq <- confusionMatrix_sr_ar$table %>% 
   as.data.frame() %>% 
-  dplyr::rename(ar_emotion = Var1, sr_emotion = Var2) %>% 
+  dplyr::rename(ar_emotion = Prediction, sr_emotion = Reference) %>% 
+  dplyr::mutate(n_video = sum(Freq)) %>% 
   dplyr::mutate(prop_video = Freq/sum(Freq)) %>% 
   dplyr::group_by(sr_emotion) %>% 
+  dplyr::mutate(n_sr = sum(Freq)) %>%
   dplyr::mutate(prop_sr = Freq/sum(Freq)) %>% 
   dplyr::ungroup()
 
 confusionMatrix_sr_ar_freq %>% 
   ggplot(mapping = aes(x = sr_emotion, y = ar_emotion)) +
-  geom_tile(aes(fill = Freq), colour = "white") +
+  geom_tile(aes(fill = prop_sr), colour = "white") +
   geom_text(
-    aes(label = Freq),
+    aes(label = paste0(scales::percent(prop_sr), "\n(", Freq,"/",n_sr, ")")),
     color = "black",
-    family="serif",
     size = 4,
-    parse = FALSE, 
-    lineheight = 0.7
-  ) +
+    family="serif",
+    parse = FALSE,
+    lineheight = 0.7)+
   scale_fill_gradient(
-    name = "Frequency",
+    name = "Proportion of Recognized\nSelf-Reported Emotion",
     low = "white", 
     high = "red", 
-    ) +
+    labels = scales::percent,
+    limits = c(0,1)
+  ) +
   scale_x_discrete(name = "Self-Reports") +
   scale_y_discrete(name = "Automatic Classifier") +
   theme_minimal() +
@@ -287,10 +293,10 @@ confusionMatrix_sr_ar_freq %>%
         axis.text.y = element_text(size=16, hjust = 0.5),
         axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0)),
         legend.text = element_text(size=8),
-        legend.position = "none")
+        legend.position = "bottom")
 ```
 
-Results obtained for the comparison between emotions self-reported and recognized by the automatic classifier are similar to the ones with human observers (`r table_nums("confusionTable_sr_ar", display = "cite")`). Overall there is a low agreement between emotion self-reported and emotion recognized by the automatic classifier (Accuracy = `r round(confusionMatrix_sr_ar$overall["Accuracy"],2)`, 95%CI[`r round(confusionMatrix_sr_ar$overall["AccuracyLower"],2)`,`r round(confusionMatrix_sr_ar$overall["AccuracyUpper"],2)`]; Kappa = `r round(confusionMatrix_sr_ar$overall["Kappa"],2)`) except for *happiness* (`r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "happiness" & confusionMatrix_sr_ar_freq$sr_emotion == "happiness", "prop_sr"]))` of the video self-reported) and *surprise* (`r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "surprise" & confusionMatrix_sr_ar_freq$sr_emotion == "surprise", "prop_sr"]))` of the videos self-reported). Surprisingly the automatic classifier incorrectly recognized as *disgust* an important proportion of videos in which *happiness* was the highest self-reported emotion (`r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "disgust" & confusionMatrix_sr_ar_freq$sr_emotion == "happiness", "prop_sr"]))` of the videos self-reported). In parallel, the automatic classifier recognized as *happiness* and *disgust* videos in which *surprise* was the highest self-reported emotion (respectively `r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "happiness" & confusionMatrix_sr_ar_freq$sr_emotion == "surprise", "prop_sr"]))` and `r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "disgust" & confusionMatrix_sr_ar_freq$sr_emotion == "surprise", "prop_sr"]))` of the videos self-reported).
+Results obtained for the comparison between emotions self-reported and recognized by the automatic classifier are similar to the ones with human observers (`r table_nums("confusionTable_sr_ar", display = "cite")`). Overall there is a low agreement between emotion self-reported and emotion recognized by the automatic classifier (Accuracy = `r round(confusionMatrix_sr_ar$overall["Accuracy"],2)`, 95%CI[`r round(confusionMatrix_sr_ar$overall["AccuracyLower"],2)`,`r round(confusionMatrix_sr_ar$overall["AccuracyUpper"],2)`]; Kappa = `r round(confusionMatrix_sr_ar$overall["Kappa"],2)`) except for *happiness* (`r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "happiness" & confusionMatrix_sr_ar_freq$sr_emotion == "happiness", "prop_sr"]))` of the video self-reported). Surprisingly the automatic classifier incorrectly recognized as *disgust* an important proportion of videos in which *anger*, *happiness* and *surprise* was the highest self-reported emotion (respectively `r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "disgust" & confusionMatrix_sr_ar_freq$sr_emotion == "anger", "prop_sr"]))`, `r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "disgust" & confusionMatrix_sr_ar_freq$sr_emotion == "happiness", "prop_sr"]))` and `r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "disgust" & confusionMatrix_sr_ar_freq$sr_emotion == "surprise", "prop_sr"]))` of the videos self-reported). In parallel, the automatic classifier recognized as *happiness* videos in which *fear* and *surprise* was the highest self-reported emotion (respectively `r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "happiness" & confusionMatrix_sr_ar_freq$sr_emotion == "fear", "prop_sr"]))` and `r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "disgust" & confusionMatrix_sr_ar_freq$sr_emotion == "surprise", "prop_sr"]))` of the videos self-reported).
 
 ```{r confusionTable_sr_ar, results="asis"}
 confusionMatrix_sr_ar_table <- confusionMatrix_sr_ar %>%
@@ -331,71 +337,72 @@ A comparable explanation can be provided as the level of undetermined emotion ar
 
 ## Comparison between human and automatic recognition
 
-As previously mentioned, the accuracy of humans observers and the automatic classifier have some similarities. In order to compare which recognition has the highest accuracy a Receiver Operating Characteristic (ROC) curve was calculated (`r fig_nums("roc", display = "cite")`).
+As previously mentioned, the accuracy of humans observers and the automatic classifier have some similarities in there mistakes. However human observers appears to be more accurate than the automatic classifier to recognize individuals' subjective feeling (human observer Accuracy = `r round(confusionMatrix_sr_hr$overall["Accuracy"],2)`; automatic classifier Accuracy = `r round(confusionMatrix_sr_ar$overall["Accuracy"],2)`. A third confusion matrix is used to compare similarities between human observers and automatic classifier (`r fig_nums("confusionMatrix_hr_ar", display = "cite")`).
 
-```{r roc, fig.height=6, fig.cap=fig_nums("roc")}
-roc_sr_hr <- comparison_sr_hr %>% 
-  dplyr::mutate_if(is.factor, as.character) %>% 
-  dplyr::mutate(correct_classification = case_when(
-    sr_emotion == hr_emotion ~ 1,
-    sr_emotion != hr_emotion ~ 0
-  )) %>% 
-  dplyr::rename(rec_score = hr_score) %>% 
-  dplyr::mutate(rec_type = "human")
+```{r confusionMatrix_hr_ar, fig.height=4, fig.cap=fig_nums("confusionMatrix_hr_ar")}
+comparison_hr_ar <- dplyr::inner_join(human_recognition_score,automatic_recognition_score, by = "C_Video") %>% 
+  dplyr::ungroup() %>% 
+  dplyr::filter(ar_emotion != "undetermined") %>% 
+  dplyr::filter(hr_emotion != "undetermined") %>% 
+  dplyr::mutate_if(is.character,as.factor)
 
-roc_sr_ar <- comparison_sr_ar %>% 
-  dplyr::mutate_if(is.factor, as.character) %>% 
-  dplyr::mutate(correct_classification = case_when(
-    sr_emotion == ar_emotion ~ 1,
-    sr_emotion != ar_emotion ~ 0
-  )) %>% 
-  dplyr::rename(rec_score = ar_score) %>% 
-  dplyr::mutate(rec_type = "automatic")
+confusionMatrix_hr_ar <- caret::confusionMatrix(
+  data = comparison_hr_ar$ar_emotion,
+  reference = comparison_hr_ar$hr_emotion
+)
 
-auc <- dplyr::bind_rows(roc_sr_hr,roc_sr_ar) %>% 
-  tidyr::nest(-rec_type) %>%
-  dplyr::mutate(rec_type = as.factor(rec_type),
-                roc_obj = purrr::map(data, ~ roc(.$correct_classification,.$rec_score)),
-                roc_value = purrr::map(roc_obj,auc)) %>%
-  tidyr::unnest(roc_value) %>% 
-  dplyr::select(rec_type,roc_value) %>% 
-  dplyr::mutate(roc_value = round(roc_value,2))
+confusionMatrix_hr_ar_freq <- confusionMatrix_hr_ar$table %>% 
+  as.data.frame() %>% 
+  dplyr::rename(ar_emotion = Prediction, hr_emotion = Reference) %>% 
+  dplyr::mutate(n_video = sum(Freq)) %>% 
+  dplyr::mutate(prop_video = Freq/sum(Freq)) %>% 
+  dplyr::group_by(hr_emotion) %>% 
+  dplyr::mutate(n_hr = sum(Freq)) %>%
+  dplyr::mutate(prop_hr = Freq/sum(Freq)) %>% 
+  dplyr::ungroup()
 
-dplyr::bind_rows(roc_sr_hr,roc_sr_ar) %>% 
-  ggplot(aes(d = correct_classification, m = rec_score, color = rec_type)) + 
-  geom_roc(labels = FALSE,pointsize = 0) +
-  style_roc(xlab = "False Positive Rate",
-            ylab = "True Positive Rate", 
-            theme = theme_minimal) + 
-  scale_color_manual(
-    "Classifiers",
-    values = c("#e41a1c","#377eb8")
+confusionMatrix_hr_ar_freq %>% 
+  ggplot(mapping = aes(x = hr_emotion, y = ar_emotion)) +
+  geom_tile(aes(fill = prop_hr), colour = "white") +
+  geom_text(
+    aes(label = paste0(scales::percent(prop_hr), "\n(", Freq,"/",n_hr, ")")),
+    color = "black",
+    size = 4,
+    family="serif",
+    parse = FALSE,
+    lineheight = 0.7)+
+  scale_fill_gradient(
+    name = "Proportion of Recognized\nEmotion",
+    low = "white", 
+    high = "red", 
+    labels = scales::percent,
+    limits = c(0,1)
   ) +
-  theme(text = element_text(size=18,family="serif"),
-        strip.text.x = element_text(face="bold",size=18),
-        axis.title.x = element_text(margin = margin(t = 20, r = 0, b = 0, l = 0)),
+  scale_x_discrete(name = "Human Observers") +
+  scale_y_discrete(name = "Automatic Classifier") +
+  theme_minimal() +
+  theme(text = element_text(size=16,family="serif"),
+        axis.text.x = element_text(size=16, angle = 45, hjust = 0.75,vjust=0.9),
+        axis.text.y = element_text(size=16, hjust = 0.5),
         axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0)),
-        axis.text.x = element_text(size = 10),
-        axis.text.y = element_text(size = 10),
-        legend.text = element_text(size=10),
-        legend.position = "bottom") + 
-  geom_abline(intercept = 0, slope = 1, linetype = "dashed")
+        legend.text = element_text(size=8),
+        legend.position = "bottom")
 ```
 
-The ROC curve and its Area Under the Curve (AUC) values shows that the automatic classifier are more accurate than human observers in inferring subjective feeling from facial expressions (human AUC = `r auc[auc$rec_type == "human","roc_value"]` *vs.* automatic AUC = `r auc[auc$rec_type == "automatic","roc_value"]`).
+The overall agreement between human observers and the automatic classifier is in fact very low (Kappa = `r round(confusionMatrix_hr_ar$overall["Kappa"],2)`). Except for *happiness* and *disgust* (respectively `r scales::percent(as.numeric(confusionMatrix_hr_ar_freq[confusionMatrix_hr_ar_freq$ar_emotion == "happiness" & confusionMatrix_hr_ar_freq$hr_emotion == "happiness", "prop_hr"]))` and `r scales::percent(as.numeric(confusionMatrix_hr_ar_freq[confusionMatrix_hr_ar_freq$ar_emotion == "disgust" & confusionMatrix_hr_ar_freq$hr_emotion == "disgust", "prop_hr"]))` of common labelling), there is no clear common pattern. Moreover, the automatic classifier has a tendency to label as *disgust* videos labeled as *sadness* by human observers and as *happiness* videos labaled as *fear* by human observers 
 
 Conclusion
 ============
-Despite being one on the most investigated question in affective science, the link between emotion felt and facial expression is a hot topic and no clear evidence have been found to definitely answer it. However, with the growing interest of industries and government to monitor individual's psychological states, evidences are showing that facial expressions are in reality not expressing emotions [@mckeown2013analogical]. This research aimed to provide some empirical data to the question. The subjective feeling of participants was compared with human recognition on one side and automatic recognition on the other side. The results reveals a low accuracy for both humans and automatic classifier to accurately identify the inner emotional states of these individuals based on their facial expressions. Moreover it appeared that automatic classifier obtain a higher accuracy to recognize the corresponding emotion label than humans observers are. A possible explaination is that human oberservers are usually not using emotion label to recognize emotion and this type of paradigm provides non accurate results.
+Despite being one on the most investigated question in affective science, the coherence between emotion felt and facial expression is a hot topic and no clear evidence have been found to definitely answer it. However, with the growing interest of industries and government to monitor individual's psychological states, evidences are showing that facial expressions are in reality not expressing emotions [@mckeown2013analogical]. This research aimed to provide some empirical data to the question. The subjective feeling of participants was compared with human recognition on one side and automatic recognition on the other side. The results reveals a low accuracy for both humans and automatic classifier to accurately identify the inner emotional states of these individuals based on their facial expressions. Moreover it appeared that human observers obtain a higher accuracy to recognize the corresponding emotion label than the automatic classifier is. A possible explaination is that human oberservers are assessing expressing sequences while having access to the full video which provides a context whereas the automatic classifier only assess the videos frame by frame.
 
-Some limitations to this process should be stated over the use of self-reports to evaluate individual's subjective feelings. Accessing the inner subjective feeling can be biased if not impossible. Moreover the procedure used for human annotation can also be open to dispute. Instead of asking the human annotators to provide an unique label, a more subtle approach was chosen to mimic results provided by the automatic classifier. Whereas this paradigm is longer and more complicated, it can lead to more robust results in reducing the forced-choice biais [@russell1993forced]. However this procedure can also reduce the human obersvers accuracy. In this regard, the results of the human annotation could have been more ambiguous because it is not the natural way that people are inferring meaning from facial expressions. An alternative explaination relies in reducing the recognition biais involved in the classic recognition paradigm. Classic forced-choice paradigms obtain artificial high results, thus by using a more evolved approach observers' accuracy may have been reduced. 
+Some limitations to this process should be stated over the use of self-reports to evaluate individual's subjective feelings. Accessing the inner subjective feeling can be biased if not impossible. Moreover the procedure used for human observation can also be open to dispute. Instead of asking the human annotators to provide an unique label, a more subtle approach was chosen to mimic results provided by the automatic classifier. Whereas this paradigm is longer and more complicated, it can lead to more robust results in reducing the forced-choice biais [@russell1993forced]. However this procedure can also reduce the human obersvers accuracy. In this regard, the results of the human observation could have been more ambiguous because it is not the natural way that people are inferring meaning from facial expressions. An alternative explaination relies in reducing the recognition biais involved in the classic recognition paradigm. Classic forced-choice paradigms obtain artificial high results, thus by using a more evolved approach observers' accuracy may have been reduced. 
 
 Considering the above, the results provides an additional evidence that individuals' subjective feeling can not be inferred from facial expressions and in our case invalidate the hypothesis of hardwired emotions. Even if emotions were hardwired, in everyday life one does not observe prototypical facial expressions and therefore research should be focused on analysing non-prototypical facial expressions.  Advancements in identifying "non-basic" emotion labels [@mcduff2016discovering] as well as non-prototypical facial expression have been made in the developpement of automatic facial expression recognition tools. However this result suggests that automatic facial expression recognition tools should evaluate facial morphology features such as action units [e.g., OpenFace @baltruvsaitis2016openface] rather than inferring potential emotional or affective states.
 
 Acknowledgment {#acknowledgment}
 ==============
 
-The authors would like to thank Brigitte Meillon and Jean Michel Adam who developed the software used to collect and preprocess human observer annotations.
+The authors would like to thank Brigitte Meillon and Jean Michel Adam who developed the software used to collect and preprocess human observer results.
 
 References {#references .numbered}
 ==========
