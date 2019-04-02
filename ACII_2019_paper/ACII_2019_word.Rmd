@@ -126,11 +126,11 @@ The annotation of facial expressions was performed on-site using *Oudjat*, a sof
 
 This annotation procedure results in a uni-dimensional time-series for each video per human observer identifying for each second of the video which emotion was recognized. Then time-series corresponding to the same video were aggregated to calculate the proportion of human observers for each second of the video per emotional label (EQ1).
 
-$$x_{video_{i}.label_{i}.t_{i}} = \frac{n_{video_{i}.label_{i}.t_{i}}}{n_{video_{i}}}$$
+$$x_{video_{i}.label_{j}.t_{k}} = \frac{n_{video_{i}.label_{j}.t_{i}}}{n_{video_{k}}}$$
 
 The sum of each label proportion per second was used as a score to determine which labels corresponds to the overall video (i.e., the highest score). 
 
-$$x_{video.label.t_{i}} = \frac{n_{video.label.t_{i}}}{n_{video}}$$
+$$label_{video_{i}} = max{\frac{n_{video.label.t_{i}}}{n_{video}}}$$
 
 In case of more than one label having the maximum value, the emotion is described as undetermined.
 
