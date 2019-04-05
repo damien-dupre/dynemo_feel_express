@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.12.3)  5 APR 2019 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.12.3)  5 APR 2019 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -550,7 +550,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1140.
 Here is how much of TeX's memory you used:
  9879 strings out of 494585
  146664 string characters out of 6176317
- 232852 words of memory out of 5000000
+ 232844 words of memory out of 5000000
  13397 multiletter control sequences out of 15000+600000
  38197 words of font info for 72 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
@@ -568,7 +568,7 @@ mes/utmb8a.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/
 urw/times/utmbi8a.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on ACII_2019_paper.pdf (6 pages, 330321 bytes).
+Output written on ACII_2019_paper.pdf (6 pages, 330307 bytes).
 PDF statistics:
  242 PDF objects out of 1000 (max. 8388607)
  209 compressed objects within 3 object streams

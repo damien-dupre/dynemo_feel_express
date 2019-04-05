@@ -353,7 +353,7 @@ A comparable explanation involing the amount of undertermined video based on sel
 
 As previously mentioned, human observers appear to be more accurate than the automatic classifier to recognize individuals’ subjective feeling (human observer Accuracy = `r round(confusionMatrix_sr_hr$overall["Accuracy"],2)`; automatic classifier Accuracy = `r round(confusionMatrix_sr_ar$overall["Accuracy"],2)`). However, both make mistakes. A third confusion matrix is used to compare similarities (diagonal) and differences between human observers and automatic classifier in classifing the six emotion labels (Figure \nolinebreak \ref{fig:confusionMatrix_hr_ar}).
 
-```{r confusionMatrix_hr_ar, fig.height=5, fig.cap="\\label{fig:confusionMatrix_hr_ar}Comparison between the human observers and automatic classifier recognition for the classfication of emotion labels."}
+```{r confusionMatrix_hr_ar, fig.height=5, fig.cap="\\label{fig:confusionMatrix_hr_ar}Proportion of emotion labels classified by human observers which are recognized by the automatif classifier."}
 comparison_hr_ar <- dplyr::inner_join(human_recognition_score,automatic_recognition_score, by = "C_Video") %>% 
   dplyr::ungroup() %>% 
   dplyr::filter(ar_emotion != "undetermined") %>% 
@@ -386,7 +386,7 @@ confusionMatrix_hr_ar_freq %>%
     parse = FALSE,
     lineheight = 0.7)+
   scale_fill_gradient(
-    name = "Proportion of Recognized\nEmotion",
+    name = "Proportion Recognized Emotion",
     low = "white", 
     high = "red", 
     labels = scales::percent,
