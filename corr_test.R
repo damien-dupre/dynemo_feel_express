@@ -61,6 +61,12 @@ automatic_auc <- pROC::auc(automatic_roc)
 automatic_auc
 
 
+# ggplot(recognition_result, aes(x=sr_score, y=ar_score)) +
+#   geom_point() +
+#   geom_smooth(method = "glm", 
+#               method.args = list(family = "binomial"), 
+#               se = FALSE) 
+
 human_logistic <- lme4::glmer(
   sr_score ~ hr_score + (1 | list_video) + (1 | list_emotion), 
   data = recognition_result, 
@@ -80,4 +86,5 @@ automatic_logistic <- lme4::glmer(
 summary(automatic_logistic)
 
 # see prediction accuracy
+
 

@@ -22,9 +22,16 @@ header-includes:
   - \usepackage{booktabs}
   - \usepackage{float}
   - \usepackage{tabu}
+  - \usepackage{wrapfig}
+  - \floatplacement{figure}{H}
+  - \floatplacement{table}{H}
   
 bibliography: mybibfile.bib
 output: rticles::ieee_article
+fig_caption: yes
+keep_tex: yes
+includes:
+  in_header: preamble-latex.tex
 ---
 
 ```{r setup, include = FALSE}
@@ -34,7 +41,7 @@ knitr::opts_chunk$set(
   warning = FALSE, 
   error = FALSE, 
   echo = FALSE,
-  fig.pos = 'H')
+  fig.pos = "H")
 #
 set.seed(123)# Seed for random number generation
 options(scipen = 999)# Disable scientific number format
@@ -45,6 +52,8 @@ library(here) # Locate files relative to project root
 library(caret)
 library(plotROC)
 library(pROC)
+library(xtable)
+library(Hmisc)
 ```
 
 ```{r data}
@@ -74,7 +83,7 @@ Based on the behaviorist approach initiated by Darwin in *The Expression of the 
 Even if this theory obtained a popular support, it fails to explain how individuals can feel emotions without expressing them and how individuals can express emotions without feeling them, in instances in which display rules cannot be called upon [@kraut1979social; @duran2017coherence]. These evidences have led to an alternative conception, notably the social constructivist approach.
 
 ## The link between emotion and facial expression through the social constructivist approach
-Detractors of the Basic Emotion Theory consider emotion not as genetically hardwired but as a learnt association between a given situation and an appropriate response [@averill1980constructivist; @barrett2017emotions]. For the tenants of the constructivist approach, emotions are “concepts” based on past experiences and which are “a collection of embodied, whole brain representations that predict what is about to happen in the sensory environment, what the best action is to deal with impending events, and their consequences for allostasis” [@barrett2017theory, p12]. Following this assumption, faces are best conceived as tools displaying signals in social interactions [@crivelli2018facial]. These signals can convey individuals’ motivations and readiness [@frijda1997facial] or social messages [@fridlund1995human]. Therefore, facial expressions are thought as behaviors which meaning is inferred by the observer. Findings support this observer dependence [@lindquist2013s; @niedenthal2017embodied]. They show that to make meaning of another person’s facial behavior, the perceiver relies in particular on her/his knowledge about emotion categories.
+Detractors of the Basic Emotion Theory consider emotion not as genetically hardwired but as a learnt association between a given situation and an appropriate response [@averill1980constructivist; @barrett2017emotions]. For the tenants of the constructivist approach, emotions are “concepts” based on past experiences and which are “a collection of embodied, whole brain representations that predict what is about to happen in the sensory environment, what the best action is to deal with impending events, and their consequences for allostasis” [@barrett2017theory, p12]. Following this assumption, faces are best conceived as tools displaying signals in social interactions [@crivelli2018facial]. These signals can convey individuals’ motivations and readiness [@frijda1997facial] or social messages [@fridlund1994human]. Therefore, facial expressions are thought as behaviors which meaning is inferred by the observer. Findings support this observer dependence [@lindquist2013s; @niedenthal2017embodied]. They show that to make meaning of another person’s facial behavior, the perceiver relies in particular on her/his knowledge about emotion categories.
 
 ## The recognition of emotional facial expressions
 Regarding emotional facial expression (EFE) recognition, the behaviorist approach assertions and the constructivist approach claims lead to two divergent predictions. The foremost postulates that, when triggered, each basic emotion is expressed by a prototypical face (non basic emotions being blends of the basic ones). Basic emotions are easily recognized by all human observers and emotional states are accessible by facial measurement. As the recognition of facial expressions is based on the identification of specific patterns of facial movements, it implies that EFE recognition of both human observers and automatic classifiers should be as accurate. The constructivist approach, in contrast, affirms that facial expressions do not provide a direct access to individuals’ subjective feeling. Even if the face possibly moves during an emotional episode, facial muscle movements are not linked in a one-to-one manner to a specific discrete emotional experience [@doyle2017language, p418]. Instead, emotions are mentally constructed by the perceiver and mental categories of emotions are needed to accurately categorize facial movements. Therefore, since there is no emotional prototypical face, one should expect human observers’ superior ability to accurately recognize EFE as compared to automatic EFE recognition tools.
@@ -159,7 +168,72 @@ Results
 
 Since encoders’ self-reports, human annotations and the automatic recognition include data on “non-basic” emotion labels and features, the analysis is performed using only the six “basic” emotion labels in order to compare them. The maximum score for self-reports, human annotations and automatic recognition is used to label the video. In case of more than one label obtaining the maximum value, the video is labeled as undetermined.
 
-## Correlation between self-report and human facial expression recognition
+```{r corr-matrix}
+# list_video <- self_report_score$C_Video
+# list_emotion <- c("disgust","fear","happiness","surprise","sadness","anger")
+# 
+# grid_data <- expand.grid(list_video = list_video, list_emotion = list_emotion)
+# 
+# self_report_result <- self_report_score %>% 
+#   dplyr::filter(sr_emotion != "undetermined") %>% 
+#   dplyr::mutate(sr_score = 1)
+# 
+# human_recognition_result <- human_recognition_score %>% 
+#   dplyr::filter(hr_emotion != "undetermined") %>% 
+#   dplyr::mutate(hr_score = 1)
+# 
+# automatic_recognition_result <- automatic_recognition_score %>% 
+#   dplyr::filter(ar_emotion != "undetermined") %>% 
+#   dplyr::mutate(ar_score = 1)
+# 
+# recognition_result <- grid_data %>% 
+#   dplyr::left_join(self_report_result, by = c(
+#     "list_video" = "C_Video",
+#     "list_emotion" = "sr_emotion"
+#     )
+#   ) %>% 
+#   dplyr::left_join(human_recognition_result, by = c(
+#     "list_video" = "C_Video",
+#     "list_emotion" = "hr_emotion"
+#     )
+#   ) %>% 
+#   dplyr::left_join(automatic_recognition_result, by = c(
+#     "list_video" = "C_Video",
+#     "list_emotion" = "ar_emotion"
+#     )
+#   ) %>% 
+#   replace(is.na(.), 0) %>% 
+#   dplyr::select(-list_video, -list_emotion)
+# 
+# 
+#   x <- as.matrix(recognition_result)
+#   R <- Hmisc::rcorr(x)$r
+#   p <- Hmisc::rcorr(x)$P
+#   
+#   ## define notions for significance levels; spacing is important.
+#   mystars <- ifelse(p < .001, "***", ifelse(p < .01, "** ", ifelse(p < .05, "* ", " ")))
+#   
+#   ## trunctuate the matrix that holds the correlations to two decimal
+#   R <- format(round(cbind(rep(-1.11, ncol(x)), R), 2))[,-1]
+#   
+#   ## build a new matrix that includes the correlations with their apropriate stars
+#   Rnew <- matrix(paste(R, mystars, sep=""), ncol=ncol(x))
+#   diag(Rnew) <- paste(diag(R), " ", sep="")
+#   rownames(Rnew) <- colnames(x)
+#   colnames(Rnew) <- paste(colnames(x), "", sep="")
+#   colnames(x)
+#   ## remove upper triangle
+#   Rnew <- as.matrix(Rnew)
+#   Rnew[upper.tri(Rnew, diag = TRUE)] <- ""
+#   Rnew <- as.data.frame(Rnew)
+#   ## remove last column and return the matrix (which is now a data frame)
+#   Rnew <- cbind(Rnew[1:length(Rnew)-1])
+# 
+# 
+# xtable(Rnew)
+```
+
+## Self-reported emotions recognized by human observers
 
 ```{r sr_hr}
 comparison_sr_hr <- dplyr::inner_join(self_report_score,human_recognition_score, by = "C_Video") %>% 
@@ -230,7 +304,7 @@ confusionMatrix_sr_hr_table <- confusionMatrix_sr_hr %>%
 confusionMatrix_sr_hr_table %>%
   knitr::kable(
     "latex",
-    caption = "\\label{table:confusionTable_sr_hr}Agreement accuracy metrics for each emotion.",
+    caption = "\\label{table:confusionTable_sr_hr}Human recognition accuracy metrics for each emotion.",
     booktabs = TRUE,
     digits = 2,
     linesep = "",
@@ -239,8 +313,8 @@ confusionMatrix_sr_hr_table %>%
   ) %>%
   kableExtra::kable_styling(
     font_size = 8,
-    full_width = TRUE,
-    latex_options = c("hold_position")) %>%
+    full_width = TRUE, 
+    latex_options = "HOLD_position") %>%
    add_footnote("Note. \\textit{na.} values are produced when not enough data are available to compute accuracy indicators.", notation="none", escape = FALSE)
 
 # confusionMatrix_sr_hr_table %>%
@@ -254,7 +328,7 @@ confusionMatrix_sr_hr_table %>%
 
 However, self-reports show a significant proportion of undetermined emotional states (`r scales::percent(nrow(list_automatic_ties)/358)` of the 358 videos) which reveals the potential limit of using 6-points likert scales to measure emotional self-reports. Indeed, encoders can easily score to the maximum for more than one emotion.
 
-## Correlation between self-report and automatic facial expression recognition
+## Self-reported emotions recognized by the automatic classifier
 
 ```{r sr_ar}
 comparison_sr_ar <- dplyr::inner_join(self_report_score,automatic_recognition_score, by = "C_Video") %>% 
@@ -325,7 +399,7 @@ confusionMatrix_sr_ar_table <- confusionMatrix_sr_ar %>%
 confusionMatrix_sr_ar_table %>%
   knitr::kable(
     "latex",
-    caption = "\\label{table:confusionTable_sr_ar}Agreement accuracy metrics for each emotion.",
+    caption = "\\label{table:confusionTable_sr_ar}Autonatic recognition accuracy metrics for each emotion.",
     booktabs = T,
     digits = 2,
     linesep = "",
@@ -403,7 +477,7 @@ confusionMatrix_hr_ar_freq %>%
         legend.position = "bottom")
 ```
 
-The overall agreement between human observers and the automatic classifier is in fact very low (Kappa = `r round(confusionMatrix_hr_ar$overall["Kappa"],2)`). Except for *happiness* and *disgust* (respectively `r scales::percent(as.numeric(confusionMatrix_hr_ar_freq[confusionMatrix_hr_ar_freq$ar_emotion == "happiness" & confusionMatrix_hr_ar_freq$hr_emotion == "happiness", "prop_hr"]))` and `r scales::percent(as.numeric(confusionMatrix_hr_ar_freq[confusionMatrix_hr_ar_freq$ar_emotion == "disgust" & confusionMatrix_hr_ar_freq$hr_emotion == "disgust", "prop_hr"]))` of common labelling), there is no clear common pattern. Moreover, the automatic classifier has a tendency to label as *disgust* videos labeled as *sadness* by human observers and as *happiness* videos labaled as *fear* by human observers 
+The overall agreement between human observers and the automatic classifier is in fact very low (Kappa = `r round(confusionMatrix_hr_ar$overall["Kappa"],2)`). Except for *happiness* and *disgust* (respectively `r scales::percent(as.numeric(confusionMatrix_hr_ar_freq[confusionMatrix_hr_ar_freq$ar_emotion == "happiness" & confusionMatrix_hr_ar_freq$hr_emotion == "happiness", "prop_hr"]))` and `r scales::percent(as.numeric(confusionMatrix_hr_ar_freq[confusionMatrix_hr_ar_freq$ar_emotion == "disgust" & confusionMatrix_hr_ar_freq$hr_emotion == "disgust", "prop_hr"]))` of common labelling), there is no clear common pattern. Moreover, the automatic classifier has a tendency to label as *disgust* videos labeled as *sadness* by human observers and as *happiness* videos labeled as *fear* by human observers 
 
 Discussion and Conclusion
 ============
@@ -412,7 +486,7 @@ Despite being one on the most investigated question in affective science, the co
 
 Such results support the hypothesis advanced by some authors of a low emotion–expression coherence [e.g., @kappas2003facial]. In many instances, facial displays are not associated with a concordant emotional state, even any emotional state at all [@bonanno2004brief; @fernandez2013emotion]. More and more evidences are showing that facial expressions are in reality not expressing emotions [@mckeown2013analogical]. As well as other nonverbal behaviors, facial movements are not only assumed to be determined by emotion but also by various other causes, such as psychological states (e.g., \nolinebreak motivations or pain), to say nothing of social context and sociocultural norms [such as “display rules”, @ekman1987universals]. This multiple determination excludes any possibility of drawing an inference from facial activity on the underlying psychological state (emotional or other). Beyond the present observations showing a weak coherence between subjective feelings and spontaneous facial expressions, this study provides some light on the controversy between the behaviorist and the constructivist approaches. The first of those two lines of thinking [@ekman1992argument] assumes that expressions of emotion are brief and coherent patterns of facial muscle movements that co-vary with discrete subjective experiences. Emotions and their related prototypical facial behavior are universal because they are considered as innate mechanisms allowing individuals to respond adaptively to evolutionary significant events (threats, opportunities…) encountered in the environment. Instead of viewing emotions as natural kinds [@barrett2017theory], the constructivist approach supposes that emotions are social constructions. The specific emotion categories identified on the face of another person are the result of categorization. In other words, the emotions that are recognized by the observer are constructed in her/his mind, primarily based on her/his conceptual knowledge of emotion. Therefore, facial movements do not express specific emotions. It is the observer that infers the emotional meaning of the facial expression. As a consequence, one can predict from the first line of thinking that individuals’ emotional subjective feeling should be correlated to the recognition of facial expressions from both human observers and automatic classifiers whereas if emotions are social constructs, as stated by the second line of thinking, human observer’s should be better at perceiving emotions in face than automatic classifiers. Present results plead in favor of the latter stance. They show that human observers are more accurate than the automatic recognition tool to identify individuals’ subjective feeling on the basis of their face. Moreover, mistakes made by human observers look less arbitrary to the ones made by the classifier. For instance, even if mix-up between disgust and anger is sometimes reported in recognition studies, confusions such as the ones produced by the classifier have never been noted for human observers. A possible explanation is that human observers are assessing dynamic expressive sequences. They have access to the full video which provides a kinetic context whereas the automatic classifier only assesses the videos frame by frame. Further research is needed to shed light on this issue.
 
-Some limitations should be stated, notably regarding the use of self-reports to evaluate encoders’ subjective feelings. Accessing the inner subjective feeling can be biased if not impossible. Moreover the procedure used for human observation can also be open to dispute. Instead of asking the human annotators to provide a unique label, a more subtle approach was chosen to mimic results provided by the automatic classifier . Whereas this paradigm is longer and more complicated, it can lead to more robust results in reducing the forced-choice biais [@russell1993forced]. However this procedure can also reduce the human observers accuracy. In this regard, the results of the human observation could have been more ambiguous because it is not the natural way that people are inferring meaning from facial expressions. An alternative explanation relies in reducing the recognition biais involved in the classic recognition paradigm. Classic forced-choice paradigms obtain artificial high results, thus by using a more evolved approach observers’ accuracy may have been lowered.
+Some limitations should be stated, notably regarding the use of self-reports to evaluate encoders’ subjective feelings. Accessing the inner subjective feeling can be biased if not impossible. Moreover the procedure used for human observation can also be open to dispute. Instead of asking the human annotators to provide a unique label, a more subtle approach was chosen to mimic results provided by the automatic classifier . Whereas this paradigm is longer and more complicated, it can lead to more robust results in reducing the forced-choice bais [@russell1993forced]. However this procedure can also reduce the human observers accuracy. In this regard, the results of the human observation could have been more ambiguous because it is not the natural way that people are inferring meaning from facial expressions. An alternative explanation relies in reducing the recognition bais involved in the classic recognition paradigm. Classic forced-choice paradigms obtain artificial high results, thus by using a more evolved approach observers’ accuracy may have been lowered.
 
 Considering the above, the results provide additional evidence that individuals’ subjective feeling can not be inferred from facial expressions and in our case invalidate the hypothesis of hardwired emotions unambiguously displayed on the face. Even if emotions were hardwired, in everyday life one does not observe prototypical facial expressions and therefore research should be focused on analysing non-prototypical facial expressions. Advancements in identifying “non-basic” emotion labels [@mcduff2016discovering] as well as non-prototypical facial expression have been made in the developpement of automatic facial expression recognition tools. However this result suggests that automatic facial expression recognition tools should merely evaluate facial morphology features such as action units [e.g., OpenFace presented in @baltruvsaitis2016openface] rather than inferring supposedly emotional or affective states.
 

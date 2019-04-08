@@ -340,6 +340,9 @@
 \usepackage{booktabs}
 \usepackage{float}
 \usepackage{tabu}
+\usepackage{wrapfig}
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -549,12 +552,12 @@ events, and their consequences for allostasis'' (Barrett 2017b, p12).
 Following this assumption, faces are best conceived as tools displaying
 signals in social interactions (Crivelli and Fridlund 2018). These
 signals can convey individuals' motivations and readiness (Frijda and
-Tcherkassof 1997) or social messages (Fridlund and Rosenberg 1995).
-Therefore, facial expressions are thought as behaviors which meaning is
-inferred by the observer. Findings support this observer dependence
-(Lindquist and Gendron 2013; Niedenthal et al. 2017). They show that to
-make meaning of another person's facial behavior, the perceiver relies
-in particular on her/his knowledge about emotion categories.
+Tcherkassof 1997) or social messages (Fridlund 1994). Therefore, facial
+expressions are thought as behaviors which meaning is inferred by the
+observer. Findings support this observer dependence (Lindquist and
+Gendron 2013; Niedenthal et al. 2017). They show that to make meaning of
+another person's facial behavior, the perceiver relies in particular on
+her/his knowledge about emotion categories.
 
 \hypertarget{the-recognition-of-emotional-facial-expressions}{%
 \subsection{The recognition of emotional facial
@@ -728,9 +731,9 @@ annotations and automatic recognition is used to label the video. In
 case of more than one label obtaining the maximum value, the video is
 labeled as undetermined.
 
-\hypertarget{correlation-between-self-report-and-human-facial-expression-recognition}{%
-\subsection{Correlation between self-report and human facial expression
-recognition}\label{correlation-between-self-report-and-human-facial-expression-recognition}}
+\hypertarget{self-reported-emotions-recognized-by-human-observers}{%
+\subsection{Self-reported emotions recognized by human
+observers}\label{self-reported-emotions-recognized-by-human-observers}}
 
 Encoders' subjective feeling is compared with human observers
 recognition in a confusion matrix (Figure
@@ -764,9 +767,9 @@ highest self-reported emotion (respectively 28.6\%, 33.3\%, 34.7\% and
 \emph{surprise} was the highest self-reported emotion (respectively
 50.0\% and 25.6\% of the videos self-reported).
 
-\begin{table}[!h]
+\begin{table}[H]
 
-\caption{\label{tab:confusionTable_sr_hr}\label{table:confusionTable_sr_hr}Agreement accuracy metrics for each emotion.}
+\caption{\label{tab:confusionTable_sr_hr}\label{table:confusionTable_sr_hr}Human recognition accuracy metrics for each emotion.}
 \centering
 \fontsize{8}{10}\selectfont
 \begin{tabu} to \linewidth {>{\raggedright}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
@@ -791,10 +794,9 @@ limit of using 6-points likert scales to measure emotional self-reports.
 Indeed, encoders can easily score to the maximum for more than one
 emotion.
 
-\hypertarget{correlation-between-self-report-and-automatic-facial-expression-recognition}{%
-\subsection{Correlation between self-report and automatic facial
-expression
-recognition}\label{correlation-between-self-report-and-automatic-facial-expression-recognition}}
+\hypertarget{self-reported-emotions-recognized-by-the-automatic-classifier}{%
+\subsection{Self-reported emotions recognized by the automatic
+classifier}\label{self-reported-emotions-recognized-by-the-automatic-classifier}}
 
 Similarly to the previous analysis, a confusion matrix was used to
 compare encoders' subjective feeling with the emotion label recognized
@@ -825,7 +827,7 @@ automatic classifier recognized as \emph{happiness} videos in which
 
 \begin{table}[!h]
 
-\caption{\label{tab:confusionTable_sr_ar}\label{table:confusionTable_sr_ar}Agreement accuracy metrics for each emotion.}
+\caption{\label{tab:confusionTable_sr_ar}\label{table:confusionTable_sr_ar}Autonatic recognition accuracy metrics for each emotion.}
 \centering
 \fontsize{8}{10}\selectfont
 \begin{tabu} to \linewidth {>{\raggedright}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
@@ -874,7 +876,7 @@ classifier is in fact very low (Kappa = 0.18). Except for
 common labelling), there is no clear common pattern. Moreover, the
 automatic classifier has a tendency to label as \emph{disgust} videos
 labeled as \emph{sadness} by human observers and as \emph{happiness}
-videos labaled as \emph{fear} by human observers
+videos labeled as \emph{fear} by human observers
 
 \hypertarget{discussion-and-conclusion}{%
 \section{Discussion and Conclusion}\label{discussion-and-conclusion}}
@@ -953,12 +955,12 @@ procedure used for human observation can also be open to dispute.
 Instead of asking the human annotators to provide a unique label, a more
 subtle approach was chosen to mimic results provided by the automatic
 classifier . Whereas this paradigm is longer and more complicated, it
-can lead to more robust results in reducing the forced-choice biais
+can lead to more robust results in reducing the forced-choice bais
 (Russell 1993). However this procedure can also reduce the human
 observers accuracy. In this regard, the results of the human observation
 could have been more ambiguous because it is not the natural way that
 people are inferring meaning from facial expressions. An alternative
-explanation relies in reducing the recognition biais involved in the
+explanation relies in reducing the recognition bais involved in the
 classic recognition paradigm. Classic forced-choice paradigms obtain
 artificial high results, thus by using a more evolved approach
 observers' accuracy may have been lowered.
@@ -992,47 +994,52 @@ results.
 \hypertarget{refs}{}
 \leavevmode\hypertarget{ref-averill1980constructivist}{}%
 Averill, James R. 1980. ``A Constructivist View of Emotion.'' In
-\emph{Theories of Emotion}, 305--39. Elsevier.
+\emph{Theories of Emotion}, edited by Robert Plutchik and Henry
+Kellerman, 305--39. New York, NY: Academic Press.
 
 \leavevmode\hypertarget{ref-baltruvsaitis2016openface}{}%
 Baltrušaitis, Tadas, Peter Robinson, and Louis-Philippe Morency. 2016.
 ``Openface: An Open Source Facial Behavior Analysis Toolkit.'' In
-\emph{2016 Ieee Winter Conference on Applications of Computer Vision
-(Wacv)}, 1--10. IEEE.
+\emph{Proceedings of the Winter Conference on Applications of Computer
+Vision}, 1--10. \url{https://doi.org/10.1109/WACV.2016.7477553}.
 
 \leavevmode\hypertarget{ref-barrett2017emotions}{}%
 Barrett, Lisa Feldman. 2017a. \emph{How Emotions Are Made: The Secret
-Life of the Brain}. Houghton Mifflin Harcourt.
+Life of the Brain}. Boston, MA: Houghton Mifflin Harcourt.
 
 \leavevmode\hypertarget{ref-barrett2017theory}{}%
 ---------. 2017b. ``The Theory of Constructed Emotion: An Active
 Inference Account of Interoception and Categorization.'' \emph{Social
 Cognitive and Affective Neuroscience} 12 (1): 1--23.
+\url{https://doi.org/10.1093/scan/nsw154}.
 
 \leavevmode\hypertarget{ref-bonanno2004brief}{}%
-Bonanno, George, and Dacher Keltner. 2004. ``Brief Report the Coherence
-of Emotion Systems: Comparing `on-Line' Measures of Appraisal and Facial
+Bonanno, George, and Dacher Keltner. 2004. ``The Coherence of Emotion
+Systems: Comparing `on-Line' Measures of Appraisal and Facial
 Expressions, and Self-Report.'' \emph{Cognition and Emotion} 18 (3):
-431--44.
+431--44. \url{https://doi.org/10.1080/02699930341000149}.
 
 \leavevmode\hypertarget{ref-crivelli2018facial}{}%
 Crivelli, Carlos, and Alan J Fridlund. 2018. ``Facial Displays Are Tools
 for Social Influence.'' \emph{Trends in Cognitive Sciences} 22 (5):
-388--99.
+388--99. \url{https://doi.org/10.1016/j.tics.2018.02.006}.
 
 \leavevmode\hypertarget{ref-darwin1872expression}{}%
 Darwin, Charles. 1872. \emph{The Expression of the Emotions in Man and
-Animals}. London, UK: John Murray, London UK.
+Animals}. London, UK: John Murray.
 
 \leavevmode\hypertarget{ref-dente2017measures}{}%
 Dente, Pasquale, Dennis Küster, Lina Skora, and E Krumhuber. 2017.
 ``Measures and Metrics for Automatic Emotion Classification via Facet.''
 In \emph{Proceedings of the Conference on the Study of Artificial
-Intelligence and Simulation of Behaviour (Aisb)}, 160--63.
+Intelligence and Simulation of Behaviour}, 160--63.
 
 \leavevmode\hypertarget{ref-doyle2017language}{}%
 Doyle, Cameron M, and Kristen A Lindquist. 2017. ``Language and Emotion:
-Hypotheses on the Constructed Nature of Emotion Perception.''
+Hypotheses on the Constructed Nature of Emotion Perception.'' In
+\emph{The Science of Facial Expression}, edited by José-Miguel
+Fernández-Dols and James A Russell, 415--32. New York, NY: Oxford
+University Press.
 
 \leavevmode\hypertarget{ref-dupre2015oudjat}{}%
 Dupré, Damien, Daniel Akpan, Elena Elias, Jean-Michel Adam, Brigitte
@@ -1040,102 +1047,115 @@ Meillon, Nicolas Bonnefond, Michel Dubois, and Anna Tcherkassof. 2015.
 ``Oudjat: A Configurable and Usable Annotation Tool for the Study of
 Facial Expressions of Emotion.'' \emph{International Journal of
 Human-Computer Studies} 83: 51--61.
+\url{https://doi.org/10.1016/j.ijhcs.2015.05.010}.
 
 \leavevmode\hypertarget{ref-dupre2018accuracy}{}%
 Dupré, Damien, Nicole Andelic, Gawain Morrison, and Gary McKeown. 2018.
 ``Accuracy of Three Commercial Automatic Emotion Recognition Systems
 Across Different Individuals and Their Facial Expressions.'' In
-\emph{2018 Ieee International Conference on Pervasive Computing and
-Communications Workshops (Percom Workshops)}, 627--32. IEEE.
+\emph{Proceedings of the International Conference on Pervasive Computing
+and Communications}, 627--32.
+\url{https://doi.org/10.1109/PERCOMW.2018.8480127}.
 
 \leavevmode\hypertarget{ref-duran2017coherence}{}%
 Durán, Juan I, Rainer Reisenzein, and José-Miguel Fernández-Dols. 2017.
-``Coherence Between Emotions and Facial Expressions.'' \emph{The Science
-of Facial Expression}, 107--29.
+``Coherence Between Emotions and Facial Expressions.'' Edited by
+José-Miguel Fernández-Dols and James A Russell, 107--29.
 
 \leavevmode\hypertarget{ref-ekman1992argument}{}%
 Ekman, Paul. 1992. ``An Argument for Basic Emotions.'' \emph{Cognition
 \& Emotion} 6 (3-4): 169--200.
+\url{https://doi.org/10.1080/02699939208411068}.
 
 \leavevmode\hypertarget{ref-ekman2007directed}{}%
----------. 2007. ``The Directed Facial Action Task.'' \emph{Handbook of
-Emotion Elicitation and Assessment} 47: 53.
+---------. 2007. ``The Directed Facial Action Task.'' In \emph{Handbook
+of Emotion Elicitation and Assessment}, edited by James A. Coan and John
+J. B. Allen, 47--53. New York, NY: Oxford University Press.
 
 \leavevmode\hypertarget{ref-ekman1987universals}{}%
 Ekman, Paul, Wallace V Friesen, Maureen O'sullivan, Anthony Chan, Irene
 Diacoyanni-Tarlatzis, Karl Heider, Rainer Krause, et al. 1987.
 ``Universals and Cultural Differences in the Judgments of Facial
 Expressions of Emotion.'' \emph{Journal of Personality and Social
-Psychology} 53 (4): 712.
+Psychology} 53 (4): 712--17.
+\url{https://doi.org/10.1037/0022-3514.53.4.712}.
 
 \leavevmode\hypertarget{ref-ekman1988universality}{}%
 Ekman, Paul, and Karl G Heider. 1988. ``The Universality of a Contempt
 Expression: A Replication.'' \emph{Motivation and Emotion} 12 (3):
-303--8.
+303--8. \url{https://doi.org/10.1007/BF00993116}.
 
 \leavevmode\hypertarget{ref-fernandez2013emotion}{}%
 Fernández-Dols, José-Miguel, and Carlos Crivelli. 2013. ``Emotion and
 Expression: Naturalistic Studies.'' \emph{Emotion Review} 5 (1): 24--29.
+\url{https://doi.org/10.1177/1754073912457229}.
 
-\leavevmode\hypertarget{ref-fridlund1995human}{}%
-Fridlund, Alan J, and Erika L Rosenberg. 1995. ``Human Facial
-Expression: An Evolutionary View.'' \emph{Nature} 373 (6515): 569--69.
+\leavevmode\hypertarget{ref-fridlund1994human}{}%
+Fridlund, Alan J. 1994. \emph{Human Facial Expression: An Evolutionary
+View}. San Diego, CA: Academic Press.
 
 \leavevmode\hypertarget{ref-frijda1997facial}{}%
 Frijda, Nico H, and Anna Tcherkassof. 1997. ``Facial Expressions as
-Modes of Action Readiness.'' \emph{The Psychology of Facial Expression},
-78--102.
+Modes of Action Readiness.'' In \emph{The Psychology of Facial
+Expression}, edited by James A Russell and José-Miguel Fernández-Dols,
+78--102. Cambridge, UK: Cambridge University Press.
 
 \leavevmode\hypertarget{ref-kappas2003facial}{}%
 Kappas, Arvid. 2003. ``What Facial Activity Can and Cannot Tell Us About
-Emotions.'' In \emph{The Human Face}, 215--34. Springer.
+Emotions.'' In \emph{The Human Face}, edited by Mary Katsikitis,
+215--34. Boston, MA: Springer.
 
 \leavevmode\hypertarget{ref-kraut1979social}{}%
 Kraut, Robert E, and Robert E Johnston. 1979. ``Social and Emotional
 Messages of Smiling: An Ethological Approach.'' \emph{Journal of
-Personality and Social Psychology} 37 (9): 1539.
+Personality and Social Psychology} 37 (9): 1539--53.
 
 \leavevmode\hypertarget{ref-lindquist2013s}{}%
 Lindquist, Kristen A, and Maria Gendron. 2013. ``What's in a Word?
 Language Constructs Emotion Perception.'' \emph{Emotion Review} 5 (1):
-66--71.
+66--71. \url{https://doi.org/10.1177/1754073912451351}.
 
 \leavevmode\hypertarget{ref-mcduff2016discovering}{}%
 McDuff, Daniel. 2016. ``Discovering Facial Expressions for States of
 Amused, Persuaded, Informed, Sentimental and Inspired.'' In
-\emph{Proceedings of the 18th Acm International Conference on Multimodal
-Interaction}, 71--75. ACM.
+\emph{Proceedings of the International Conference on Multimodal
+Interaction}, 71--75. \url{https://doi.org/10.1145/2993148.2993192}.
 
 \leavevmode\hypertarget{ref-mcduff2016affdex}{}%
 McDuff, Daniel, Abdelrahman Mahmoud, Mohammad Mavadati, May Amr, Jay
 Turcot, and Rana el Kaliouby. 2016. ``AFFDEX Sdk: A Cross-Platform
 Real-Time Multi-Face Expression Recognition Toolkit.'' In
-\emph{Proceedings of the 2016 Chi Conference Extended Abstracts on Human
-Factors in Computing Systems}, 3723--6. ACM.
+\emph{Proceedings of the Chi Conference on Human Factors in Computing
+Systems}, 3723--6. \url{https://doi.org/10.1145/2851581.2890247}.
 
 \leavevmode\hypertarget{ref-mckeown2013analogical}{}%
 McKeown, Gary J. 2013. ``The Analogical Peacock Hypothesis: The Sexual
 Selection of Mind-Reading and Relational Cognition in Human
 Communication.'' \emph{Review of General Psychology} 17 (3): 267--87.
+\url{https://doi.org/10.1037/a0032631}.
 
 \leavevmode\hypertarget{ref-niedenthal2017embodied}{}%
 Niedenthal, Paula M, Adrienne Wood, Magdalena Rychlowska, and Sebastian
-Korb. 2017. ``Embodied Simulation in Decoding Facial Expression.''
-\emph{The Science of Facial Expression}, 397.
+Korb. 2017. ``Embodied Simulation in Decoding Facial Expression.'' In
+\emph{The Science of Facial Expression}, edited by José-Miguel
+Fernández-Dols and James A Russell, 397--414. New York, NY: Oxford
+University Press.
 
 \leavevmode\hypertarget{ref-russell1993forced}{}%
 Russell, James A. 1993. ``Forced-Choice Response Format in the Study of
 Facial Expression.'' \emph{Motivation and Emotion} 17 (1): 41--51.
+\url{https://doi.org/10.1007/BF00995206}.
 
 \leavevmode\hypertarget{ref-tcherkassof2013dynemo}{}%
 Tcherkassof, Anna, Damien Dupré, Brigitte Meillon, Nadine Mandran,
 Michel Dubois, and Jean-Michel Adam. 2013. ``DynEmo: A Video Database of
 Natural Facial Expressions of Emotions.'' \emph{The International
 Journal of Multimedia \& Its Applications} 5 (5): 61--80.
+\url{https://doi.org/10.5121/ijma.2013.5505}.
 
 \leavevmode\hypertarget{ref-de2019mama}{}%
 Waal, Frans de. 2019. \emph{Mama's Last Hug: Animal Emotions and What
-They Teach Us About Ourselves}. Granta Books.
+They Teach Us About Ourselves}. London, UK: Granta Books.
 
 \end{document}
 
