@@ -3,7 +3,7 @@ library(here)
 library(tidyverse)
 library(janitor)
 # upload data ------------------------------------------------------------------
-self_report_data <- readr::read_rds(here::here("data/human_self_report_data/Base_Finale_20090114.rds")) %>% 
+self_report_data <- readr::read_rds("C:/Users/dupred/OneDrive/data/dynemo_feel_data/human_self_report_data/Base_Finale_20090114.rds") %>% 
   janitor::clean_names() %>% 
   dplyr::mutate(C_Video = stringr::str_replace(fichier_video_v,".mpg","")) %>% 
   dplyr::select(

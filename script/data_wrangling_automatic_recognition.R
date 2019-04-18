@@ -7,7 +7,7 @@ library(tidyverse)
 # 
 # readr::write_rds(automatic_recognition_data, here::here("./data/automatic_recognition_data/automatic_recognition_data.rds"))
 
-automatic_recognition_data <- readr::read_rds(here::here("./data/automatic_recognition_data/automatic_recognition_data.rds"))
+automatic_recognition_data <- readr::read_rds("C:/Users/dupred/OneDrive/data/dynemo_feel_data/automatic_recognition_data/automatic_recognition_data.rds")
 
 automatic_recognition_score <- automatic_recognition_data %>% 
   dplyr::select(C_Video = filename, TimeStamp, happiness = joy, fear, disgust, sadness, anger, surprise) %>% 

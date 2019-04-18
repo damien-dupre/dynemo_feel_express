@@ -2,9 +2,9 @@
 library(tidyverse)
 library(splitstackshape)
 # upload data ------------------------------------------------------------------
-metadata_video <- readr::read_rds(here::here("data/human_recognition_data/metadata_video.rds"))
+metadata_video <- readr::read_rds("C:/Users/dupred/OneDrive/data/dynemo_feel_data/human_recognition_data/metadata_video.rds")
 
-human_recognition_data <- here::here("./data/human_recognition_data") %>% 
+human_recognition_data <- "C:/Users/dupred/OneDrive/data/dynemo_feel_data/human_recognition_data" %>% 
   fs::dir_ls(regexp = "\\.csv$") %>% 
   purrr::map_dfr(readr::read_csv2, .id = "source", col_types = cols(
     C_INDUC = col_character(),
