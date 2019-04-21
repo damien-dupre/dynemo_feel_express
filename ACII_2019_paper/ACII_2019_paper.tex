@@ -326,7 +326,7 @@
 \usepackage[unicode=true]{hyperref}
 
 \hypersetup{
-            pdftitle={Coherence between subjective feeling and facial expression: A comparison of human and automatic recognition},
+            pdftitle={The Emotional Coherence Controversy: Evidence from Human and Automatic Expression Recognition},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -343,6 +343,8 @@
 \usepackage{wrapfig}
 \usepackage[none]{hyphenat}
 \floatplacement{figure}{H}
+\usepackage{flushend}
+\usepackage{biblatex}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -360,8 +362,8 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Coherence between subjective feeling and facial expression: A comparison
-of human and automatic recognition}
+\title{The Emotional Coherence Controversy: Evidence from Human and Automatic
+Expression Recognition}
 
 % author names and affiliations
 % use a multiple column layout for up to three different
@@ -381,7 +383,8 @@ of human and automatic recognition}
   %% -- beg for/affiliation.institution.author
 Damien Dupré %% -- end for/affiliation.institution.author
 }
-\IEEEauthorblockA{Dublin City University\\
+\IEEEauthorblockA{Business School\\
+Dublin City University\\
 Dublin, Ireland
 \\damien.dupre@dcu.ie
 }
@@ -390,7 +393,8 @@ Dublin, Ireland
   %% -- beg for/affiliation.institution.author
 Anna Tcherkassof %% -- end for/affiliation.institution.author
 }
-\IEEEauthorblockA{Grenoble Alpes University\\
+\IEEEauthorblockA{Laboratoire Inter-universitaire de Psychologie\\
+Université Grenoble Alpes\\
 Grenoble, France
   %% -- beg for/affiliation.institution.author
 \\anna.tcherkassof@univ-grenoble-alpes.fr
@@ -448,25 +452,26 @@ Grenoble, France
 % in the abstract
 \begin{abstract}
 While it has been taken for granted in the development of several
-automatic facial expression recognition tools, the question of the link
-between subjective feelings and facial expressions is still a subject of
-debate. On one hand the behaviorist approach conceives emotions as
-genetically hardwired and therefore being genuinely displayed through
-facial expressions. On the other hand the constructivist approach
-conceives emotions as socially constructed, the emotional meaning of a
-facial expression being inferred by the observer. In order to evaluate
-the link between the subjective feeling of emotions and their
-recognition based on facial expression, 232 videos of encoders recruited
-to carry out an emotion elicitation task were annotated by 1383 human
-observers as well as by an automatic facial expression classifier.
-Results show a low accuracy of human observers and of the automatic
-classifier to infer the subjective feeling from the facial expressions
-displayed by encoders . They also show a weak link between self-reported
-emotional states and facial emotional displays. Based on these results,
-the hypothesis of genetically hardwired emotion genuinely display is
-difficult to support whereas the idea of emotion and facial expression
-socially constructed appears to be more likely. Then automatic emotion
-recognition tools based on facial expressions should be questioned.
+automatic facial expression recognition tools, the question of the
+coherence between subjective feelings and facial expressions is still a
+subject of debate. On one hand, the behaviorist approach conceives
+emotions as genetically hardwired and therefore being genuinely
+displayed through facial expressions. On the other hand, the
+constructivist approach conceives emotions as socially constructed; the
+emotional meaning of a facial expression being inferred by the observer.
+In order to evaluate the coherence between the subjective feeling of
+emotions and their recognition based on facial expression, 232 videos of
+encoders recruited to carry out an emotion elicitation task were
+annotated by 1383 human observers as well as by an automatic facial
+expression classifier. Results show low accuracy of human observers and
+of the automatic classifier to infer the subjective feeling from the
+facial expressions displayed by encoders. They also show a weak
+coherence between self-reported emotional states and facial emotional
+displays. Based on these results, the hypothesis of genetically
+hardwired emotion genuinely displayed is difficult to support, whereas
+the idea of emotion and facial expression socially constructed appears
+to be more likely. Accordingly, automatic emotion recognition tools
+based on facial expressions should be questioned.
 \end{abstract}
 
 % no keywords
@@ -501,15 +506,16 @@ Facial expression, self-report, human observer, automatic recognition.
 With the development of commercial automatic facial expression
 recognition tools {[}1{]}, industries and governments are gradually
 implementing this technology in order to track humans' emotions in
-various scenarios (\emph{e.g.}, marketing, healthcare, automotive to
-name a few). This technoloogy rests on the premise that facial
-expressions provide a direct access to individuals' subjective feeling.
-Even if this premise is central to the modern mainstream approach of
-human emotion, recent research in affective science are challenging it.
-Once the two competing approaches briefly described as well as the
-predictions they respectively entail, an experiment testing these
-hypotheses will be presented and its results analyzed in order to
-provide empirical evidence to contribute to answer the question.
+various scenarios (\emph{e.g.}, in marketing, healthcare, and the
+automotive industry to name a few). This technology rests on the premise
+that facial expressions provide a direct access to individuals'
+subjective feelings also called ``emotional coherence''. Even if this
+premise is central to the modern mainstream approach of human emotion,
+recent research in affective science is challenging it. Once the two
+competing approaches are briefly described along with the predictions
+they respectively entail, an experiment testing these hypotheses will be
+presented and its results analyzed in order to provide empirical
+evidence to contribute to answer the question.
 
 \hypertarget{a.-the-behaviorist-approach}{%
 \subsection{A. The Behaviorist
@@ -517,7 +523,7 @@ Approach}\label{a.-the-behaviorist-approach}}
 
 Based on the behaviorist approach initiated by Darwin in \emph{The
 Expression of the Emotions in Man and Animals} {[}2{]}, facial
-expressions are conceived as a genuine displays of individuals' inner
+expressions are conceived as a genuine displays of an individual's inner
 emotional state. This hypothesis is used as a basis for the Basic
 Emotion Theory (BET) which states that a set of six emotions are
 universally displayed and are genetically hardwired not only in humans
@@ -525,13 +531,13 @@ universally displayed and are genetically hardwired not only in humans
 view, \emph{``when emotions are aroused by perception of a social event,
 a set of central commands produce patterned emotion-specific changes in
 multiple systems, including {[}\ldots{}{]} facial expressions.''} {[}5,
-p. 49{]}. To cope with critics, several amendments have been made to the
-BET, increasing the number of basic emotions from six to seven {[}6{]}
-as well as adding the concept of ``display rules'' to explain cultural
-differences in the management of facial expressions {[}7{]}.
+p. 49{]}. To respond to criticisms, several amendments have been made to
+the BET, increasing the number of basic emotions from six to seven
+{[}6{]} as well as adding the concept of ``display rules'' to explain
+cultural differences in the management of facial expressions {[}7{]}.
 
-Even if this theory obtained a popular support, it fails to explain how
-individuals can feel emotions without expressing them and how
+Even if this theory obtained popular support, it fails to explain how
+individuals can feel emotions without expressing them, and how
 individuals can express emotions without feeling them, in instances in
 which display rules cannot be called upon {[}8{]}, {[}9{]}. These
 evidences have led to an alternative conception, notably the social
@@ -544,38 +550,38 @@ Approach}\label{b.-the-social-constructivist-approach}}
 Detractors of the Basic Emotion Theory consider emotion not as
 genetically hardwired but as a learnt association between a given
 situation and an appropriate response {[}10{]}, {[}11{]}. For the
-tenants of the constructivist approach, emotions are ``concepts'' based
-on past experiences and which are \emph{``a collection of embodied,
-whole brain representations that predict what is about to happen in the
-sensory environment, what the best action is to deal with impending
-events, and their consequences for allostasis''} {[}12, p. 12{]}.
-Following this assumption, faces are best conceived as tools displaying
-signals in social interactions {[}13{]}. These signals can convey
-individuals' motivations and readiness {[}14{]} or social messages
-{[}15{]}. Therefore, facial expressions are thought as behaviors which
-meaning is inferred by the observer. Findings support this observer
-dependence {[}16{]}, {[}17{]}. They show that to make meaning of another
-person's facial behavior, the perceiver relies in particular on her/his
-knowledge about emotion categories.
+proponents of the constructivist approach, emotions are ``concepts''
+based on past experiences and which are \emph{``a collection of
+embodied, whole brain representations that predict what is about to
+happen in the sensory environment, what the best action is to deal with
+impending events, and their consequences for allostasis''} {[}12, p.
+12{]}. Following this assumption, faces are best conceived as tools
+displaying signals in social interactions {[}13{]}. These signals can
+convey individuals' motivations and readiness {[}14{]} or social
+messages {[}15{]}. Therefore, facial expressions are thought as
+behaviors which meaning is inferred by the observer. Findings support
+this observer dependence {[}16{]}, {[}17{]}. They show that to make
+meaning of another person's facial behavior, the perceiver relies in
+particular on her/his knowledge about emotion categories.
 
 \hypertarget{c.-emotional-facial-expression-recognition}{%
 \subsection{C. Emotional Facial Expression
 Recognition}\label{c.-emotional-facial-expression-recognition}}
 
-Regarding emotional facial expression (EFE) recognition, the behaviorist
-approach assertions and the constructivist approach claims lead to two
-divergent predictions. The foremost postulates that, when triggered,
-each basic emotion is expressed by a prototypical face (non basic
-emotions being blends of the basic ones). Basic emotions are easily
-recognized by all human observers and emotional states are accessible by
-facial measurement. As the recognition of facial expressions is based on
-the identification of specific patterns of facial movements, it implies
-that EFE recognition of both human observers and automatic classifiers
-should be as accurate. The constructivist approach, in contrast, affirms
-that facial expressions do not provide a direct access to individuals'
-subjective feeling. Even if the face possibly moves during an emotional
-episode, facial muscle movements are not linked in a one-to-one manner
-to a specific discrete emotional experience {[}18, p. p418{]}. Instead,
+Regarding emotional facial expression (EFE) recognition, behaviorist and
+constructivist approaches lead to two divergent predictions. The former
+postulates that, when triggered, each basic emotion is expressed by a
+prototypical face (non basic emotions being blends of the basic ones).
+Basic emotions are easily recognized by all human observers and
+emotional states are accessible by facial measurement. As the
+recognition of facial expressions is based on the identification of
+specific patterns of facial movements, it implies that EFE recognition
+of both human observers and automatic classifiers should be as accurate.
+The constructivist approach, in contrast, affirms that facial
+expressions do not provide a direct access to individuals' subjective
+feelings. Even if the face possibly moves during an emotional episode,
+facial muscle movements are not linked in a one-to-one manner to a
+specific discrete emotional experience {[}18, p. p418{]}. Instead,
 emotions are mentally constructed by the perceiver and mental categories
 of emotions are needed to accurately categorize facial movements.
 Therefore, since there is no emotional prototypical face, one should
@@ -591,7 +597,7 @@ constructivist approaches according to the expected differences in
 emotion recognition.}
 \end{figure}
 
-The aim of the current paper is to investigate the link between the
+The aim of the current paper is to investigate the coherence between the
 subjective feeling of emotions and its recognition from facial
 expressions in order to give credit either to the behaviorist plea or to
 the constructivist's one. Contrary to most studies using posed and
@@ -603,9 +609,9 @@ behaviors in ordinary life.
 \hypertarget{ii.-method}{%
 \section{II. Method}\label{ii.-method}}
 
-To evaluate the link between subjective feeling of emotions and their
-recognition from facial expressions, encoders were first recruited to
-perform an emotion elicitation task while their facial expression was
+To evaluate the coherence between subjective feeling of emotions and
+their recognition from facial expressions, encoders were first recruited
+to perform an emotion elicitation task while their facial expression was
 video recorded. Then, the videos of the encoders' faces were shown to
 human observers and were also analysed by an automatic classifier in
 order to identify which emotion was displayed.
@@ -628,7 +634,7 @@ the DynEmo database {[}19{]}.
 \caption{\label{fig:dynemo_img}Example of a front facing recording
 synced with the full view of the participant and the elicitation task.
 This picture is taken from a pilot with projects collaborators and all
-gave a consent for the publication of their photos and videos.}
+gave consent for the publication of their photos and videos.}
 \end{figure}
 
 After the emotion elicitation task the encoders rated their subjective
@@ -646,7 +652,7 @@ also used to check that encoders did not guess the real purpose of the
 experiment (\emph{e.g.}, being filmed while they were performing an
 emotional elicitation task) to guarantee facial expressions'
 genuineness. All encoders gave their agreement on their data and video
-to be processed for research purpose only.
+to be processed for research purposes only.
 
 \hypertarget{b.-human-facial-expression-recognition}{%
 \subsection{B. Human Facial Expression
@@ -747,17 +753,17 @@ Accuracy}\label{a.-human-observers-accuracy}}
 The overall correlation of recognition and non-recognition between
 self-reported emotions and human observers recognition is significant
 but low (\(r = .24\), 95\% CI \([.19\), \(.29]\), \(t(1384) = 9.21\),
-\(p < .001\)). In order to identify differences according the emotional
-labels, encoders' subjective feeling is compared with human observers
-recognition in a confusion matrix (Figure
+\(p < .001\)). In order to identify differences according to the
+emotional labels, encoders' subjective feelings are compared with human
+observers' recognition in a confusion matrix (Figure
 \ref{fig:confusionMatrix_sr_hr}).
 
 \begin{figure}
 \centering
 \includegraphics{ACII_2019_paper_files/figure-latex/confusionMatrix_sr_hr-1.pdf}
-\caption{\label{fig:confusionMatrix_sr_hr}Confusion matrix of between
-the emotion self-reported as being characteristic of the elicitation
-with the emotion recognized by the human observers.}
+\caption{\label{fig:confusionMatrix_sr_hr}Confusion matrix between the
+emotion self-reported as being characteristic of the elicitation with
+the emotion recognized by the human observers.}
 \end{figure}
 
 Each emotion label used to describe encoders' self-reported subjective
@@ -768,7 +774,7 @@ agreement between the emotion felt by the encoder during the elicitation
 and the emotion recognized by the human observers (Accuracy
 \nolinebreak = \nolinebreak 0.43, 95\% CI {[}0.35,0.52{]}; Kappa = 0.19)
 except for \emph{disgust} (100\% of the videos self-reported). These
-results are far from those classicaly obtained in the literature for
+results are far from those classically obtained in the literature for
 emotional facial expression recognition which ranges between 60\% and
 80\% accuracy. However these results are mostly obtained with static
 (\emph{i.e.,} pictures) and posed (\emph{i.e.,} displayed by actors)
@@ -783,7 +789,7 @@ lower instance \emph{happiness} was recognized in videos where
 \emph{fear} and \emph{surprise} was the highest self-reported emotion
 (respectively 50.0\% and 25.6\% of the videos self-reported).
 
-Sensitivity, specificity, precision and F1 score for each emotion
+Sensitivity, specificity, precision and F1 scores for each emotion
 reveals that \emph{happiness} has the highest coherence ratio whereas
 \emph{sadness} has the lowest coherence ratio between true positives and
 false positives (Table \ref{table:confusionTable_sr_hr}).
@@ -815,7 +821,7 @@ obtain the highest scores, \emph{anger}, \emph{surprise} and
 \emph{sadness} have the lowest recognition ratio. The underlying effect
 of expression intensity may explain why \emph{happiness} and
 \emph{disgust} are easily recognized. \emph{Anger} and \emph{sadness} as
-non-socialy desirable emotion may be have been felt but not expressed.
+non-socially desirable emotions may be have been felt but not expressed.
 
 However, self-reports show a significant proportion of undetermined
 emotional states (35.2\% of the 358 videos) which reveals the potential
@@ -828,12 +834,13 @@ emotion.
 Accuracy}\label{b.-automatic-classifiers-accuracy}}
 
 Similarly to the previous analysis, the overall correlation of
-recognition and non-recognition revealed a significant but very low link
-between self-reported emotions and automatic \nolinebreak classifier's
-recognition (\(r = .12\), 95\% CI \([.07\), \(.17]\),
-\(t(1384) = 4.50\), \(p < .001\)). A confusion matrix was used to
-compare encoders' subjective feeling with the emotion label recognized
-by the automatic classifier (Figure \ref{fig:confusionMatrix_sr_ar}).
+recognition and non-recognition revealed a significant but very low
+coherence between self-reported emotions and automatic
+\nolinebreak classifier's recognition (\(r = .12\), 95\% CI \([.07\),
+\(.17]\), \(t(1384) = 4.50\), \(p < .001\)). A confusion matrix was used
+to compare encoders' subjective feeling with the emotion label
+recognized by the automatic classifier (Figure
+\ref{fig:confusionMatrix_sr_ar}).
 
 \begin{figure}
 \centering
@@ -850,15 +857,15 @@ with human observers (Table
 between emotion self-reported and emotion recognized by the automatic
 classifier (Accuracy \nolinebreak = \nolinebreak 0.3, 95\% CI
 {[}0.22,0.38{]}; Kappa \nolinebreak = \nolinebreak 0.07) except for
-\emph{happiness} (44.4\% of the video self-reported) is watched.
+\emph{happiness} (44.4\% of the video self-reported) is evident.
 
 Surprisingly the automatic classifier incorrectly recognized as
-\emph{disgust} an important proportion of videos in which \emph{anger},
-\emph{happiness} and \emph{surprise} was the highest self-reported
-emotion (respectively 42.9\%, 25.0\% and 32.6\% of the videos
-self-reported). In parallel, the automatic classifier recognized as
-\emph{happiness} videos in which \emph{fear} and \emph{surprise} was the
-highest self-reported emotion (respectively 66.7\% and 32.6\% of the
+\emph{disgust} an significant proportion of videos in which
+\emph{anger}, \emph{happiness} and \emph{surprise} was the highest
+self-reported emotion (respectively 42.9\%, 25.0\% and 32.6\% of the
+videos self-reported). In parallel, the automatic classifier recognized
+as \emph{happiness} videos in which \emph{fear} and \emph{surprise} was
+the highest self-reported emotion (respectively 66.7\% and 32.6\% of the
 videos self-reported).
 
 \begin{table}[H]
@@ -882,8 +889,8 @@ surprise & 0.19 & 0.86 & 0.36 & 0.25\\
 \end{tabu}
 \end{table}
 
-A comparable explanation involing the amount of undertermined video
-based on self-reports can be provided as the level of undetermined
+A comparable explanation involving the amount of undetermined video
+based on self-reports can be provided, as the level of undetermined
 emotions are very high for the self reports.
 
 \hypertarget{c.-comparison-between-human-and-automatic-recognition}{%
@@ -891,7 +898,7 @@ emotions are very high for the self reports.
 Recognition}\label{c.-comparison-between-human-and-automatic-recognition}}
 
 As previously mentioned, human observers appear to be more accurate than
-the automatic classifier to recognize individuals' subjective feeling
+the automatic classifier to recognize an individual's subjective feeling
 (human observers Accuracy \nolinebreak = \nolinebreak0.43; automatic
 classifier Accuracy = 0.3; \(r = .22\), 95\% CI \([.17\), \(.27]\),
 \(t(1384) = 8.31\), \(p < .001\)). However, both make mistakes.
@@ -914,35 +921,36 @@ classifier is in fact very low (Kappa = 0.18). Except for
 \emph{happiness} and \emph{disgust} (respectively 64.9\% and 50.0\% of
 common labelling), there is no clear common pattern. Moreover, the
 automatic classifier has a tendency to label as \emph{disgust} videos
-labeled as \emph{sadness} by human observers and as \emph{happiness}
-videos labeled as \emph{fear} by human observers
+labeled as \emph{sadness} by human observers, and as \emph{happiness}
+videos labeled as \emph{fear} by human observers.
 
 \hypertarget{iv.-discussion-and-conclusion}{%
 \section{IV. Discussion and
 Conclusion}\label{iv.-discussion-and-conclusion}}
 
-Despite being one on the most investigated question in affective
-science, the coherence between emotion felt and facially displayed and
-facial expression recognized is a hot topic. To date no clear evidence
-has been found to definitely answer it. Yet, with the growing interest
-of industries and government to monitor individual's psychological
-states, this issue is under high pressure. The present research aims to
-provide some empirical data to the question. The faces encoders
+Despite being one of the most investigated questions in affective
+science, the coherence between emotion felt and facially displayed on
+the one hand, and facial expression recognized on the other is a hot
+topic. To date no clear evidence has been found to definitively solve
+the questions raised. Yet, with the growing interest of industries and
+government in monitoring individual's psychological states, this issue
+is under intense scrutiny. The present research aims to provide some
+empirical data to answer some of the questions posed. The faces encoders
 displayed when confronted with an emotional eliciting task were
 submitted both to human and to automatic recognition. The criterion for
 recognition accuracy was the subjective feeling self-reported by the
-encoder once the elicitation task carried out. Results first reveal a
-low coherence between emotion felt and facial expression displayed.
-Secondly, results show a low accuracy for both humans and automatic
-classifier in identifying the inner emotional states of these encoders
-based on their facial expressions. Thirdly, human observers prove to be
-better at recognizing the emotion facially expressed than the automatic
-recognition tool is.
+encoder once the elicitation task was carried out. Results first reveal
+a low coherence between emotion felt and facial expression displayed.
+Secondly, results show low accuracy rates for both humans and the
+automatic classifier in identifying the inner emotional states of these
+encoders based on their facial expressions. Thirdly, human observers
+prove to be better at recognizing the emotion facially expressed than
+the automatic recognition tool is.
 
 Such results support the hypothesis advanced by some authors of a low
 emotion--expression coherence {[}23{]}. In many instances, facial
 displays are not associated with a concordant emotional state, even any
-emotional state at all {[}24{]}, {[}25{]}. More and more evidences are
+emotional state at all {[}24{]}, {[}25{]}. More and more evidence is
 showing that facial expressions are in reality not expressing emotions
 {[}26{]}. As well as other nonverbal behaviors, facial movements are not
 only assumed to be determined by emotion but also by various other
@@ -953,8 +961,8 @@ possibility of drawing an inference from facial activity on the
 underlying psychological state (emotional or other).
 
 Beyond the present observations showing a weak coherence between
-subjective feelings and spontaneous facial expressions, this study
-provides some light on the controversy between the behaviorist and the
+subjective feelings and spontaneous facial expressions, this study sheds
+some light on the controversy between the behaviorist and the
 constructivist approaches. The first of those two lines of thinking
 {[}3{]} assumes that expressions of emotion are brief and coherent
 patterns of facial muscle movements that co-vary with discrete
@@ -974,14 +982,14 @@ one can predict from the first line of thinking that individuals'
 emotional subjective feeling should be correlated to the recognition of
 facial expressions from both human observers and automatic classifiers
 whereas if emotions are social constructs, as stated by the second line
-of thinking, human observer's should be better at perceiving emotions in
-face than automatic classifiers.
+of thinking, human observer's should be better at perceiving emotions
+expressed on the face than automatic classifiers.
 
 Present results plead in favor of the latter stance. They show that
 human observers are more accurate than the automatic recognition tool to
-identify individuals' subjective feeling on the basis of their face.
+identify an individual's subjective feeling on the basis of their face.
 Moreover, mistakes made by human observers look less arbitrary to the
-ones made by the classifier. For instance, even if mix-up between
+ones made by the classifier. For instance, even if a mix-up between
 disgust and anger is sometimes reported in recognition studies,
 confusions such as the ones produced by the classifier have never been
 noted for human observers. A possible explanation is that human
@@ -997,29 +1005,31 @@ procedure used for human observation can also be open to dispute.
 Instead of asking the human annotators to provide a unique label, a more
 subtle approach was chosen to mimic results provided by the automatic
 classifier. Whereas this paradigm is longer and more complicated, it can
-lead to more robust results in reducing the forced-choice bais {[}27{]}.
-However this procedure can also reduce the human observers accuracy. In
+lead to more robust results in reducing the forced-choice bias {[}27{]}.
+However this procedure can also reduce the human observers' accuracy. In
 this regard, the results of the human observation could have been more
 ambiguous because it is not the natural way that people are inferring
 meaning from facial expressions. An alternative explanation relies in
-reducing the recognition bais involved in the classic recognition
-paradigm. Classic forced-choice paradigms obtain artificial high
+reducing the recognition bias involved in the classic recognition
+paradigm. Classic forced-choice paradigms obtain artificially high
 results, thus by using a more evolved approach observers' accuracy may
 have been lowered.
 
-Considering the above, the results provide additional evidence that
-individuals' subjective feeling can not be inferred from facial
+Considering the above, the results provide additional evidence that an
+individual's subjective feeling can not be inferred from facial
 expressions and in our case invalidate the hypothesis of hardwired
 emotions unambiguously displayed on the face. Even if emotions were
 hardwired, in everyday life one does not observe prototypical facial
 expressions and therefore research should be focused on analysing
 non-prototypical facial expressions. Advancements in identifying
 ``non-basic'' emotion labels {[}28{]} as well as non-prototypical facial
-expression have been made in the developpement of automatic facial
-expression recognition tools. However this result suggests that
+expression have been made in the development of automatic facial
+expression recognition tools. However, these results suggest that
 automatic facial expression recognition tools should merely evaluate
-facial morphology features such as action units {[}29{]} rather than
-inferring supposedly emotional or affective states.
+facial morphology features such as action units (already evaluated in
+OpenFace {[}29{]}, Affectiva's Affdex {[}21{]} or Vicar Vision's
+FaceReader {[}30{]} to name a few) rather than inferring supposedly
+emotional or affective states.
 
 \hypertarget{acknowledgment}{%
 \section{V. Acknowledgment}\label{acknowledgment}}
@@ -1029,8 +1039,9 @@ who developed the software used to collect and preprocess human observer
 results.
 
 \hypertarget{references}{%
-\section*{VI. References}\label{references}}
-\addcontentsline{toc}{section}{VI. References}
+\section{VI. References}\label{references}}
+
+\footnotesize
 
 \hypertarget{refs}{}
 \leavevmode\hypertarget{ref-dupre2018accuracy}{}%
@@ -1185,6 +1196,11 @@ interaction}, 2016, pp. 71--75.
 open source facial behavior analysis toolkit,'' in \emph{Proceedings of
 the winter conference on applications of computer vision}, 2016, pp.
 1--10.
+
+\leavevmode\hypertarget{ref-den2005facereader}{}%
+{[}30{]} M. Den Uyl and H. Van Kuilenburg, ``The facereader: Online
+facial expression recognition,'' in \emph{Proceedings of measuring
+behavior}, 2005, vol. 30, pp. 589--590.
 
 \end{document}
 
