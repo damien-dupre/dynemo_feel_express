@@ -39,6 +39,8 @@ keep_tex: yes
 number_sections: yes
 includes:
   in_header: preamble-latex.tex
+  
+template: C:/Users/dupred/Desktop/Projects/dynemo_feel_express/ACII_2019_paper/conference_041818.tex
 ---
 
 \begin{IEEEkeywords}
