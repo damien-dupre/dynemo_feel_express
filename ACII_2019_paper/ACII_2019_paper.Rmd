@@ -4,20 +4,21 @@ affiliation:
   institution-columnar: true
 
   institution:
-    - name: Dublin City University
-      department: Business School
-      location: Dublin, Ireland
-      email: damien.dupre@dcu.ie
+    - name: #Dublin City University
+      department: #Business School
+      location: Blank for review
+      email: #damien.dupre@dcu.ie
       mark: 1
       author:
-        - name: Damien Dupré
-    - name: Université Grenoble Alpes
-      department: Laboratoire Inter-universitaire de Psychologie
-      location: Grenoble, France
+        - name: #Damien Dupré
+    - name: #Université Grenoble Alpes
+      department: #Laboratoire Inter-universitaire de Psychologie
+      location: Blank for review
+      email: #anna.tcherkassof@univ-grenoble-alpes.fr
       mark: 2
       author:
-        - name: Anna Tcherkassof
-          email: anna.tcherkassof@univ-grenoble-alpes.fr
+        - name: #Anna Tcherkassof
+          
 abstract: |
   While it has been taken for granted in the development of several automatic facial expression recognition tools, the question of the coherence between subjective feelings and facial expressions is still a subject of debate. On one hand, the behaviorist approach conceives emotions as genetically hardwired and therefore being genuinely displayed through facial expressions. On the other hand, the constructivist approach conceives emotions as socially constructed; the emotional meaning of a facial expression being inferred by the observer. In order to evaluate the coherence between the subjective feeling of emotions and their recognition based on facial expression, 232 videos of encoders recruited to carry out an emotion elicitation task were annotated by 1383 human observers as well as by an automatic facial expression classifier. Results show low accuracy of human observers and of the automatic classifier to infer the subjective feeling from the facial expressions displayed by encoders. They also show a weak coherence between self-reported emotional states and facial emotional displays. Based on these results, the hypothesis of genetically hardwired emotion genuinely displayed is difficult to support, whereas the idea of emotion and facial expression socially constructed appears to be more likely. Accordingly, automatic emotion recognition tools based on facial expressions should be questioned.
 
@@ -35,14 +36,11 @@ bibliography: mybibfile.bib
 output: rticles::ieee_article
 csl: http://www.zotero.org/styles/ieee
 fig_caption: yes
-keep_tex: yes
 number_sections: yes
 includes:
   in_header: preamble-latex.tex
-  
-template: C:/Users/dupred/Desktop/Projects/dynemo_feel_express/ACII_2019_paper/conference_041818.tex
 ---
-
+<!-- template: C:/Users/dupred/Desktop/Projects/dynemo_feel_express/ACII_2019_paper/conference_041818.tex -->
 \begin{IEEEkeywords}
 Facial expression, self-report, human observer, automatic recognition.
 \end{IEEEkeywords}
@@ -89,7 +87,7 @@ I. Introduction
 With the development of commercial automatic facial expression recognition tools [see @dupre2018accuracy for a non-exhaustive list of available tools], industries and governments are gradually implementing this technology in order to track humans’ emotions in various scenarios (*e.g.*, in marketing, healthcare, and the automotive industry to name a few). This technology rests on the premise that facial expressions provide a direct access to individuals’ subjective feelings also called "emotional coherence". Even if this premise is central to the modern mainstream approach of human emotion, recent research in affective science is challenging it. Once the two competing approaches are briefly described along with the predictions they respectively entail, an experiment testing these hypotheses will be presented and its results analyzed in order to provide empirical evidence to contribute to answer the question.
 
 ## A. The Behaviorist Approach
-Based on the behaviorist approach initiated by Darwin in *The Expression of the Emotions in Man and Animals* [@darwin1872expression], facial expressions are conceived as a genuine displays of an individual's inner emotional state. This hypothesis is used as a basis for the Basic Emotion Theory which states that a set of six emotions are universally displayed and are genetically hardwired not only in humans [@ekman1992argument] but also in different animal species [@de2019mama]. According to the view of the Basic Emotion Theory, *“when emotions are aroused by perception of a social event, a set of central commands produce patterned emotion-specific changes in multiple systems, including […] facial expressions.”* [@ekman2007directed, 49]. To respond to criticisms, several amendments have been made to the Basic Emotion Theory, increasing the number of basic emotions from six to seven [@ekman1988universality] as well as adding the concept of “display rules” to explain cultural differences in the management of facial expressions [@ekman1987universals]. 
+Based on the behaviorist approach initiated by Darwin in *The Expression of the Emotions in Man and Animals* [@darwin1872expression], facial expressions are conceived as a genuine displays of an individual's inner emotional state. This hypothesis is used as a basis for the Basic Emotion Theory which states that a set of six emotions are universally displayed and are genetically hardwired not only in humans [@ekman1992argument] but also in different animal species [@de2019mama]. According to the view of the Basic Emotion Theory, *“when emotions are aroused by perception of a social event, a set of central commands produce patterned emotion-specific changes in multiple systems, including […] facial expressions.”* [@ekman2007directed, 49]. To respond to criticisms, several amendments have been made to the Basic Emotion Theory, increasing the number of basic emotions from six to seven [@ekman1988universality] as well as adding the concept of “display rules” to explain cultural differences in the management of facial \linebreak expressions [@ekman1987universals]. 
 
 Even if this theory obtained popular support, it fails to explain how individuals can feel emotions without expressing them, and how individuals can express emotions without feeling them, in instances in which display rules cannot be called upon [@kraut1979social; @duran2017coherence]. These evidences have led to an alternative conception, notably the social constructivist approach.
 
@@ -501,7 +499,8 @@ Considering the above, the results provide additional evidence that an individua
 V. Acknowledgment {#acknowledgment}
 ==============
 
-The authors would like to thank Brigitte Meillon and Jean Michel Adam who developed the software used to collect and preprocess human observer results.
+[blank for review]
+<!-- The authors would like to thank Brigitte Meillon and Jean Michel Adam who developed the software used to collect and preprocess human observer results. --> 
 
 VI. References {#references .numbered}
 ==========
