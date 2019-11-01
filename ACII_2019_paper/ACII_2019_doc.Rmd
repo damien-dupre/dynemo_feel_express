@@ -167,6 +167,7 @@ where *i* is one of the `r nrow(unique_video_count)` videos, *j* is one of the s
 The `r nrow(unique_video_count)` annotated video were processed with Affdex (SDK v3.4.1). Affdex is an automatic facial expression recognition classifier developed and distributed by Affectiva is a spin-off company resulting from the research activities of MIT media lab created in 2009 [@mcduff2016affdex]. Affdex’s algorithm uses Histogram of Oriented Gradient (HOG) features and Support Vector Machine (SVM) classifiers in order to recognize facial expressions. For each video frame, Affdex identifies the probability $p_{video_{i}.label_{j}.t_{k}}$ from 0 to 100 (rescaled to 0 to 1 for the analysis) of the face as expressing one of the six “basic” emotion labels (*i.e.*, *anger*, *disgust*, *fear*, *happiness*, *surprise* and *sadness*) as well as additional psychological states such as *valence*, *engagement* or *contempt*, and facial features such as *cheek raise*, *eye widen* or *jaw drop*.
 
 For both human and automatic recognition, to determine which of the six “basic” emotions can be used to identify each video, the recognition probability for each label by frame was converted into odd ratio by label [@dente2017measures]. The highest sum of each odd ratio time-series defines the label recognized by the automatic classifier (EQ\ref{eq:2} for human recognition and EQ\ref{eq:3} for automatic recognition).
+
 \begin{equation}
 \label{eq:2}
 video_{i}.label = \max\left(\frac{\sum_{k=1}^{n}x_{video_{i}.label_{j}.t_{k}}}{\sum_{k=1}^{n}x_{video_{i}.t_{k}}}\right)
