@@ -1,6 +1,6 @@
 \begin{ThreePartTable}
 \begin{TableNotes}[para]
-\item Note. textit{na.} values are produced when not enough data are available to compute accuracy indicators.
+\item Note. *na.* values are produced when not enough data are available to compute accuracy indicators.
 \end{TableNotes}
 \begin{longtabu} to \linewidth {>{\raggedright}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
 \caption{\label{tab:confusionTable-sr-hr}Human recognition accuracy metrics for each emotion.}\\
@@ -21,7 +21,7 @@ surprise & 0.44 & 0.67 & 0.37 & 0.4\\
  
 \begin{ThreePartTable}
 \begin{TableNotes}[para]
-\item Note. textit{na.} values are produced when not enough data are available to compute accuracy indicators.
+\item Note. *na.* values are produced when not enough data are available to compute accuracy indicators.
 \end{TableNotes}
 \begin{longtabu} to \linewidth {>{\raggedright}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
 \caption{\label{tab:confusionTable-sr-ar}Autonatic recognition accuracy metrics for each emotion.}\\
