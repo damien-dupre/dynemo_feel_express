@@ -1,21 +1,15 @@
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
-
-\centering
-\includegraphics{manuscript_apa_files/figure-latex/confusionMatrix_sr_hr-1.pdf}
-\caption{(\#fig:confusionMatrix\_sr\_hr)\label{fig:confusionMatrix_sr_hr}Confusion matrix between the emotion self-reported as being characteristic of the elicitation with the emotion recognized by the human observers.}
+[!h]
+\includegraphics[width=\textwidth]{manuscript_apa_files/figure-latex/confusionMatrix-sr-hr-1} \caption{Confusion matrix between the emotion self-reported as being characteristic of the elicitation with the emotion recognized by the human observers.}\label{fig:confusionMatrix-sr-hr}
 \end{figure*}
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
-
-\centering
-\includegraphics{manuscript_apa_files/figure-latex/confusionMatrix_sr_ar-1.pdf}
-\caption{(\#fig:confusionMatrix\_sr\_ar)\label{fig:confusionMatrix_sr_ar}Confusion matrix of between the emotion self-reported as being characteristic of the elicitation with the emotion recognized by the automatic classifier.}
+[!h]
+\includegraphics[width=\textwidth]{manuscript_apa_files/figure-latex/confusionMatrix-sr-ar-1} \caption{Confusion matrix of between the emotion self-reported as being characteristic of the elicitation with the emotion recognized by the automatic classifier.}\label{fig:confusionMatrix-sr-ar}
 \end{figure*}
 \begin{figure*}[hbt]
 \ifnextchar[{\eatarg}{}
-
-\centering
-\includegraphics{manuscript_apa_files/figure-latex/confusionMatrix_hr_ar-1.pdf}
-\caption{(\#fig:confusionMatrix\_hr\_ar)\label{fig:confusionMatrix_hr_ar}Proportion of emotion labels classified by human observers which are recognized by the automatif classifier.}
+[!h]
+\includegraphics[width=\textwidth]{manuscript_apa_files/figure-latex/confusionMatrix-hr-ar-1} \caption{Proportion of emotion labels classified by human observers which are recognized by the automatif classifier.}\label{fig:confusionMatrix-hr-ar}
 \end{figure*}
