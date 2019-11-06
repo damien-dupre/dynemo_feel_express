@@ -1,10 +1,16 @@
+################################################################################
+#                     Data Wrangling: Human Recognition                        #
+################################################################################
+
 # setup ------------------------------------------------------------------------
 library(tidyverse)
 library(splitstackshape)
-# upload data ------------------------------------------------------------------
-metadata_video <- readr::read_rds("C:/Users/dupred/OneDrive/data/dynemo_feel_data/human_recognition_data/metadata_video.rds")
 
-human_recognition_data <- "C:/Users/dupred/OneDrive/data/dynemo_feel_data/human_recognition_data" %>% 
+# upload data ------------------------------------------------------------------
+metadata_video <- "../../data/dynemo_feel_data/human_recognition_data/metadata_video.rds" %>% 
+  readr::read_rds()
+
+human_recognition_data <- "../../data/dynemo_feel_data/human_recognition_data" %>% 
   fs::dir_ls(regexp = "\\.csv$") %>% 
   purrr::map_dfr(readr::read_csv2, .id = "source", col_types = cols(
     C_INDUC = col_character(),
@@ -50,21 +56,25 @@ data_timeline <- human_recognition_data %>%
   unnest() %>% 
   dplyr::mutate_if(is.factor,as.character)
 
-final_timeline <- dplyr::left_join(full_timeline,data_timeline, by = c("source", "C_INDUC", "SEX_Sujet", "SEXE_Juge", "C_Juge", "C_Video", "timeline")) %>% 
-  replace(is.na(.),"no_rec") %>% 
-  dplyr::mutate(Curiosite = ifelse(E_Detectee == "Curiosite",1,0)) %>% 
-  dplyr::mutate(Deception = ifelse(E_Detectee == "Deception",1,0)) %>% 
-  dplyr::mutate(Degout = ifelse(E_Detectee == "Degout",1,0)) %>% 
-  dplyr::mutate(Emu = ifelse(E_Detectee == "Emu",1,0)) %>% 
-  dplyr::mutate(Enervement = ifelse(E_Detectee == "Enervement",1,0)) %>% 
-  dplyr::mutate(Ennui = ifelse(E_Detectee == "Ennui",1,0)) %>% 
-  dplyr::mutate(Fierte = ifelse(E_Detectee == "Fierte",1,0)) %>% 
-  dplyr::mutate(Frayeur = ifelse(E_Detectee == "Frayeur",1,0)) %>% 
-  dplyr::mutate(Gaiete  = ifelse(E_Detectee == "Gaiete",1,0)) %>% 
-  dplyr::mutate(Honte = ifelse(E_Detectee == "Honte",1,0)) %>% 
-  dplyr::mutate(RAS = ifelse(E_Detectee == "RAS",1,0)) %>% 
-  dplyr::mutate(Stupefaction = ifelse(E_Detectee == "Stupefaction",1,0)) %>% 
-  dplyr::mutate(Vexation = ifelse(E_Detectee == "Vexation",1,0))
+final_timeline <- full_timeline %>% 
+  dplyr::left_join(
+    data_timeline, 
+    by = c("source", "C_INDUC", "SEX_Sujet", "SEXE_Juge", "C_Juge", "C_Video", "timeline")
+  ) %>% 
+  replace(is.na(.), "no_rec") %>% 
+  dplyr::mutate(Curiosite = ifelse(E_Detectee == "Curiosite", 1, 0)) %>% 
+  dplyr::mutate(Deception = ifelse(E_Detectee == "Deception", 1, 0)) %>% 
+  dplyr::mutate(Degout = ifelse(E_Detectee == "Degout", 1, 0)) %>% 
+  dplyr::mutate(Emu = ifelse(E_Detectee == "Emu", 1, 0)) %>% 
+  dplyr::mutate(Enervement = ifelse(E_Detectee == "Enervement", 1, 0)) %>% 
+  dplyr::mutate(Ennui = ifelse(E_Detectee == "Ennui", 1, 0)) %>% 
+  dplyr::mutate(Fierte = ifelse(E_Detectee == "Fierte", 1, 0)) %>% 
+  dplyr::mutate(Frayeur = ifelse(E_Detectee == "Frayeur", 1, 0)) %>% 
+  dplyr::mutate(Gaiete  = ifelse(E_Detectee == "Gaiete", 1, 0)) %>% 
+  dplyr::mutate(Honte = ifelse(E_Detectee == "Honte", 1, 0)) %>% 
+  dplyr::mutate(RAS = ifelse(E_Detectee == "RAS", 1, 0)) %>% 
+  dplyr::mutate(Stupefaction = ifelse(E_Detectee == "Stupefaction", 1, 0)) %>% 
+  dplyr::mutate(Vexation = ifelse(E_Detectee == "Vexation", 1, 0))
 
 average_timeline <- final_timeline %>% 
   dplyr::group_by(C_Video,timeline) %>% 
@@ -99,10 +109,15 @@ average_timeline <- final_timeline %>%
     anger = anger/n,
     fear = fear/n,
     happiness = happiness/n,
-    surprise = surprise/n)
+    surprise = surprise/n
+  )
 
 human_recognition_score <- average_timeline %>%
-  tidyr::gather(emotion,value, c("disgust","sadness","anger", "fear", "happiness", "surprise")) %>% 
+  tidyr::gather(
+    emotion, 
+    value, 
+    c("disgust","sadness","anger", "fear", "happiness", "surprise")
+  ) %>% 
   dplyr::group_by(C_Video, emotion) %>%
   dplyr::summarise(sum_emotion = sum(value)) %>% 
   dplyr::group_by(C_Video) %>% 
@@ -117,7 +132,9 @@ list_ties <- human_recognition_score %>%
   dplyr::mutate(ties = "yes") %>% 
   dplyr::select(-n)
 
-human_recognition_score <- dplyr::left_join(human_recognition_score, list_ties, by = c("C_Video")) %>% 
+# emotion score ----------------------------------------------------------------
+human_recognition_score <- human_recognition_score %>% 
+  dplyr::left_join(list_ties, by = c("C_Video")) %>% 
   dplyr::mutate(emotion = case_when(
     ties == "yes" ~ "undetermined",
     TRUE ~ emotion
