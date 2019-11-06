@@ -36,13 +36,13 @@ draft             : no
 documentclass     : "apa6"
 classoption       : "man"
 
-# output: papaja::apa6_word
+output: papaja::apa6_word
 
-output            :
-  bookdown::pdf_book:
-    toc: false
-    number_sections: false
-    base_format: papaja::apa6_pdf
+# output            :
+#   bookdown::pdf_book:
+#     toc: false
+#     number_sections: false
+#     base_format: papaja::apa6_pdf
 
 header-includes:
   - \usepackage{booktabs}
@@ -182,11 +182,10 @@ For the human facial expression recognition method, `r nrow(unique_ppt_count)` s
 
 The annotation of facial expressions was performed on-site using *Oudjat*, a software for designing video annotation experiments [@dupre2015oudjat]. For each video, the annotation procedure followed two steps. First, the participants had to identify the emotional sequences by pressing the space bar of their keyboard to indicate the beginning and the end of the emotional sequences while watching the video. Second, the participants watched each emotional sequence previously identified and labeled the sequence using one of the 12 emotions proposed including six basic emotion labels (*i.e.*, *anger*, *disgust*, *fear*, *happiness*, *surprise* and *sadness*) and six "non-basic" emotion labels (*i.e.*, *pride*, *curiosity*, *boredom*, *shame*, *humiliation*, and *disappointment*). They also had the possibility to indicate that the sequence was expressing none of the proposed emotion labels.
 
-This annotation procedure resulted in a uni-dimensional time-series for each video per human observer, identifying for each second of the video which emotion was recognized. Then, time-series corresponding to the same video were aggregated to calculate the proportion of human observers $x_{video_{i}.label_{j}.t_{k}}$ for each second of the video per emotional label (EQ\ref{eq:1}).
+This annotation procedure resulted in a uni-dimensional time-series for each video per human observer, identifying for each second of the video which emotion was recognized. Then, time-series corresponding to the same video were aggregated to calculate the proportion of human observers $x_{video_{i}.label_{j}.t_{k}}$ for each second of the video per emotional label shown in Equation \@ref(eq:one).
 
 \begin{equation}
-\label{eq:1}
-x_{video_{i}.label_{j}.t_{k}} = \frac{n_{video_{i}.label_{j}.t_{k}}}{n_{video_{k}}}
+x_{video_{i}.label_{j}.t_{k}} = \frac{n_{video_{i}.label_{j}.t_{k}}}{n_{video_{k}}}(\#eq:one)
 \end{equation}
 
 where *i* is one of the `r nrow(unique_video_count)` videos, *j* is one of the six “basic” emotion labels, *k* for each second of the video.
@@ -195,16 +194,14 @@ where *i* is one of the `r nrow(unique_video_count)` videos, *j* is one of the s
 
 The `r nrow(unique_video_count)` annotated video were processed with Affdex (SDK v3.4.1). Affdex is an automatic facial expression recognition classifier developed and distributed by Affectiva, which is a spin-off company resulting from the research activities of MIT media lab created in 2009 [@mcduff2016affdex]. Affdex’s algorithm uses Histogram of Oriented Gradient (HOG) features and Support Vector Machine (SVM) classifiers in order to recognize facial expressions. For each video frame, Affdex identifies the probability $p_{video_{i}.label_{j}.t_{k}}$ from 0 to 100 (rescaled to 0 to 1 for the analysis) of the face as expressing one of the six basic emotion labels (*i.e.*, *anger*, *disgust*, *fear*, *happiness*, *surprise* and *sadness*) as well as additional psychological states such as *valence*, *engagement* or *contempt*, and facial features such as *cheek raise*, *eye widen* or *jaw drop*.
 
-For both human and automatic recognition, to determine which of the six basic emotions can be used to identify each video, the recognition probability for each label by frame was converted into odd ratio by label [@dente2017measures]. The highest sum of each odd ratio time-series defines the label recognized by the automatic classifier (EQ\ref{eq:2} for human recognition and EQ\ref{eq:3} for automatic recognition). 
+For both human and automatic recognition, to determine which of the six basic emotions can be used to identify each video, the recognition probability for each label by frame was converted into odd ratio by label [@dente2017measures]. The highest sum of each odd ratio time-series defines the label recognized (see Equation \@ref(eq:two) for human recognition and Equation \@ref(eq:three) for automatic recognition). 
 
 \begin{equation}
-\label{eq:2}
-video_{i}.label = \max\left(\frac{\sum_{k=1}^{n}x_{video_{i}.label_{j}.t_{k}}}{\sum_{k=1}^{n}x_{video_{i}.t_{k}}}\right)
+video_{i}.label = \max\left(\frac{\sum_{k=1}^{n}x_{video_{i}.label_{j}.t_{k}}}{\sum_{k=1}^{n}x_{video_{i}.t_{k}}}\right)(\#eq:two)
 \end{equation}
 
 \begin{equation}
-\label{eq:3}
-video_{i}.label = \max\left(\frac{\sum_{k=1}^{f}p_{video_{i}.label_{j}.t_{k}}}{\sum_{k=1}^{f}p_{video_{i}.t_{k}}}\right)
+video_{i}.label = \max\left(\frac{\sum_{k=1}^{f}p_{video_{i}.label_{j}.t_{k}}}{\sum_{k=1}^{f}p_{video_{i}.t_{k}}}\right)(\#eq:three)
 \end{equation}
 
 where *i* is one of the `r nrow(unique_video_count)` videos, *j* is one of the six “basic” emotion labels, *k* for each second of the *n* second video or for each frame of the *f* frame video.
@@ -234,21 +231,27 @@ automatic_recognition_result <- automatic_recognition_score %>%
   dplyr::mutate(ar_score = 1)
 
 recognition_result <- grid_data %>%
-  dplyr::left_join(self_report_result, by = c(
-    "list_video" = "C_Video",
-    "list_emotion" = "sr_emotion"
-    )
-  ) %>%
-  dplyr::left_join(human_recognition_result, by = c(
-    "list_video" = "C_Video",
-    "list_emotion" = "hr_emotion"
-    )
-  ) %>%
-  dplyr::left_join(automatic_recognition_result, by = c(
-    "list_video" = "C_Video",
-    "list_emotion" = "ar_emotion"
-    )
-  ) %>%
+  dplyr::left_join(
+    self_report_result,
+    by = c(
+      "list_video" = "C_Video",
+      "list_emotion" = "sr_emotion"
+      )
+    ) %>%
+  dplyr::left_join(
+    human_recognition_result,
+    by = c(
+      "list_video" = "C_Video",
+      "list_emotion" = "hr_emotion"
+      )
+    ) %>%
+  dplyr::left_join(
+    automatic_recognition_result,
+    by = c(
+      "list_video" = "C_Video",
+      "list_emotion" = "ar_emotion"
+      )
+    ) %>%
   replace(is.na(.), 0)
 
 corr_sr_hr <- cor.test(
@@ -351,30 +354,36 @@ confusionMatrix_sr_hr_table <- confusionMatrix_sr_hr %>%
   dplyr::mutate(Emotion = gsub(pattern = "Class: ",replacement = "",x = Emotion)) %>% 
   dplyr::select(Emotion, Sensitivity, Specificity, Precision, F1) %>% 
   dplyr::mutate_if(is.numeric,round,2) %>% 
-  replace(is.na(.), "\\textit{na.}")
+  # replace(is.na(.), "\\textit{na.}")
+  replace(is.na(.), "na.")
 
 confusionMatrix_sr_hr_table %>%
-  knitr::kable(
-    "latex",
+  # knitr::kable(
+  #   "latex",
+  #   caption = "(ref:confusionTable-sr-hr)",
+  #   booktabs = TRUE,
+  #   digits = 2,
+  #   linesep = "",
+  #   escape = FALSE,
+  #   align = c('l', rep('c', 4)),
+  #   longtable = T
+  # ) %>%
+  # kableExtra::kable_styling(
+  #   latex_options = "HOLD_position",
+  #   font_size = 8,
+  #   full_width = TRUE 
+  # ) %>%
+  # kableExtra::footnote(
+  #   general_title = "",
+  #   general = "Note. na. values are produced when not enough data are available to compute accuracy indicators.", 
+  #   escape = FALSE,
+  #   footnote_as_chunk = TRUE,
+  #   threeparttable = TRUE
+  # )
+  papaja::apa_table(
     caption = "(ref:confusionTable-sr-hr)",
-    booktabs = TRUE,
-    digits = 2,
-    linesep = "",
-    escape = FALSE,
-    align = c('l', rep('c', 4)),
-    longtable = T
-  ) %>%
-  kableExtra::kable_styling(
-    latex_options = "HOLD_position",
-    font_size = 8,
-    full_width = TRUE 
-  ) %>%
-  kableExtra::footnote(
-    general_title = "",
-    general = "Note. na. values are produced when not enough data are available to compute accuracy indicators.", 
-    escape = FALSE,
-    footnote_as_chunk = TRUE,
-    threeparttable = TRUE
+    note = "na. values are produced when not enough data are available to compute accuracy indicators.",
+    escape = TRUE
   )
 ```
 
@@ -445,34 +454,40 @@ confusionMatrix_sr_ar_table <- confusionMatrix_sr_ar %>%
   magrittr::use_series(byClass) %>%
   as.data.frame() %>%
   tibble::rownames_to_column("Emotion") %>%
-  dplyr::mutate(Emotion = gsub(pattern = "Class: ",replacement = "",x = Emotion)) %>% 
+  dplyr::mutate(Emotion = gsub(pattern = "Class: ", replacement = "", x = Emotion)) %>% 
   dplyr::select(Emotion, Sensitivity, Specificity, Precision, F1) %>% 
-  dplyr::mutate_if(is.numeric,round,2) %>% 
-  replace(is.na(.), "\\textit{na.}")
+  dplyr::mutate_if(is.numeric, round, 2) %>% 
+  #replace(is.na(.), "\\textit{na.}")
+  replace(is.na(.), "na.")
 
 confusionMatrix_sr_ar_table %>%
-  knitr::kable(
-    "latex",
+  # knitr::kable(
+  #   "latex",
+  #   caption = "(ref:confusionTable-sr-ar)",
+  #   booktabs = T,
+  #   digits = 2,
+  #   linesep = "",
+  #   escape = FALSE,
+  #   align = c('l',rep('c', 4)),
+  #   longtable = T
+  # ) %>%
+  # kableExtra::kable_styling(
+  #   latex_options = c("HOLD_position"),
+  #   font_size = 8,
+  #   full_width = TRUE
+  #   ) %>%
+  # kableExtra::footnote(
+  #   general_title = "",
+  #   general = "Note. na. values are produced when not enough data are available to compute accuracy indicators.", 
+  #   escape = FALSE,
+  #   footnote_as_chunk = TRUE,
+  #   threeparttable = TRUE
+  #   ) 
+  papaja::apa_table(
     caption = "(ref:confusionTable-sr-ar)",
-    booktabs = T,
-    digits = 2,
-    linesep = "",
-    escape = FALSE,
-    align = c('l',rep('c', 4)),
-    longtable = T
-  ) %>%
-  kableExtra::kable_styling(
-    latex_options = c("HOLD_position"),
-    font_size = 8,
-    full_width = TRUE
-    ) %>%
-  kableExtra::footnote(
-    general_title = "",
-    general = "Note. na. values are produced when not enough data are available to compute accuracy indicators.", 
-    escape = FALSE,
-    footnote_as_chunk = TRUE,
-    threeparttable = TRUE
-    )
+    note = "na. values are produced when not enough data are available to compute accuracy indicators.",
+    escape = TRUE
+  )
 ```
 
 Surprisingly the automatic classifier incorrectly recognized as *disgust* a significant proportion of videos in which *anger*, *happiness* and *surprise* was the highest self-reported emotion (respectively `r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "disgust" & confusionMatrix_sr_ar_freq$sr_emotion == "anger", "prop_sr"]))`, `r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "disgust" & confusionMatrix_sr_ar_freq$sr_emotion == "happiness", "prop_sr"]))` and `r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "disgust" & confusionMatrix_sr_ar_freq$sr_emotion == "surprise", "prop_sr"]))` of the videos self-reported). In parallel, the automatic classifier recognized as *happiness* videos in which *fear* and *surprise* was the highest self-reported emotion (respectively `r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "happiness" & confusionMatrix_sr_ar_freq$sr_emotion == "fear", "prop_sr"]))` and `r scales::percent(as.numeric(confusionMatrix_sr_ar_freq[confusionMatrix_sr_ar_freq$ar_emotion == "disgust" & confusionMatrix_sr_ar_freq$sr_emotion == "surprise", "prop_sr"]))` of the videos self-reported).
@@ -511,7 +526,7 @@ confusionMatrix_hr_ar_freq %>%
   ggplot(mapping = aes(x = hr_emotion, y = ar_emotion)) +
   geom_tile(aes(fill = prop_hr), colour = "white") +
   geom_text(
-    aes(label = paste0(scales::percent(prop_hr), "\n(", Freq,"/",n_hr, ")")),
+    aes(label = paste0(scales::percent(prop_hr), "\n(", Freq, "/", n_hr, ")")),
     color = "black",
     size = 4,
     family="serif",
