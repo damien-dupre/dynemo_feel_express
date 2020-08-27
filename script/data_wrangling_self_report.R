@@ -7,8 +7,14 @@ library(here)
 library(tidyverse)
 library(janitor)
 
+# data path --------------------------------------------------------------------
+data_path <- here::here() %>% 
+  dirname() %>% 
+  dirname() %>% 
+  paste0("/data/dynemo_feel_data/human_self_report_data")
+
 # upload data ------------------------------------------------------------------
-self_report_data <- "../../data/dynemo_feel_data/human_self_report_data/Base_Finale_20090114.rds" %>% 
+self_report_data <- file.path(data_path,  "Base_Finale_20090114.rds") %>% 
   readr::read_rds() %>% 
   janitor::clean_names() %>% 
   dplyr::mutate(C_Video = stringr::str_replace(fichier_video_v,".mpg","")) %>% 

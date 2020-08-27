@@ -5,12 +5,19 @@
 # setup ------------------------------------------------------------------------
 library(tidyverse)
 library(splitstackshape)
+library(here)
+
+# data path --------------------------------------------------------------------
+data_path <- here::here() %>% 
+  dirname() %>% 
+  dirname() %>% 
+  paste0("/data/dynemo_feel_data/human_recognition_data")
 
 # upload data ------------------------------------------------------------------
-metadata_video <- "../../data/dynemo_feel_data/human_recognition_data/metadata_video.rds" %>% 
+metadata_video <- file.path(data_path,  "metadata_video.rds") %>% 
   readr::read_rds()
 
-human_recognition_data <- "../../data/dynemo_feel_data/human_recognition_data" %>% 
+human_recognition_data <- data_path %>% 
   fs::dir_ls(regexp = "\\.csv$") %>% 
   purrr::map_dfr(readr::read_csv2, .id = "source", col_types = cols(
     C_INDUC = col_character(),

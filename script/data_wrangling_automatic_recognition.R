@@ -4,9 +4,16 @@
 
 # setup ------------------------------------------------------------------------
 library(tidyverse)
+library(here)
+
+# data path --------------------------------------------------------------------
+data_path <- here::here() %>% 
+  dirname() %>% 
+  dirname() %>% 
+  paste0("/data/dynemo_feel_data/automatic_recognition_data")
 
 # upload data ------------------------------------------------------------------
-automatic_recognition_data <- "../../data/dynemo_feel_data/automatic_recognition_data/automatic_recognition_data.rds" %>% 
+automatic_recognition_data <- file.path(data_path,  "automatic_recognition_data.rds") %>% 
   readr::read_rds()
 
 # data wrangling ---------------------------------------------------------------
