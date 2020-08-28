@@ -1,0 +1,2199 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.8.16)  28 AUG 2020 14:09
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**manuscript_apa.tex
+(./manuscript_apa.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-08-07> (c:/Users/dupred/AppData/Roaming/TinyTeX/texm
+f-dist/tex/latex/apa7/apa7.cls
+Document Class: apa7 2020/08/12 v2.03 APA formatting (7th edition)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox
+.sty
+Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count176
+)
+Class apa7 Info: No bibliography package was specified; defaulting to (but not 
+loading) Biblatex on input line 218.
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.st
+y
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry
+.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.s
+ty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.st
+y
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count177
+\Gm@cntv=\count178
+\c@Gm@tempcnt=\count179
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks16
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx
+.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics
+.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/grap
+hics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdft
+ex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/scalerel/scalerel
+.sty
+Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchi
+ng of objects, relative to a reference object or in absolute terms
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count180
+\calc@Bcount=\count181
+\calc@Adimen=\dimen145
+\calc@Bdimen=\dimen146
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count182
+\calc@Cskip=\skip51
+)
+\thesrwidth=\skip52
+\thesrheight=\skip53
+\srblobheight=\skip54
+\srblobdepth=\skip55
+\mnxsrwidth=\skip56
+\LMex=\skip57
+\LMpt=\skip58
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer
+/tikz.sty
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pg
+f.sty
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgf
+rcs.sty
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfutil-common.tex
+\pgfutil@everybye=\toks17
+\pgfutil@tempdima=\dimen147
+\pgfutil@tempdimb=\dimen148
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfutil-common-lists.tex))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfutil-latex.def
+\pgfutil@abb=\box45
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfrcs.code.tex
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revisio
+n.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pg
+fcore.sty
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/p
+gfsys.sty
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
+/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfkeys.code.tex
+\pgfkeys@pathtoks=\toks18
+\pgfkeys@temptoks=\toks19
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks20
+))
+\pgf@x=\dimen149
+\pgf@y=\dimen150
+\pgf@xa=\dimen151
+\pgf@ya=\dimen152
+\pgf@xb=\dimen153
+\pgf@yb=\dimen154
+\pgf@xc=\dimen155
+\pgf@yc=\dimen156
+\pgf@xd=\dimen157
+\pgf@yd=\dimen158
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count183
+\c@pgf@countb=\count184
+\c@pgf@countc=\count185
+\c@pgf@countd=\count186
+\t@pgf@toka=\toks21
+\t@pgf@tokb=\toks22
+\t@pgf@tokc=\toks23
+\pgf@sys@id@count=\count187
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
+/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
+/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
+/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
+/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count188
+\pgfsyssoftpath@bigbuffer@items=\count189
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
+/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/colo
+r.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcore.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+h.code.tex
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hcalc.code.tex
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hutil.code.tex)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hparser.code.tex
+\pgfmath@dimen=\dimen159
+\pgfmath@count=\count190
+\pgfmath@box=\box46
+\pgfmath@toks=\toks24
+\pgfmath@stack@operand=\toks25
+\pgfmath@stack@operation=\toks26
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.code.tex
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.basic.code.tex)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.trigonometric.code.tex)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.random.code.tex)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.comparison.code.tex)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.base.code.tex)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.round.code.tex)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.misc.code.tex)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.integerarithmetics.code.tex)))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count191
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint
+.code.tex)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen160
+\pgf@picmaxx=\dimen161
+\pgf@picminy=\dimen162
+\pgf@picmaxy=\dimen163
+\pgf@pathminx=\dimen164
+\pgf@pathmaxx=\dimen165
+\pgf@pathminy=\dimen166
+\pgf@pathmaxy=\dimen167
+\pgf@xx=\dimen168
+\pgf@xy=\dimen169
+\pgf@yx=\dimen170
+\pgf@yy=\dimen171
+\pgf@zx=\dimen172
+\pgf@zy=\dimen173
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen174
+\pgf@path@lasty=\dimen175
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen176
+\pgf@shorten@start@additional=\dimen177
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box47
+\pgf@hbox=\box48
+\pgf@layerbox@main=\box49
+\pgf@picture@serial@count=\count192
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen178
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen179
+\pgf@pt@y=\dimen180
+\pgf@pt@temp=\dimen181
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen182
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen183
+\pgf@sys@shading@range@num=\count193
+\pgf@shadingcount=\count194
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box50
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgf
+moduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box51
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgf
+moduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility
+/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen184
+\pgf@nodesepend=\dimen185
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility
+/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgf
+for.sty
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgf
+keys.sty
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfkeys.code.tex))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.
+sty
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+h.code.tex))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+h.code.tex)
+\pgffor@iter=\dimen186
+\pgffor@skip=\dimen187
+\pgffor@stack=\toks27
+\pgffor@toks=\toks28
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlay
+er/tikz/tikz.code.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/p
+gflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count195
+\pgfplotmarksize=\dimen188
+)
+\tikz@lastx=\dimen189
+\tikz@lasty=\dimen190
+\tikz@lastxsaved=\dimen191
+\tikz@lastysaved=\dimen192
+\tikz@lastmovetox=\dimen193
+\tikz@lastmovetoy=\dimen194
+\tikzleveldistance=\dimen195
+\tikzsiblingdistance=\dimen196
+\tikz@figbox=\box52
+\tikz@figbox@bg=\box53
+\tikz@tempbox=\box54
+\tikz@tempbox@bg=\box55
+\tikztreelevel=\count196
+\tikznumberofchildren=\count197
+\tikznumberofcurrentchild=\count198
+\tikz@fig@count=\count199
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgf
+modulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count266
+\pgfmatrixcurrentcolumn=\count267
+\pgf@matrix@numberofcolumns=\count268
+)
+\tikz@expandcount=\count269
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlay
+er/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref
+.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds
+.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdft
+excmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwa
+rerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvset
+keys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kv
+definekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfes
+cape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.s
+ty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letlt
+xmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.s
+ty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptio
+ns.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen197
+\Hy@linkcounter=\count270
+\Hy@pagecounter=\count271
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.d
+ef
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc
+.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcm
+ds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count272
+Package hyperref Info: Option `unicode' set `true' on input line 4338.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.de
+f
+File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count273
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen198
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.s
+ty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigi
+ntcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count274
+\Field@Width=\dimen199
+\Fld@charsize=\dimen256
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/atbegshi/atbegs
+hi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count275
+\c@Item=\count276
+\c@Hfootnote=\count277
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.
+def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/atveryend/atverye
+nd.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count278
+\c@bookmark@seq@number=\count279
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/re
+runfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/u
+niquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip59
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlay
+er/tikz/libraries/tikzlibrarysvg.path.code.tex
+File: tikzlibrarysvg.path.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/p
+gflibrarysvg.path.code.tex
+File: pgflibrarysvg.path.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgf
+moduleparser.code.tex
+File: pgfmoduleparser.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfparserdef@arg@count=\count280
+)
+\pgf@lib@svg@last@x=\dimen257
+\pgf@lib@svg@last@y=\dimen258
+\pgf@lib@svg@last@c@x=\dimen259
+\pgf@lib@svg@last@c@y=\dimen260
+\pgf@lib@svg@count=\count281
+\pgf@lib@svg@max@num=\count282
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs
+.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen261
+\lightrulewidth=\dimen262
+\cmidrulewidth=\dimen263
+\belowrulesep=\dimen264
+\belowbottomsep=\dimen265
+\aboverulesep=\dimen266
+\abovetopsep=\dimen267
+\cmidrulesep=\dimen268
+\cmidrulekern=\dimen269
+\defaultaddspace=\dimen270
+\@cmidla=\count283
+\@cmidlb=\count284
+\@aboverulesep=\dimen271
+\@belowrulesep=\dimen272
+\@thisruleclass=\count285
+\@lastruleclass=\count286
+\@thisrulewidth=\dimen273
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/th
+reeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box56
+)
+\b@level@one@skip=\skip60
+\e@level@one@skip=\skip61
+\b@level@two@skip=\skip62
+\e@level@two@skip=\skip63
+\b@level@three@skip=\skip64
+\e@level@three@skip=\skip65
+\b@level@four@skip=\skip66
+\e@level@four@skip=\skip67
+\b@level@five@skip=\skip68
+\e@level@five@skip=\skip69
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption.s
+ty
+Package: caption 2020/05/30 v3.4k Customizing captions (AR)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption3.
+sty
+Package: caption3 2020/07/20 v1.12b caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen274
+\captionmargin@=\dimen275
+\captionwidth=\dimen276
+\caption@tempdima=\dimen277
+\caption@indent=\dimen278
+\caption@parindent=\dimen279
+\caption@hangindent=\dimen280
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count287
+\c@continuedfloat=\count288
+Package caption Info: hyperref package is loaded.
+Package caption Info: threeparttable package is loaded.
+)
+\c@APAenum=\count289
+\@text@par@indent=\skip70
+\gr@box=\box57
+\gr@boxwidth=\skip71
+\gr@boxheight=\skip72
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 209.
+)
+\c@appendix=\count290
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr
+.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip73
+\f@nch@O@elh=\skip74
+\f@nch@O@erh=\skip75
+\f@nch@O@olh=\skip76
+\f@nch@O@orh=\skip77
+\f@nch@O@elf=\skip78
+\f@nch@O@erf=\skip79
+\f@nch@O@olf=\skip80
+\f@nch@O@orf=\skip81
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.
+sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts
+.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks29
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.s
+ty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip82
+For additional information on amsmath, use the `?' option.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.s
+ty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.st
+y
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks30
+\ex@=\dimen281
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.st
+y
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+LaTeX Info: Redefining \boldsymbol on input line 28.
+\pmbraise@=\dimen282
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.st
+y
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count291
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count292
+\leftroot@=\count293
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count294
+\DOTSCASE@=\count295
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box58
+\strutbox@=\box59
+\big@size=\dimen283
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count296
+\c@MaxMatrixCols=\count297
+\dotsspace@=\muskip17
+\c@parentequation=\count298
+\dspbrk@lvl=\count299
+\tag@help=\toks31
+\row@=\count300
+\column@=\count301
+\maxfields@=\count302
+\andhelp@=\toks32
+\eqnshift@=\dimen284
+\alignsep@=\dimen285
+\tagshift@=\dimen286
+\tagwidth@=\dimen287
+\totwidth@=\dimen288
+\lineht@=\dimen289
+\@envbody=\toks33
+\multlinegap=\skip83
+\multlinetaggap=\skip84
+\mathdisplay@stack=\toks34
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.s
+ty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.
+sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.st
+y
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks35
+\inpenc@posthook=\toks36
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/upquote/upquote.s
+ty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microty
+pe.sty
+Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
+\MT@toks=\toks37
+\MT@count=\count303
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen290
+LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
+\MT@listname@count=\count304
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microty
+pe-pdftex.def
+File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 914.
+LaTeX Info: Redefining \lslig on input line 914.
+\MT@outer@space=\skip85
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microty
+pe.cfg
+File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/parskip/parskip.s
+ty
+Package: parskip 2020-06-15 v2.0f non-zero parskip adjustments
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.s
+ty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip86
+\LTright=\skip87
+\LTpre=\skip88
+\LTpost=\skip89
+\LTchunksize=\count305
+\LTcapwidth=\dimen291
+\LT@head=\box60
+\LT@firsthead=\box61
+\LT@foot=\box62
+\LT@lastfoot=\box63
+\LT@cols=\count306
+\LT@rows=\count307
+\c@LT@tables=\count308
+\c@LT@chunks=\count309
+\LT@p@ftn=\toks38
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote
+.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box64
+\fn@width=\dimen292
+) (c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/was/upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.s
+ty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow
+.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip90
+\multirow@cntb=\count310
+\multirow@dima=\skip91
+\bigstrutjot=\dimen293
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/tabularx.st
+y
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen294
+\ar@mcellbox=\box65
+\extrarowheight=\dimen295
+\NC@list=\toks39
+\extratabsurround=\skip92
+\backup@length=\skip93
+\ar@cellbox=\box66
+)
+\TX@col@width=\dimen296
+\TX@old@table=\dimen297
+\TX@old@col=\dimen298
+\TX@target=\dimen299
+\TX@delta=\dimen300
+\TX@cols=\count311
+\TX@ftn=\toks40
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/t
+hreeparttablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.s
+ty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimsp
+aces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip94
+)
+\longtablewidth=\skip95
+Failed to patch abstract.
+Failed to patch title.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes
+.sty
+Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+\csq@reset=\count312
+\csq@gtype=\count313
+\csq@glevel=\count314
+\csq@qlevel=\count315
+\csq@maxlvl=\count316
+\csq@tshold=\count317
+\csq@ltx@everypar=\toks41
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes
+.def
+File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes
+.cfg
+File: csquotes.cfg 
+)) (c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.st
+y
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count318
+\float@exts=\toks42
+\float@box=\box67
+\@float@everytoks=\toks43
+\@floatcapt=\box68
+) (c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth
+.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box69
+\sift@deathcycles=\count319
+\@vwid@loff=\dimen301
+\@vwid@roff=\dimen302
+)
+\c@taburow=\count320
+\tabu@nbcols=\count321
+\tabu@cnt=\count322
+\tabu@Xcol=\count323
+\tabu@alloc=\count324
+\tabu@nested=\count325
+\tabu@target=\dimen303
+\tabu@spreadtarget=\dimen304
+\tabu@naturalX=\dimen305
+\tabucolX=\dimen306
+\tabu@Xsum=\dimen307
+\extrarowdepth=\dimen308
+\abovetabulinesep=\dimen309
+\belowtabulinesep=\dimen310
+\tabustrutrule=\dimen311
+\tabu@thebody=\toks44
+\tabu@footnotes=\toks45
+\tabu@box=\box70
+\tabu@arstrutbox=\box71
+\tabu@hleads=\box72
+\tabu@vleads=\box73
+\tabu@cellskip=\skip96
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.s
+ty
+\wrapoverhang=\dimen312
+\WF@size=\dimen313
+\c@WF@wrappedlines=\count326
+\WF@box=\box74
+\WF@everypar=\toks46
+Package: wrapfig 2003/01/31  v 3.6
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyphenat/hyphenat
+.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language5
+LaTeX Info: Redefining \_ on input line 43.
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/sttools/flushend.
+sty
+Package: flushend 2017/03/27 v3.3 Balancing columns in twocolumn mode
+\flushend@@lastskip@a=\skip97
+\flushend@@lastskip@b=\skip98
+\flushend@@lastskip@c=\skip99
+\flushend@@penalty@a=\count327
+\flushend@@lastkern@a=\dimen314
+\var@@temp@spread=\dimen315
+\var@@temp@a=\dimen316
+\flushend@@page@rule=\dimen317
+\flushend@@varbox@a=\box75
+\flushend@@varbox@c=\box76
+\flushend@@tempbox@a=\box77
+\flushend@@tempbox@c=\box78
+\@viper=\box79
+\hold@viper=\box80
+\atColsBreak=\toks47
+\atColsEnd=\toks48
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex
+.sty
+Package: biblatex 2020/08/23 v3.15a programmable bibliographies (PK/MW)
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count328
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.st
+y
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count329
+\c@listtotal=\count330
+\c@listcount=\count331
+\c@liststart=\count332
+\c@liststop=\count333
+\c@citecount=\count334
+\c@citetotal=\count335
+\c@multicitecount=\count336
+\c@multicitetotal=\count337
+\c@instcount=\count338
+\c@maxnames=\count339
+\c@minnames=\count340
+\c@maxitems=\count341
+\c@minitems=\count342
+\c@citecounter=\count343
+\c@maxcitecounter=\count344
+\c@savedcitecounter=\count345
+\c@uniquelist=\count346
+\c@uniquename=\count347
+\c@refsection=\count348
+\c@refsegment=\count349
+\c@maxextratitle=\count350
+\c@maxextratitleyear=\count351
+\c@maxextraname=\count352
+\c@maxextradate=\count353
+\c@maxextraalpha=\count354
+\c@abbrvpenalty=\count355
+\c@highnamepenalty=\count356
+\c@lownamepenalty=\count357
+\c@maxparens=\count358
+\c@parenlevel=\count359
+\blx@tempcnta=\count360
+\blx@tempcntb=\count361
+\blx@tempcntc=\count362
+\blx@maxsection=\count363
+\blx@maxsegment@0=\count364
+\blx@notetype=\count365
+\blx@parenlevel@text=\count366
+\blx@parenlevel@foot=\count367
+\blx@sectionciteorder@0=\count368
+\blx@entrysetcounter=\count369
+\blx@biblioinstance=\count370
+\labelnumberwidth=\skip100
+\labelalphawidth=\skip101
+\biblabelsep=\skip102
+\bibitemsep=\skip103
+\bibnamesep=\skip104
+\bibinitsep=\skip105
+\bibparsep=\skip106
+\bibhang=\skip107
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language6
+\c@mincomprange=\count371
+\c@maxcomprange=\count372
+\c@mincompwidth=\count373
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-dm.d
+ef
+File: blx-dm.def 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count374
+\c@savedafterword=\count375
+\c@annotator=\count376
+\c@savedannotator=\count377
+\c@author=\count378
+\c@savedauthor=\count379
+\c@bookauthor=\count380
+\c@savedbookauthor=\count381
+\c@commentator=\count382
+\c@savedcommentator=\count383
+\c@editor=\count384
+\c@savededitor=\count385
+\c@editora=\count386
+\c@savededitora=\count387
+\c@editorb=\count388
+\c@savededitorb=\count389
+\c@editorc=\count390
+\c@savededitorc=\count391
+\c@foreword=\count392
+\c@savedforeword=\count393
+\c@holder=\count394
+\c@savedholder=\count395
+\c@introduction=\count396
+\c@savedintroduction=\count397
+\c@namea=\count398
+\c@savednamea=\count399
+\c@nameb=\count400
+\c@savednameb=\count401
+\c@namec=\count402
+\c@savednamec=\count403
+\c@translator=\count404
+\c@savedtranslator=\count405
+\c@shortauthor=\count406
+\c@savedshortauthor=\count407
+\c@shorteditor=\count408
+\c@savedshorteditor=\count409
+\c@labelname=\count410
+\c@savedlabelname=\count411
+\c@institution=\count412
+\c@savedinstitution=\count413
+\c@lista=\count414
+\c@savedlista=\count415
+\c@listb=\count416
+\c@savedlistb=\count417
+\c@listc=\count418
+\c@savedlistc=\count419
+\c@listd=\count420
+\c@savedlistd=\count421
+\c@liste=\count422
+\c@savedliste=\count423
+\c@listf=\count424
+\c@savedlistf=\count425
+\c@location=\count426
+\c@savedlocation=\count427
+\c@organization=\count428
+\c@savedorganization=\count429
+\c@origlocation=\count430
+\c@savedoriglocation=\count431
+\c@origpublisher=\count432
+\c@savedorigpublisher=\count433
+\c@publisher=\count434
+\c@savedpublisher=\count435
+\c@language=\count436
+\c@savedlanguage=\count437
+\c@origlanguage=\count438
+\c@savedoriglanguage=\count439
+\c@pageref=\count440
+\c@savedpageref=\count441
+\shorthandwidth=\skip108
+\shortjournalwidth=\skip109
+\shortserieswidth=\skip110
+\shorttitlewidth=\skip111
+\shortauthorwidth=\skip112
+\shorteditorwidth=\skip113
+\locallabelnumberwidth=\skip114
+\locallabelalphawidth=\skip115
+\localshorthandwidth=\skip116
+\localshortjournalwidth=\skip117
+\localshortserieswidth=\skip118
+\localshorttitlewidth=\skip119
+\localshortauthorwidth=\skip120
+\localshorteditorwidth=\skip121
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-comp
+at.def
+File: blx-compat.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.st
+y
+Package: expl3 2020-08-07 L3 programming layer (loader) 
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backe
+nd-pdfmode.def
+File: l3backend-pdfmode.def 2020-08-07 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count442
+\l__pdf_internal_box=\box81
+))
+Package biblatex Info: expl3
+(biblatex)             2020-08-07 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+Package biblatex Info: Trying to load expl3 case changing code...
+Package biblatex Info: ... file 'blx-case-expl3.def' found.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/blx-case
+-expl3.def
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse
+/xparse.sty
+Package: xparse 2020-05-15 L3 Experimental document command parser
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse
+/xparse-generic.tex
+\l__xparse_current_arg_int=\count443
+\g__xparse_grabber_int=\count444
+\l__xparse_m_args_int=\count445
+\l__xparse_v_nesting_int=\count446
+))
+File: blx-case-expl3 2020/08/23 v3.15a expl3 case changing code for biblatex
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex
+.def
+File: biblatex.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+\c@textcitecount=\count447
+\c@textcitetotal=\count448
+\c@textcitemaxnames=\count449
+\c@biburlbigbreakpenalty=\count450
+\c@biburlbreakpenalty=\count451
+\c@biburlnumpenalty=\count452
+\c@biburlucpenalty=\count453
+\c@biburllcpenalty=\count454
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count455
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/nume
+ric.bbx
+File: numeric.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/bbx/stan
+dard.bbx
+File: standard.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count456
+\c@bbx:relatedtotal=\count457
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/cbx/nume
+ric.cbx
+File: numeric.cbx 2020/08/23 v3.15a biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/biblatex
+.cfg
+File: biblatex.cfg 
+))
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/07/13 3.47 The Babel package
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/07/13 3.47 Babel common definitions
+\babel@savecnt=\count458
+\U@D=\dimen318
+\l@babelnohyphens=\language7
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.
+def)
+\bbl@readstream=\read4
+)
+\bbl@dirlevel=\count459
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel-english/e
+nglish.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: \l@british = using hyphenrules for english
+(babel)             (\language0) on input line 82.
+Package babel Info: \l@UKenglish = using hyphenrules for english
+(babel)             (\language0) on input line 83.
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for english
+(babel)             (\language0) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for english
+(babel)             (\language0) on input line 108.
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel-english/e
+nglish.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+))
+\cslhangindent=\skip122
+\c@NumberOfAuthors=\count460
+\c@NumberOfSuperscripts=\count461
+
+Class apa7 Warning: Deprecated: see documentation for \authorsaffiliations on i
+nput line 153.
+
+\c@NumberOfAffiliations=\count462
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
+(./manuscript_apa.aux)
+\openout1 = `manuscript_apa.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 161.
+LaTeX Font Info:    ... okay on input line 161.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=433.62pt
+* \textheight=614.295pt
+* \oddsidemargin=18.06749pt
+* \evensidemargin=18.06749pt
+* \topmargin=-18.06749pt
+* \headheight=15.2pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epst
+opdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epsto
+pdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)) ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box82
+Package hyperref Info: Link coloring OFF on input line 161.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.
+sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount
+.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/
+gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count463
+)
+LaTeX Info: Redefining \ref on input line 161.
+LaTeX Info: Redefining \pageref on input line 161.
+LaTeX Info: Redefining \nameref on input line 161.
+(./manuscript_apa.out) (./manuscript_apa.out)
+\@outlinefile=\write5
+\openout5 = `manuscript_apa.out'.
+
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/apa7/config/APA7e
+nglish.txt
+File: APA7english.txt 2020/08/02 v1.01 apa7 configuration for non-American Engl
+ish
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/ltcaption
+.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \microtypecontext on input line 161.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using protrusion set `basicmath'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+LaTeX Info: Redefining \showhyphens on input line 161.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.
+cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/biblatex/lbx/engl
+ish.lbx
+File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `manuscript_apa.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'manuscript_apa.bbl' not found.
+No file manuscript_apa.bbl.
+Package biblatex Info: Reference section=0 on input line 161.
+Package biblatex Info: Reference segment=0 on input line 161.
+Using title for running head
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+62.
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+62.
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+162.
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+162.
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 162.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 162.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 162.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 162
+.
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.
+cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 162
+.
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.
+cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-eur.
+cfg
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 162.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 162.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 162.
+[1
+
+{c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdft
+ex.map}] [2] [3] [4] [5] [6] [7] [8] [9] [10]
+Underfull \hbox (badness 1168) in paragraph at lines 268--269
+[]\T1/lmr/m/n/10.95 (+20) The con-fu-sion ma-tri-ces ob-tained by cross-ing en-
+coders' self-reports, hu-man
+ []
+
+<manuscript_apa_files/figure-latex/confusionMatrix-sr-hr-1.pdf, id=142, 469.755
+pt x 433.62pt>
+File: manuscript_apa_files/figure-latex/confusionMatrix-sr-hr-1.pdf Graphic fil
+e (type pdf)
+<use manuscript_apa_files/figure-latex/confusionMatrix-sr-hr-1.pdf>
+Package pdftex.def Info: manuscript_apa_files/figure-latex/confusionMatrix-sr-h
+r-1.pdf  used on input line 279.
+(pdftex.def)             Requested size: 433.62059pt x 400.26515pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
+
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 279--279
+|\T1/lmr/m/it/10.95 (+20) Con-fu-sion ma-trix be-tween the emo-tion self-report
+ed as be-ing char-ac-ter-is-tic of the
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11]
+Underfull \vbox (badness 4181) has occurred while \output is active []
+
+[12 <./manuscript_apa_files/figure-latex/confusionMatrix-sr-hr-1.pdf>]
+<manuscript_apa_files/figure-latex/confusionMatrix-sr-ar-1.pdf, id=165, 469.755
+pt x 433.62pt>
+File: manuscript_apa_files/figure-latex/confusionMatrix-sr-ar-1.pdf Graphic fil
+e (type pdf)
+<use manuscript_apa_files/figure-latex/confusionMatrix-sr-ar-1.pdf>
+Package pdftex.def Info: manuscript_apa_files/figure-latex/confusionMatrix-sr-a
+r-1.pdf  used on input line 328.
+(pdftex.def)             Requested size: 433.62059pt x 400.26515pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13] [14 <./manuscript_apa_files/figure-latex/confusionMatrix-sr-ar-1.pdf>]
+<manuscript_apa_files/figure-latex/confusionMatrix-hr-ar-1.pdf, id=188, 469.755
+pt x 433.62pt>
+File: manuscript_apa_files/figure-latex/confusionMatrix-hr-ar-1.pdf Graphic fil
+e (type pdf)
+<use manuscript_apa_files/figure-latex/confusionMatrix-hr-ar-1.pdf>
+Package pdftex.def Info: manuscript_apa_files/figure-latex/confusionMatrix-hr-a
+r-1.pdf  used on input line 375.
+(pdftex.def)             Requested size: 433.62059pt x 400.26515pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
+
+ []
+
+[15 <./manuscript_apa_files/figure-latex/confusionMatrix-hr-ar-1.pdf>]
+Underfull \vbox (badness 6575) has occurred while \output is active []
+
+[16] [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[18] [19]
+Underfull \hbox (badness 4108) in paragraph at lines 435--437
+ \T1/lmr/m/it/10.95 (+20) and In-for-ma-tion Pro-cess-ing\T1/lmr/m/n/10.95 (+20
+) , \T1/lmr/m/it/10.95 (+20) 2\T1/lmr/m/n/10.95 (+20) (2), 121--132. []$https :
+ / / doi . org / 10 . 1142 /
+ []
+
+[20] [21]
+Underfull \hbox (badness 2302) in paragraph at lines 501--503
+ [][]\T1/lmr/m/n/10.95 (+20) Fernández-Dols, J.-M., & Criv-elli, C. (2013). Emo
+-tion and ex-pres-sion:
+ []
+
+[22] [23] [24]
+Underfull \hbox (badness 1509) in paragraph at lines 615--617
+ [][]\T1/lmr/m/n/10.95 (+20) Scherer, K. R., & Ceschi, G. (1997). Lost lug-gage
+: A field study of
+ []
+
+[25]pdfTeX warning (ext4): destination with the same identifier (name{ref-aviez
+er2017inherently}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.645 ...\hypertarget{ref-aviezer2017inherently}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-aviezer2008angry}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.648 ...vmode\hypertarget{ref-aviezer2008angry}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-baltruvsaitis2016openface}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.651 ...ertarget{ref-baltruvsaitis2016openface}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-barrett2006emotions}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.654 ...de\hypertarget{ref-barrett2006emotions}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-barrett2019emotional}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.657 ...e\hypertarget{ref-barrett2019emotional}{}
+                                                  % [26]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-barrett2011context}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.660 ...ode\hypertarget{ref-barrett2011context}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-bennett2002facial}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.663 ...mode\hypertarget{ref-bennett2002facial}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-bonanno2004brief}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.666 ...vmode\hypertarget{ref-bonanno2004brief}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-buck1985prime}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.669 \leavevmode\hypertarget{ref-buck1985prime}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-camras1991development}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.672 ...\hypertarget{ref-camras1991development}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-camras2007infants}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.675 ...mode\hypertarget{ref-camras2007infants}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-cohn2003timing}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.678 ...vevmode\hypertarget{ref-cohn2003timing}{}
+                                                  %
+Underfull \hbox (badness 4108) in paragraph at lines 678--680
+ \T1/lmr/m/it/10.95 (+20) and In-for-ma-tion Pro-cess-ing\T1/lmr/m/n/10.95 (+20
+) , \T1/lmr/m/it/10.95 (+20) 2\T1/lmr/m/n/10.95 (+20) (2), 121--132. []$https :
+ / / doi . org / 10 . 1142 /
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{ref-crivelli2
+015smiles}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.681 ...ode\hypertarget{ref-crivelli2015smiles}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-crivelli2018facial}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.684 ...ode\hypertarget{ref-crivelli2018facial}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-crivelli2017recognizing}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.687 ...ypertarget{ref-crivelli2017recognizing}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-darwin1872expression}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.690 ...e\hypertarget{ref-darwin1872expression}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-dente2017measures}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.693 ...mode\hypertarget{ref-dente2017measures}{}
+                                                  % [27]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-den2005facereader}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.696 ...mode\hypertarget{ref-den2005facereader}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-digirolamo2017emotion}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.699 ...\hypertarget{ref-digirolamo2017emotion}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-dols2017natural}) has been already us
+ed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.702 ...evmode\hypertarget{ref-dols2017natural}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-duchenne1876mecanisme}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.705 ...\hypertarget{ref-duchenne1876mecanisme}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-dupre2015oudjat}) has been already us
+ed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.708 ...evmode\hypertarget{ref-dupre2015oudjat}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-dupre2018accuracy}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.711 ...mode\hypertarget{ref-dupre2018accuracy}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-duran2017coherence}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.714 ...ode\hypertarget{ref-duran2017coherence}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-ekman1992argument}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.717 ...mode\hypertarget{ref-ekman1992argument}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-ekman2007directed}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.720 ...mode\hypertarget{ref-ekman2007directed}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-ekman2017facial}) has been already us
+ed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.723 ...evmode\hypertarget{ref-ekman2017facial}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-ekman2011meant}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.726 ...vevmode\hypertarget{ref-ekman2011meant}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-ekman1980facial}) has been already us
+ed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.729 ...evmode\hypertarget{ref-ekman1980facial}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-ekman1987universals}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.732 ...de\hypertarget{ref-ekman1987universals}{}
+                                                  % [28]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-ekman1988universality}) has been
+ already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.735 ...\hypertarget{ref-ekman1988universality}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-elfenbein2002universality}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.738 ...ertarget{ref-elfenbein2002universality}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-fernandez1997spontaneous}) has been a
+lready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.741 ...pertarget{ref-fernandez1997spontaneous}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-fernandez2013emotion}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.744 ...e\hypertarget{ref-fernandez2013emotion}{}
+                                                  %
+Underfull \hbox (badness 2302) in paragraph at lines 744--746
+ []\T1/lmr/m/n/10.95 (+20) Fernández-Dols, J.-M., & Criv-elli, C. (2013). Emo-t
+ion and ex-pres-sion:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{ref-fernandez
+1995smiles}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.747 ...de\hypertarget{ref-fernandez1995smiles}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-fridlund1994human}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.750 ...mode\hypertarget{ref-fridlund1994human}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-frijda2012recognition}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.753 ...\hypertarget{ref-frijda2012recognition}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-frijda1997facial}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.756 ...vmode\hypertarget{ref-frijda1997facial}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-gendron2018emotion}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.759 ...ode\hypertarget{ref-gendron2018emotion}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-gendron2014perceptions}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.762 ...hypertarget{ref-gendron2014perceptions}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-hassin2013inherently}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.765 ...e\hypertarget{ref-hassin2013inherently}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-hess2016emotional}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.768 ...mode\hypertarget{ref-hess2016emotional}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-hess1990differentiating}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.771 ...ypertarget{ref-hess1990differentiating}{}
+                                                  % [29]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-jakobs1999social}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.774 ...vmode\hypertarget{ref-jakobs1999social}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-johnson2010smile}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.777 ...vmode\hypertarget{ref-johnson2010smile}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-kamachi2013dynamic}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.780 ...ode\hypertarget{ref-kamachi2013dynamic}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-kanade2000comprehensive}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.783 ...ypertarget{ref-kanade2000comprehensive}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-kappas2003facial}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.786 ...vmode\hypertarget{ref-kappas2003facial}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-krause1998dyadic}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.789 ...vmode\hypertarget{ref-krause1998dyadic}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-kraut1979social}) has been already us
+ed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.792 ...evmode\hypertarget{ref-kraut1979social}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-krumhuber2013effects}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.795 ...e\hypertarget{ref-krumhuber2013effects}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-lee2002effect}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.798 \leavevmode\hypertarget{ref-lee2002effect}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-lindquist2006language}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.801 ...\hypertarget{ref-lindquist2006language}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-lindquist2013s}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.804 ...vevmode\hypertarget{ref-lindquist2013s}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-mcduff2016discovering}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.807 ...\hypertarget{ref-mcduff2016discovering}{}
+                                                  % [30]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-mcduff2016affdex}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.810 ...vmode\hypertarget{ref-mcduff2016affdex}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-mckeown2013analogical}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.813 ...\hypertarget{ref-mckeown2013analogical}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-mehu2007smiles}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.816 ...vevmode\hypertarget{ref-mehu2007smiles}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-meillon2010dynemo}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.819 ...mode\hypertarget{ref-meillon2010dynemo}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-nielsen2007conceptual}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.822 ...\hypertarget{ref-nielsen2007conceptual}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-pacherie2003modes}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.825 ...mode\hypertarget{ref-pacherie2003modes}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-reisenzein2000exploring}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.828 ...ypertarget{ref-reisenzein2000exploring}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-reisenzein2006evidence}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.831 ...hypertarget{ref-reisenzein2006evidence}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-reisenzein2013coherence}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.834 ...ypertarget{ref-reisenzein2013coherence}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-rosenberg1994coherence}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.837 ...hypertarget{ref-rosenberg1994coherence}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-ruiz2003spontaneous}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.840 ...de\hypertarget{ref-ruiz2003spontaneous}{}
+                                                  % [31]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-russell1993forced}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.843 ...mode\hypertarget{ref-russell1993forced}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-russell1994there}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.846 ...vmode\hypertarget{ref-russell1994there}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-russell2003facial}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.849 ...mode\hypertarget{ref-russell2003facial}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-russell1987relativity}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.852 ...\hypertarget{ref-russell1987relativity}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-sander2014oxford}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.855 ...vmode\hypertarget{ref-sander2014oxford}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-scherer1997lost}) has been already us
+ed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.858 ...evmode\hypertarget{ref-scherer1997lost}{}
+                                                  %
+Underfull \hbox (badness 1509) in paragraph at lines 858--860
+ []\T1/lmr/m/n/10.95 (+20) Scherer, K. R., & Ceschi, G. (1997). Lost lug-gage: 
+A field study of
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{ref-schutzwoh
+l2012facial}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.861 ...e\hypertarget{ref-schutzwohl2012facial}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-tcherkassof2007facial}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.864 ...\hypertarget{ref-tcherkassof2007facial}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-tcherkassof2013dynemo}) has been alre
+ady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.867 ...\hypertarget{ref-tcherkassof2013dynemo}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-tcherkassof2014emotions}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.870 ...ypertarget{ref-tcherkassof2014emotions}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-tsai2002emotional}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.873 ...mode\hypertarget{ref-tsai2002emotional}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-vernon2002disgust}) has been already 
+used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.876 ...mode\hypertarget{ref-vernon2002disgust}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-de2019mama}) has been already used, d
+uplicate ignored
+<to be read again> 
+                   \relax 
+l.879 \leavevmode\hypertarget{ref-de2019mama}{}
+                                               % [32]pdfTeX warning (ext4): des
+tination with the same identifier (name{ref-wagner1997methods}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.882 ...mode\hypertarget{ref-wagner1997methods}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-wagner1986communication}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.885 ...ypertarget{ref-wagner1986communication}{}
+                                                  % [33]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 892.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 892.
+(./manuscript_apa.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 892.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 892.
+Package rerunfilecheck Info: File `manuscript_apa.out' has not changed.
+(rerunfilecheck)             Checksum: CAF49E32D2259EDA0A1DEB3B53E997E3;3230.
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                manuscript_apa
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'manuscript_apa.run.xml'.
+\openout1 = `manuscript_apa.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 34467 strings out of 482816
+ 636466 string characters out of 5953757
+ 1331232 words of memory out of 5000000
+ 48903 multiletter control sequences out of 15000+600000
+ 613342 words of font info for 172 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 68i,12n,68p,6645b,1641s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.
+enc}{c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-m
+athex.enc}{c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
+m/lm-mathit.enc}{c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/d
+vips/lm/lm-ec.enc}<c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/typ
+e1/public/lm/lmbx10.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fon
+ts/type1/public/lm/lmex10.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-di
+st/fonts/type1/public/lm/lmmi10.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/te
+xmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/Users/dupred/AppData/Roaming/TinyT
+eX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/dupred/AppData/Roaming/
+TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/dupred/AppData/Roa
+ming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/dupred/AppDat
+a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/dupred/A
+ppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/dupr
+ed/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
+Output written on manuscript_apa.pdf (33 pages, 315621 bytes).
+PDF statistics:
+ 603 PDF objects out of 1000 (max. 8388607)
+ 543 compressed objects within 6 object streams
+ 158 named destinations out of 1000 (max. 500000)
+ 10396 words of extra memory for PDF output out of 12000 (max. 10000000)
+

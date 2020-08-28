@@ -56,9 +56,9 @@ header-includes:
 ---
 (ref:confusionMatrix-sr-hr) Confusion matrix between the emotion self-reported as being characteristic of the elicitation with the emotion recognized by the human observers.
 (ref:confusionMatrix-sr-ar) Confusion matrix of between the emotion self-reported as being characteristic of the elicitation with the emotion recognized by the automatic classifier.
-(ref:confusionMatrix-hr-ar) Proportion of emotion labels classified by human observers which are recognized by the automatif classifier.
+(ref:confusionMatrix-hr-ar) Proportion of emotion labels classified by human observers which are recognized by the automatic classifier.
 (ref:confusionTable-sr-hr) Human recognition accuracy metrics for each emotion.
-(ref:confusionTable-sr-ar) Autonatic recognition accuracy metrics for each emotion.
+(ref:confusionTable-sr-ar) Automatic recognition accuracy metrics for each emotion.
 
 ```{r setup, include = FALSE}
 library(tidyverse) # Data wrangling & grammar of graphics
@@ -73,7 +73,7 @@ set.seed(123) # Seed for random number generation
 options(scipen = 999)# Disable scientific number format
 knitr::opts_chunk$set(
   cache.extra = knitr::rand_seed,
-  cache = TRUE,
+  cache = FALSE,
   message = FALSE, 
   warning = FALSE, 
   error = FALSE, 
