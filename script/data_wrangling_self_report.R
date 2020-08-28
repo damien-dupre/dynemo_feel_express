@@ -11,7 +11,7 @@ library(janitor)
 data_path <- here::here() %>% 
   dirname() %>% 
   dirname() %>% 
-  paste0("/data/dynemo_feel_data/human_self_report_data")
+  file.path("data/dynemo_feel_data/human_self_report_data")
 
 # upload data ------------------------------------------------------------------
 self_report_data <- file.path(data_path,  "Base_Finale_20090114.rds") %>% 

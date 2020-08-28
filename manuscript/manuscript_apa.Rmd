@@ -213,7 +213,7 @@ where *i* is one of the `r unique_video_count["vid_n"]` videos, *j* is one of th
 
 Since encoders’ self-reports, human annotations and the automatic recognition include data on “non-basic” emotion labels and features, the analysis is performed using only the six basic emotion labels in order to compare them. The maximum rating for self-reports, human annotations and automatic recognition is used to label the video. In case of more than one label obtaining the maximum rating, the video is labeled as undetermined.
 
-The confusion matrices obtained by crossing encoders’ self-reports, human annotations and the automatic recognition are analysed by calulating two-sided Pearson correlation, accuracy which corresponds to the overall agreement rate averaged over cross-validation iterations and Cohen’s (unweighted) Kappa.
+The confusion matrices obtained by crossing encoders’ self-reports, human annotations and the automatic recognition are analysed by calculating two-sided Pearson correlation, accuracy which corresponds to the overall agreement rate averaged over cross-validation iterations and Cohen’s (unweighted) Kappa.
 
 # Results
 

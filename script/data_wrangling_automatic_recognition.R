@@ -10,7 +10,7 @@ library(here)
 data_path <- here::here() %>% 
   dirname() %>% 
   dirname() %>% 
-  paste0("/data/dynemo_feel_data/automatic_recognition_data")
+  file.path("data/dynemo_feel_data/automatic_recognition_data")
 
 # upload data ------------------------------------------------------------------
 automatic_recognition_data <- file.path(data_path,  "automatic_recognition_data.rds") %>% 

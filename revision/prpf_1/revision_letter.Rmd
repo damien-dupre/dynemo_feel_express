@@ -7,6 +7,85 @@ output      : "papaja::revision_letter_pdf"
 #output      : word_document
 ---
 
+```{r setup, include = FALSE}
+# libraries --------------------------------------------------------------------
+library(tidyverse)
+library(magrittr)
+library(here)
+library(ltm)
+
+# options ----------------------------------------------------------------------
+set.seed(123)
+options(scipen = 999)
+knitr::opts_chunk$set(
+  cache.extra = knitr::rand_seed,
+  cache = FALSE,
+  message = FALSE, 
+  warning = FALSE, 
+  error = FALSE, 
+  echo = FALSE
+  )
+
+# data -------------------------------------------------------------------------
+
+## self_report_data
+source(here::here("script/data_wrangling_self_report.R"))
+self_report_score <- self_report_score %>%
+  dplyr::select(C_Video, sr_emotion = emotion, sr_score = value)
+
+## human_recognition_data
+source(here::here("script/data_wrangling_human_recognition.R"))
+human_recognition_score <- human_recognition_score %>%
+  dplyr::select(C_Video, hr_emotion = emotion, hr_score = confidence_score)
+
+## automatic_recognition_data
+source(here::here("script/data_wrangling_automatic_recognition.R"))
+automatic_recognition_score <- automatic_recognition_score %>%
+  dplyr::select(C_Video, ar_emotion = emotion, ar_score = confidence_score) %>%
+  dplyr::filter(C_Video %in% ppt_per_video$C_Video)
+
+list_video <- human_recognition_score$C_Video
+list_emotion <- c("disgust","fear","happiness","surprise","sadness","anger")
+
+grid_data <- expand.grid(list_video = list_video, list_emotion = list_emotion)
+
+self_report_result <- self_report_score %>%
+  dplyr::filter(sr_emotion != "undetermined") %>%
+  dplyr::mutate(sr_score = 1)
+
+human_recognition_result <- human_recognition_score %>%
+  dplyr::filter(hr_emotion != "undetermined") %>%
+  dplyr::mutate(hr_score = 1)
+
+automatic_recognition_result <- automatic_recognition_score %>%
+  dplyr::filter(ar_emotion != "undetermined") %>%
+  dplyr::mutate(ar_score = 1)
+
+recognition_result <- grid_data %>%
+  dplyr::left_join(
+    self_report_result,
+    by = c(
+      "list_video" = "C_Video",
+      "list_emotion" = "sr_emotion"
+      )
+    ) %>%
+  dplyr::left_join(
+    human_recognition_result,
+    by = c(
+      "list_video" = "C_Video",
+      "list_emotion" = "hr_emotion"
+      )
+    ) %>%
+  dplyr::left_join(
+    automatic_recognition_result,
+    by = c(
+      "list_video" = "C_Video",
+      "list_emotion" = "ar_emotion"
+      )
+    ) %>%
+  replace(is.na(.), 0)
+```
+
 # Editor Comments
 
 \RC{Dear Dr Tcherkassof,
@@ -39,6 +118,8 @@ In the following we address the respect points made by both the editor and the r
 
 \RC{The work of this article gives new insights about the connection of emotional self-reports and observer categorizations and automatic recognition of facial movements. The data are very interesting and this work should be published. But off course some things could be made better in the paper. The most important things are mainly in the methods and results section.}
 
+We greatly appreciate the Reviewer’s positive comments. We have carefully revised the manuscript according to the Reviewer’s insightful comments and provided point-by-point responses as follows.
+
 ## Method section
 
 \RC{Page 15, line 57: in 2-3 or more lines should be described which kind of emotion inductions have been used for the data base.}
@@ -48,6 +129,16 @@ In the following we address the respect points made by both the editor and the r
 ## Results section
 
 \RC{Page 19 line 17 to 20: Which kind of correlation was computed here? A pearson correlation? It should be a point-biserial correlation as one of the two variables is dichotomous.}
+
+```{r echo=TRUE}
+recognition_result %$%
+  ltm::biserial.cor(sr_score, hr_score, level = 2)
+
+recognition_result %$%
+  cor.test(sr_score, hr_score, method = "pearson", alternative = "two.sided") %>% 
+  use_series("estimate")
+```
+
 
 \RC{Page 21 line 32: "expression intensity", where are expression intensity scores? Could you please bring the data into the paper?}
 

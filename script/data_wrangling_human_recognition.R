@@ -11,7 +11,7 @@ library(here)
 data_path <- here::here() %>% 
   dirname() %>% 
   dirname() %>% 
-  paste0("/data/dynemo_feel_data/human_recognition_data")
+  file.path("data/dynemo_feel_data/human_recognition_data")
 
 # upload data ------------------------------------------------------------------
 metadata_video <- file.path(data_path,  "metadata_video.rds") %>% 
@@ -58,9 +58,9 @@ full_timeline <- unique_ppt %>%
   dplyr::mutate_if(is.factor,as.character)
 
 data_timeline <- human_recognition_data %>% 
-  mutate(timeline = map2(TC_Debut, TC_Fin, `:`)) %>% 
-  select(-TC_Debut, -TC_Fin) %>% 
-  unnest() %>% 
+  dplyr::mutate(timeline = map2(TC_Debut, TC_Fin, `:`)) %>% 
+  dplyr::select(-TC_Debut, -TC_Fin) %>% 
+  tidyr::unnest() %>% 
   dplyr::mutate_if(is.factor,as.character)
 
 final_timeline <- full_timeline %>% 
