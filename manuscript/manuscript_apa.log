@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.8.16)  28 AUG 2020 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.8.16)  1 SEP 2020 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1559,27 +1559,32 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [1
 
 {c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdft
-ex.map}] [2] [3] [4] [5] [6] [7] [8] [9] [10]
-Underfull \hbox (badness 1168) in paragraph at lines 268--269
+ex.map}] [2] [3] [4] [5] [6] [7] [8]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+28.
+(c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [9] [10]
+Underfull \hbox (badness 1168) in paragraph at lines 270--271
 []\T1/lmr/m/n/10.95 (+20) The con-fu-sion ma-tri-ces ob-tained by cross-ing en-
 coders' self-reports, hu-man
  []
 
-<manuscript_apa_files/figure-latex/confusionMatrix-sr-hr-1.pdf, id=142, 469.755
+<manuscript_apa_files/figure-latex/confusionMatrix-sr-hr-1.pdf, id=139, 469.755
 pt x 433.62pt>
 File: manuscript_apa_files/figure-latex/confusionMatrix-sr-hr-1.pdf Graphic fil
 e (type pdf)
 <use manuscript_apa_files/figure-latex/confusionMatrix-sr-hr-1.pdf>
 Package pdftex.def Info: manuscript_apa_files/figure-latex/confusionMatrix-sr-h
-r-1.pdf  used on input line 279.
+r-1.pdf  used on input line 281.
 (pdftex.def)             Requested size: 433.62059pt x 400.26515pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
 
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 279--279
+Underfull \hbox (badness 1342) in paragraph at lines 281--281
 |\T1/lmr/m/it/10.95 (+20) Con-fu-sion ma-trix be-tween the emo-tion self-report
 ed as be-ing char-ac-ter-is-tic of the
  []
@@ -1587,20 +1592,17 @@ ed as be-ing char-ac-ter-is-tic of the
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11]
-Underfull \vbox (badness 4181) has occurred while \output is active []
-
-[12 <./manuscript_apa_files/figure-latex/confusionMatrix-sr-hr-1.pdf>]
+[11] [12 <./manuscript_apa_files/figure-latex/confusionMatrix-sr-hr-1.pdf>]
 <manuscript_apa_files/figure-latex/confusionMatrix-sr-ar-1.pdf, id=165, 469.755
 pt x 433.62pt>
 File: manuscript_apa_files/figure-latex/confusionMatrix-sr-ar-1.pdf Graphic fil
 e (type pdf)
 <use manuscript_apa_files/figure-latex/confusionMatrix-sr-ar-1.pdf>
 Package pdftex.def Info: manuscript_apa_files/figure-latex/confusionMatrix-sr-a
-r-1.pdf  used on input line 328.
+r-1.pdf  used on input line 330.
 (pdftex.def)             Requested size: 433.62059pt x 400.26515pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
+Underfull \hbox (badness 10000) in paragraph at lines 330--330
 
  []
 
@@ -1614,111 +1616,120 @@ File: manuscript_apa_files/figure-latex/confusionMatrix-hr-ar-1.pdf Graphic fil
 e (type pdf)
 <use manuscript_apa_files/figure-latex/confusionMatrix-hr-ar-1.pdf>
 Package pdftex.def Info: manuscript_apa_files/figure-latex/confusionMatrix-hr-a
-r-1.pdf  used on input line 375.
+r-1.pdf  used on input line 377.
 (pdftex.def)             Requested size: 433.62059pt x 400.26515pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--375
+Underfull \hbox (badness 10000) in paragraph at lines 377--377
 
  []
 
-[15 <./manuscript_apa_files/figure-latex/confusionMatrix-hr-ar-1.pdf>]
-Underfull \vbox (badness 6575) has occurred while \output is active []
 
-[16] [17]
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15]
+Underfull \vbox (badness 4454) has occurred while \output is active []
+
+[16 <./manuscript_apa_files/figure-latex/confusionMatrix-hr-ar-1.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[18] [19]
-Underfull \hbox (badness 4108) in paragraph at lines 435--437
+[17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[19] [20]
+Underfull \hbox (badness 4108) in paragraph at lines 437--439
  \T1/lmr/m/it/10.95 (+20) and In-for-ma-tion Pro-cess-ing\T1/lmr/m/n/10.95 (+20
 ) , \T1/lmr/m/it/10.95 (+20) 2\T1/lmr/m/n/10.95 (+20) (2), 121--132. []$https :
  / / doi . org / 10 . 1142 /
  []
 
-[20] [21]
-Underfull \hbox (badness 2302) in paragraph at lines 501--503
+[21] [22]
+Underfull \hbox (badness 2302) in paragraph at lines 506--508
  [][]\T1/lmr/m/n/10.95 (+20) Fernández-Dols, J.-M., & Criv-elli, C. (2013). Emo
 -tion and ex-pres-sion:
  []
 
-[22] [23] [24]
-Underfull \hbox (badness 1509) in paragraph at lines 615--617
+[23] [24] [25]
+Underfull \hbox (badness 1509) in paragraph at lines 626--628
  [][]\T1/lmr/m/n/10.95 (+20) Scherer, K. R., & Ceschi, G. (1997). Lost lug-gage
 : A field study of
  []
 
-[25]pdfTeX warning (ext4): destination with the same identifier (name{ref-aviez
+[26]pdfTeX warning (ext4): destination with the same identifier (name{ref-aviez
 er2017inherently}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.645 ...\hypertarget{ref-aviezer2017inherently}{}
+l.656 ...\hypertarget{ref-aviezer2017inherently}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-aviezer2008angry}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.648 ...vmode\hypertarget{ref-aviezer2008angry}{}
+l.659 ...vmode\hypertarget{ref-aviezer2008angry}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-baltruvsaitis2016openface}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.651 ...ertarget{ref-baltruvsaitis2016openface}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-barrett2006emotions}) has been alread
-y used, duplicate ignored
+l.662 ...ertarget{ref-baltruvsaitis2016openface}{}
+                                                  % [27]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-barrett2006emotions}) has been a
+lready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.654 ...de\hypertarget{ref-barrett2006emotions}{}
+l.665 ...de\hypertarget{ref-barrett2006emotions}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-barrett2019emotional}) has been alrea
 dy used, duplicate ignored
 <to be read again> 
                    \relax 
-l.657 ...e\hypertarget{ref-barrett2019emotional}{}
-                                                  % [26]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-barrett2011context}) has been al
-ready used, duplicate ignored
+l.668 ...e\hypertarget{ref-barrett2019emotional}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-barrett2011context}) has been already
+ used, duplicate ignored
 <to be read again> 
                    \relax 
-l.660 ...ode\hypertarget{ref-barrett2011context}{}
+l.671 ...ode\hypertarget{ref-barrett2011context}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-bennett2002facial}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.663 ...mode\hypertarget{ref-bennett2002facial}{}
+l.674 ...mode\hypertarget{ref-bennett2002facial}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-bonanno2004brief}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.666 ...vmode\hypertarget{ref-bonanno2004brief}{}
+l.677 ...vmode\hypertarget{ref-bonanno2004brief}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-buck1985prime}) has been already used
 , duplicate ignored
 <to be read again> 
                    \relax 
-l.669 \leavevmode\hypertarget{ref-buck1985prime}{}
+l.680 \leavevmode\hypertarget{ref-buck1985prime}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-camras1991development}) has been alre
 ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.672 ...\hypertarget{ref-camras1991development}{}
+l.683 ...\hypertarget{ref-camras1991development}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-camras2007infants}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.675 ...mode\hypertarget{ref-camras2007infants}{}
+l.686 ...mode\hypertarget{ref-camras2007infants}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-cohn2003timing}) has been already use
 d, duplicate ignored
 <to be read again> 
                    \relax 
-l.678 ...vevmode\hypertarget{ref-cohn2003timing}{}
+l.689 ...vevmode\hypertarget{ref-cohn2003timing}{}
                                                   %
-Underfull \hbox (badness 4108) in paragraph at lines 678--680
+Underfull \hbox (badness 4108) in paragraph at lines 689--691
  \T1/lmr/m/it/10.95 (+20) and In-for-ma-tion Pro-cess-ing\T1/lmr/m/n/10.95 (+20
 ) , \T1/lmr/m/it/10.95 (+20) 2\T1/lmr/m/n/10.95 (+20) (2), 121--132. []$https :
  / / doi . org / 10 . 1142 /
@@ -1728,135 +1739,141 @@ pdfTeX warning (ext4): destination with the same identifier (name{ref-crivelli2
 015smiles}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.681 ...ode\hypertarget{ref-crivelli2015smiles}{}
+l.692 ...ode\hypertarget{ref-crivelli2015smiles}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-crivelli2018facial}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.684 ...ode\hypertarget{ref-crivelli2018facial}{}
+l.695 ...ode\hypertarget{ref-crivelli2018facial}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-crivelli2017recognizing}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.687 ...ypertarget{ref-crivelli2017recognizing}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-darwin1872expression}) has been alrea
-dy used, duplicate ignored
+l.698 ...ypertarget{ref-crivelli2017recognizing}{}
+                                                  % [28]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-darwin1872expression}) has been 
+already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.690 ...e\hypertarget{ref-darwin1872expression}{}
+l.701 ...e\hypertarget{ref-darwin1872expression}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-dente2017measures}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.693 ...mode\hypertarget{ref-dente2017measures}{}
-                                                  % [27]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-den2005facereader}) has been alr
-eady used, duplicate ignored
+l.704 ...mode\hypertarget{ref-dente2017measures}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-den2005facereader}) has been already 
+used, duplicate ignored
 <to be read again> 
                    \relax 
-l.696 ...mode\hypertarget{ref-den2005facereader}{}
+l.707 ...mode\hypertarget{ref-den2005facereader}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-digirolamo2017emotion}) has been alre
 ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.699 ...\hypertarget{ref-digirolamo2017emotion}{}
+l.710 ...\hypertarget{ref-digirolamo2017emotion}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-dols2017natural}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.702 ...evmode\hypertarget{ref-dols2017natural}{}
+l.713 ...evmode\hypertarget{ref-dols2017natural}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-duchenne1876mecanisme}) has been alre
 ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.705 ...\hypertarget{ref-duchenne1876mecanisme}{}
+l.716 ...\hypertarget{ref-duchenne1876mecanisme}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-dupre2015oudjat}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.708 ...evmode\hypertarget{ref-dupre2015oudjat}{}
+l.719 ...evmode\hypertarget{ref-dupre2015oudjat}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-dupre2018accuracy}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.711 ...mode\hypertarget{ref-dupre2018accuracy}{}
+l.722 ...mode\hypertarget{ref-dupre2018accuracy}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-dupre2020performance}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.725 ...e\hypertarget{ref-dupre2020performance}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-duran2017coherence}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.714 ...ode\hypertarget{ref-duran2017coherence}{}
+l.728 ...ode\hypertarget{ref-duran2017coherence}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ekman1992argument}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.717 ...mode\hypertarget{ref-ekman1992argument}{}
+l.731 ...mode\hypertarget{ref-ekman1992argument}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ekman2007directed}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.720 ...mode\hypertarget{ref-ekman2007directed}{}
+l.734 ...mode\hypertarget{ref-ekman2007directed}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ekman2017facial}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.723 ...evmode\hypertarget{ref-ekman2017facial}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-ekman2011meant}) has been already use
-d, duplicate ignored
+l.737 ...evmode\hypertarget{ref-ekman2017facial}{}
+                                                  % [29]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-ekman2011meant}) has been alread
+y used, duplicate ignored
 <to be read again> 
                    \relax 
-l.726 ...vevmode\hypertarget{ref-ekman2011meant}{}
+l.740 ...vevmode\hypertarget{ref-ekman2011meant}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ekman1980facial}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.729 ...evmode\hypertarget{ref-ekman1980facial}{}
+l.743 ...evmode\hypertarget{ref-ekman1980facial}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ekman1987universals}) has been alread
 y used, duplicate ignored
 <to be read again> 
                    \relax 
-l.732 ...de\hypertarget{ref-ekman1987universals}{}
-                                                  % [28]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-ekman1988universality}) has been
- already used, duplicate ignored
+l.746 ...de\hypertarget{ref-ekman1987universals}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-ekman1988universality}) has been alre
+ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.735 ...\hypertarget{ref-ekman1988universality}{}
+l.749 ...\hypertarget{ref-ekman1988universality}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-elfenbein2002universality}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.738 ...ertarget{ref-elfenbein2002universality}{}
+l.752 ...ertarget{ref-elfenbein2002universality}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-fernandez1997spontaneous}) has been a
 lready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.741 ...pertarget{ref-fernandez1997spontaneous}{}
+l.755 ...pertarget{ref-fernandez1997spontaneous}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-fernandez2013emotion}) has been alrea
 dy used, duplicate ignored
 <to be read again> 
                    \relax 
-l.744 ...e\hypertarget{ref-fernandez2013emotion}{}
+l.758 ...e\hypertarget{ref-fernandez2013emotion}{}
                                                   %
-Underfull \hbox (badness 2302) in paragraph at lines 744--746
+Underfull \hbox (badness 2302) in paragraph at lines 758--760
  []\T1/lmr/m/n/10.95 (+20) Fernández-Dols, J.-M., & Criv-elli, C. (2013). Emo-t
 ion and ex-pres-sion:
  []
@@ -1865,231 +1882,243 @@ pdfTeX warning (ext4): destination with the same identifier (name{ref-fernandez
 1995smiles}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.747 ...de\hypertarget{ref-fernandez1995smiles}{}
+l.761 ...de\hypertarget{ref-fernandez1995smiles}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-fridlund1994human}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.750 ...mode\hypertarget{ref-fridlund1994human}{}
+l.764 ...mode\hypertarget{ref-fridlund1994human}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-frijda2012recognition}) has been alre
 ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.753 ...\hypertarget{ref-frijda2012recognition}{}
+l.767 ...\hypertarget{ref-frijda2012recognition}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-frijda1997facial}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.756 ...vmode\hypertarget{ref-frijda1997facial}{}
+l.770 ...vmode\hypertarget{ref-frijda1997facial}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-gendron2018emotion}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.759 ...ode\hypertarget{ref-gendron2018emotion}{}
+l.773 ...ode\hypertarget{ref-gendron2018emotion}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-gendron2014perceptions}) has been alr
 eady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.762 ...hypertarget{ref-gendron2014perceptions}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-hassin2013inherently}) has been alrea
-dy used, duplicate ignored
+l.776 ...hypertarget{ref-gendron2014perceptions}{}
+                                                  % [30]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-hassin2013inherently}) has been 
+already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.765 ...e\hypertarget{ref-hassin2013inherently}{}
+l.779 ...e\hypertarget{ref-hassin2013inherently}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-hess2016emotional}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.768 ...mode\hypertarget{ref-hess2016emotional}{}
+l.782 ...mode\hypertarget{ref-hess2016emotional}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-hess1990differentiating}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.771 ...ypertarget{ref-hess1990differentiating}{}
-                                                  % [29]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-jakobs1999social}) has been alre
-ady used, duplicate ignored
+l.785 ...ypertarget{ref-hess1990differentiating}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-jakobs1999social}) has been already u
+sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.774 ...vmode\hypertarget{ref-jakobs1999social}{}
+l.788 ...vmode\hypertarget{ref-jakobs1999social}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-johnson2010smile}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.777 ...vmode\hypertarget{ref-johnson2010smile}{}
+l.791 ...vmode\hypertarget{ref-johnson2010smile}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-kamachi2013dynamic}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.780 ...ode\hypertarget{ref-kamachi2013dynamic}{}
+l.794 ...ode\hypertarget{ref-kamachi2013dynamic}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-kanade2000comprehensive}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.783 ...ypertarget{ref-kanade2000comprehensive}{}
+l.797 ...ypertarget{ref-kanade2000comprehensive}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-kappas2003facial}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.786 ...vmode\hypertarget{ref-kappas2003facial}{}
+l.800 ...vmode\hypertarget{ref-kappas2003facial}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-krause1998dyadic}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.789 ...vmode\hypertarget{ref-krause1998dyadic}{}
+l.803 ...vmode\hypertarget{ref-krause1998dyadic}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-kraut1979social}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.792 ...evmode\hypertarget{ref-kraut1979social}{}
+l.806 ...evmode\hypertarget{ref-kraut1979social}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-krumhuber2013effects}) has been alrea
 dy used, duplicate ignored
 <to be read again> 
                    \relax 
-l.795 ...e\hypertarget{ref-krumhuber2013effects}{}
+l.809 ...e\hypertarget{ref-krumhuber2013effects}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-krumhuber2020human}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.812 ...ode\hypertarget{ref-krumhuber2020human}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-lee2002effect}) has been already used
 , duplicate ignored
 <to be read again> 
                    \relax 
-l.798 \leavevmode\hypertarget{ref-lee2002effect}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-lindquist2006language}) has been alre
-ady used, duplicate ignored
+l.815 \leavevmode\hypertarget{ref-lee2002effect}{}
+                                                  % [31]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-lindquist2006language}) has been
+ already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.801 ...\hypertarget{ref-lindquist2006language}{}
+l.818 ...\hypertarget{ref-lindquist2006language}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-lindquist2013s}) has been already use
 d, duplicate ignored
 <to be read again> 
                    \relax 
-l.804 ...vevmode\hypertarget{ref-lindquist2013s}{}
+l.821 ...vevmode\hypertarget{ref-lindquist2013s}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-lottridge2009emotional}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.824 ...hypertarget{ref-lottridge2009emotional}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-mcduff2016discovering}) has been alre
 ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.807 ...\hypertarget{ref-mcduff2016discovering}{}
-                                                  % [30]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-mcduff2016affdex}) has been alre
-ady used, duplicate ignored
+l.827 ...\hypertarget{ref-mcduff2016discovering}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-mcduff2016affdex}) has been already u
+sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.810 ...vmode\hypertarget{ref-mcduff2016affdex}{}
+l.830 ...vmode\hypertarget{ref-mcduff2016affdex}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-mckeown2013analogical}) has been alre
 ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.813 ...\hypertarget{ref-mckeown2013analogical}{}
+l.833 ...\hypertarget{ref-mckeown2013analogical}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-mehu2007smiles}) has been already use
 d, duplicate ignored
 <to be read again> 
                    \relax 
-l.816 ...vevmode\hypertarget{ref-mehu2007smiles}{}
+l.836 ...vevmode\hypertarget{ref-mehu2007smiles}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-meillon2010dynemo}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.819 ...mode\hypertarget{ref-meillon2010dynemo}{}
+l.839 ...mode\hypertarget{ref-meillon2010dynemo}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-nielsen2007conceptual}) has been alre
 ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.822 ...\hypertarget{ref-nielsen2007conceptual}{}
+l.842 ...\hypertarget{ref-nielsen2007conceptual}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-pacherie2003modes}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.825 ...mode\hypertarget{ref-pacherie2003modes}{}
+l.845 ...mode\hypertarget{ref-pacherie2003modes}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-reisenzein2000exploring}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.828 ...ypertarget{ref-reisenzein2000exploring}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-reisenzein2006evidence}) has been alr
-eady used, duplicate ignored
+l.848 ...ypertarget{ref-reisenzein2000exploring}{}
+                                                  % [32]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-reisenzein2006evidence}) has bee
+n already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.831 ...hypertarget{ref-reisenzein2006evidence}{}
+l.851 ...hypertarget{ref-reisenzein2006evidence}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-reisenzein2013coherence}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.834 ...ypertarget{ref-reisenzein2013coherence}{}
+l.854 ...ypertarget{ref-reisenzein2013coherence}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-rosenberg1994coherence}) has been alr
 eady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.837 ...hypertarget{ref-rosenberg1994coherence}{}
+l.857 ...hypertarget{ref-rosenberg1994coherence}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-ruiz2003spontaneous}) has been alread
 y used, duplicate ignored
 <to be read again> 
                    \relax 
-l.840 ...de\hypertarget{ref-ruiz2003spontaneous}{}
-                                                  % [31]pdfTeX warning (ext4): 
-destination with the same identifier (name{ref-russell1993forced}) has been alr
-eady used, duplicate ignored
+l.860 ...de\hypertarget{ref-ruiz2003spontaneous}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-russell1993forced}) has been already 
+used, duplicate ignored
 <to be read again> 
                    \relax 
-l.843 ...mode\hypertarget{ref-russell1993forced}{}
+l.863 ...mode\hypertarget{ref-russell1993forced}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-russell1994there}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.846 ...vmode\hypertarget{ref-russell1994there}{}
+l.866 ...vmode\hypertarget{ref-russell1994there}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-russell2003facial}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.849 ...mode\hypertarget{ref-russell2003facial}{}
+l.869 ...mode\hypertarget{ref-russell2003facial}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-russell1987relativity}) has been alre
 ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.852 ...\hypertarget{ref-russell1987relativity}{}
+l.872 ...\hypertarget{ref-russell1987relativity}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-sander2014oxford}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.855 ...vmode\hypertarget{ref-sander2014oxford}{}
+l.875 ...vmode\hypertarget{ref-sander2014oxford}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-scherer1997lost}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.858 ...evmode\hypertarget{ref-scherer1997lost}{}
+l.878 ...evmode\hypertarget{ref-scherer1997lost}{}
                                                   %
-Underfull \hbox (badness 1509) in paragraph at lines 858--860
+Underfull \hbox (badness 1509) in paragraph at lines 878--880
  []\T1/lmr/m/n/10.95 (+20) Scherer, K. R., & Ceschi, G. (1997). Lost lug-gage: 
 A field study of
  []
@@ -2098,61 +2127,61 @@ pdfTeX warning (ext4): destination with the same identifier (name{ref-schutzwoh
 l2012facial}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.861 ...e\hypertarget{ref-schutzwohl2012facial}{}
+l.881 ...e\hypertarget{ref-schutzwohl2012facial}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-tcherkassof2007facial}) has been alre
 ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.864 ...\hypertarget{ref-tcherkassof2007facial}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-tcherkassof2013dynemo}) has been alre
-ady used, duplicate ignored
+l.884 ...\hypertarget{ref-tcherkassof2007facial}{}
+                                                  % [33]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-tcherkassof2013dynemo}) has been
+ already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.867 ...\hypertarget{ref-tcherkassof2013dynemo}{}
+l.887 ...\hypertarget{ref-tcherkassof2013dynemo}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-tcherkassof2014emotions}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.870 ...ypertarget{ref-tcherkassof2014emotions}{}
+l.890 ...ypertarget{ref-tcherkassof2014emotions}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-tsai2002emotional}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.873 ...mode\hypertarget{ref-tsai2002emotional}{}
+l.893 ...mode\hypertarget{ref-tsai2002emotional}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-vernon2002disgust}) has been already 
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.876 ...mode\hypertarget{ref-vernon2002disgust}{}
+l.896 ...mode\hypertarget{ref-vernon2002disgust}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-de2019mama}) has been already used, d
 uplicate ignored
 <to be read again> 
                    \relax 
-l.879 \leavevmode\hypertarget{ref-de2019mama}{}
-                                               % [32]pdfTeX warning (ext4): des
-tination with the same identifier (name{ref-wagner1997methods}) has been alread
-y used, duplicate ignored
+l.899 \leavevmode\hypertarget{ref-de2019mama}{}
+                                               %pdfTeX warning (ext4): destinat
+ion with the same identifier (name{ref-wagner1997methods}) has been already use
+d, duplicate ignored
 <to be read again> 
                    \relax 
-l.882 ...mode\hypertarget{ref-wagner1997methods}{}
+l.902 ...mode\hypertarget{ref-wagner1997methods}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-wagner1986communication}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.885 ...ypertarget{ref-wagner1986communication}{}
-                                                  % [33]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 892.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 892.
+l.905 ...ypertarget{ref-wagner1986communication}{}
+                                                  % [34]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 912.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 912.
 (./manuscript_apa.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 892.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 892.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 912.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 912.
 Package rerunfilecheck Info: File `manuscript_apa.out' has not changed.
 (rerunfilecheck)             Checksum: CAF49E32D2259EDA0A1DEB3B53E997E3;3230.
 
@@ -2168,32 +2197,33 @@ Package logreq Info: Writing requests to 'manuscript_apa.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34467 strings out of 482816
- 636466 string characters out of 5953757
+ 34510 strings out of 482816
+ 637517 string characters out of 5953757
  1331232 words of memory out of 5000000
- 48903 multiletter control sequences out of 15000+600000
- 613342 words of font info for 172 fonts, out of 8000000 for 9000
+ 48932 multiletter control sequences out of 15000+600000
+ 614097 words of font info for 176 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 68i,12n,68p,6645b,1641s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,12n,68p,6587b,1641s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.
 enc}{c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-m
 athex.enc}{c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
 m/lm-mathit.enc}{c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/d
-vips/lm/lm-ec.enc}<c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/typ
-e1/public/lm/lmbx10.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fon
-ts/type1/public/lm/lmex10.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-di
-st/fonts/type1/public/lm/lmmi10.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/te
-xmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/Users/dupred/AppData/Roaming/TinyT
-eX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/dupred/AppData/Roaming/
-TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/dupred/AppData/Roa
-ming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/dupred/AppDat
-a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/dupred/A
-ppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/dupr
-ed/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
-Output written on manuscript_apa.pdf (33 pages, 315621 bytes).
+vips/lm/lm-ts1.enc}{c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/en
+c/dvips/lm/lm-ec.enc}<c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/fonts/
+type1/public/lm/lmbx10.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/texmf-dist/
+fonts/type1/public/lm/lmex10.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX/texmf
+-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/dupred/AppData/Roaming/TinyTeX
+/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/Users/dupred/AppData/Roaming/Ti
+nyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/dupred/AppData/Roami
+ng/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/dupred/AppData/
+Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/dupred/App
+Data/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/dupre
+d/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/d
+upred/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb>
+Output written on manuscript_apa.pdf (34 pages, 319422 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 543 compressed objects within 6 object streams
- 158 named destinations out of 1000 (max. 500000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 556 compressed objects within 6 object streams
+ 162 named destinations out of 1000 (max. 500000)
  10396 words of extra memory for PDF output out of 12000 (max. 10000000)
 
