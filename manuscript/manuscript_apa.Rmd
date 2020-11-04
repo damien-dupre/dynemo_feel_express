@@ -39,8 +39,8 @@ abstract: |
   
 keywords          : "emotion, facial expression, self-report, human perceiver, automatic recognition."
 
-wordcount         : "7943"
-bibliography      : ["bib/manuscript_ref.bib"]
+wordcount         : "8558"
+bibliography      : ["bib/manuscript_ref.bib", "bib/r-references.bib"]
 csl               : ["csl/apa7.csl"]
 
 floatsintext      : no
@@ -54,13 +54,14 @@ draft             : no
 documentclass     : "apa7"
 classoption       : "man"
 
-output: papaja::apa6_word
-
-# output            :
-#   bookdown::pdf_book:
-#     toc: false
-#     number_sections: false
-#     base_format: papaja::apa6_pdf
+#output           : papaja::apa6_word
+ 
+output            : 
+  bookdown::pdf_book:
+    toc: false
+    number_sections: false
+    base_format: papaja::apa6_pdf
+  
 
 header-includes:
   - \usepackage{booktabs}
@@ -563,6 +564,14 @@ Several limitations should be stated, highlighting the need for further research
 Nowadays, automatic recognition systems are based on the coding of the facial muscular activations from which they infer the expressed emotion. Such automatic classifier tools take for granted that, when experienced, an emotion is: firstly, displayed on the face; secondly, in the form of a configuration of facial muscles that is unique to a person; and thirdly, recognized by the perceiver (human being or automatic classifier). These are the Basic Emotion View assertions, jeopardized by field observations and laboratory experiments on spontaneous expression of emotions, such as the present study. All raise serious objections to the supposed close relation between emotion and face. They bring up several questions, in particular regarding the perceiver’s role in the interpretation of the expresser’s emotional face. Is EFE recognition a perceiver-independent or perceiver-dependent process? Although the present results tend to favor the second option, the finalization of operational and effective “reading emotional faces” devices rests on the answer, if any, to the question raised. In any case, as stressed by @krumhuber2020human, machines’ accurate emotion classification is predicted by the prototypicality of a facial display. More prototypical is the facial behavior, more accurate is the classification. However, ordinary emotional facial behaviors are seldom prototypical. As a result, despite being one of the most investigated questions in affective science, the growing interest of industries and governments in tracking individual’s psychological states is supported by controversial assumptions.
 
 Considering the above, the present results add to the body of literature evidence that an individual’s subjective feelings are hardly inferred from spontaneous facial expressions in the absence of contextual cues, and they invalidate the hypothesis of hardwired emotions unambiguously displayed on the face. This study is the first one, to our knowledge, to look simultaneously at facial expressions spontaneously displayed in reaction to emotional triggers and their accurate decoding by human perceivers as compared to automatic emotion recognition tools. Results provide no support for the one-to-one mapping of subjective feelings and facial behaviors. Even if emotions were hardwired, in everyday life one does not observe prototypical facial expressions because of their rarity, and therefore research should be focused on analyzing non-prototypical facial expressions. Indeed, this study provide additional corroboration that facial displays of emotion are not exhibited in circumstances in which the Basic Emotion View would predict them to be expressed [@duran2017coherence]. Advancements in identifying “non-basic” emotion labels as well as non-prototypical facial expression have indeed occured with automatic facial expression recognition tools [@mcduff2016discovering]. However, these present results contribute to a critical understanding of the issues at stake. They suggest that automatic facial expression recognition tools should merely evaluate facial morphology features such as action units [already evaluated in OpenFace, @baltruvsaitis2016openface; Affectiva’s Affdex, @mcduff2016affdex; Vicar Vision’s FaceReader, @den2005facereader, to name a few] rather than inferring supposedly emotional or affective states. Trying to interpret facial displays as a means of determining underlying emotional state (especially without any information about the context, nor person specifications of the expresser, *etc.*), in all likelihood, remains dubious methods.
+
+# Acknowledgement
+
+The authors would like to thank the developers of the following R packages used to process, analyze, display and report data: `r papaja::cite_r(file = "bib/r-references.bib")`.
+
+# Data availability
+
+The R code and relevant data for statistical computing are available on the "The emotion–facial expression link (data and code)" repository from the Center for Open Science [@Dupré_Tcherkassof_2020].
 
 \newpage
 
