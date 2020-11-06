@@ -571,7 +571,7 @@ The authors would like to thank the developers of the following R packages used 
 
 # Data availability
 
-The R code and relevant data for statistical computing are available on the "The emotion–facial expression link (data and code)" repository from the Center for Open Science [@Dupré_Tcherkassof_2020].
+The R code and relevant data for statistical computing are available on *The emotion–facial expression link (data and code)* repository from the Center for Open Science at https://osf.io/erua5/ [@Dupré_Tcherkassof_2020].
 
 \newpage
 
